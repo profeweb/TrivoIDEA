@@ -3,6 +3,8 @@ package trivioAppFonts;
 import processing.core.PApplet;
 import processing.core.PFont;
 
+import static trivioAppFonts.Mides.*;
+
 public class Fonts {
 
     // Array de tipografies
@@ -16,9 +18,9 @@ public class Fonts {
     // Estableix les fonts de l'App
     void setFonts(PApplet p5){
         this.fonts = new PFont[3];
-        this.fonts[0] = p5.createFont("data/Astila.ttf", Mides.midaTitol);
-        this.fonts[1] = p5.createFont("data/GameOver.ttf", Mides.midaSubtitol);
-        this.fonts[2] = p5.createFont("data/Graffiti.ttf", Mides.midaParagraf);
+        this.fonts[0] = p5.createFont("data/Astila.ttf", midaTitol);
+        this.fonts[1] = p5.createFont("data/GameOver.ttf", midaSubtitol);
+        this.fonts[2] = p5.createFont("data/Graffiti.ttf", midaParagraf);
     }
 
     // Getter del número de fonts

@@ -2,6 +2,8 @@ package trivioAppColors;
 
 import processing.core.PApplet;
 
+import static trivioAppColors.Mides.midaCercle;
+
 public class Trivio001 extends PApplet {
 
     // Colors de l'App
@@ -25,13 +27,13 @@ public class Trivio001 extends PApplet {
         appColors = new Colors(this);
 
         // Defineix els cercles (posició, mida i color).
-        c1 = new Cercle(width/4, height/2, Mides.midaCercle);
+        c1 = new Cercle(width/4, height/2, midaCercle);
         c1.setColor(appColors.getFirstColor());  // Color primari
 
-        c2 = new Cercle(width/2, height/2, Mides.midaCercle);
+        c2 = new Cercle(width/2, height/2, midaCercle);
         c2.setColor(appColors.getSecondColor());  // Color secundari
 
-        c3 = new Cercle(3*width/4, height/2, Mides.midaCercle);
+        c3 = new Cercle(3*width/4, height/2, midaCercle);
         c3.setColor(appColors.getThirdColor());  // Color terciari
     }
 
