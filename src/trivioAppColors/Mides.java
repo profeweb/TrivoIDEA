@@ -1,6 +1,6 @@
 package trivioAppColors;
 
-public class Layout {
+public class Mides {
 
     public static float midaCercle = 150;
 }
