@@ -2,13 +2,13 @@ package trivioAppColors;
 
 import processing.core.PApplet;
 
-public class Trivio extends PApplet {
+public class Trivio001 extends PApplet {
 
     Colors appColors;
     Cercle c1, c2, c3;
 
     public static void main(String[] args) {
-        PApplet.main("trivio.Trivio", args);
+        PApplet.main("trivioAppColors.Trivio001", args);
     }
 
     public void settings(){

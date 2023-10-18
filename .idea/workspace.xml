@@ -40,8 +40,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Trivio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trivioAppColors.Trivio" />
+    <configuration name="Trivio001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioAppColors.Trivio001" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -55,7 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.trivioAppColors.Trivio" />
+        <item itemvalue="Application.Trivio001" />
       </list>
     </recent_temporary>
   </component>
