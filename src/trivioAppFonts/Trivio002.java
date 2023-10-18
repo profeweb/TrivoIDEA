@@ -7,7 +7,6 @@ public class Trivio002 extends PApplet {
     // Tipografies de l'App
     Fonts fontsApp;
 
-
     public static void main(String[] args) {
         PApplet.main("trivioAppFonts.Trivio002", args);
     }
@@ -19,6 +18,7 @@ public class Trivio002 extends PApplet {
 
     public void setup(){
 
+        // Constructor de les fonts de l'App
         fontsApp = new Fonts(this);
     }
 
@@ -38,7 +38,7 @@ public class Trivio002 extends PApplet {
         text("Paràgraf de l'App", 50, 300);
 
 
-        // MOstra totes les fonts de l'App
+        // Mostra totes les fonts de l'App
         fontsApp.displayFonts(this, 100, 400, 50);
 
 

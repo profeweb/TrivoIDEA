@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="" />
+    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/trivioAppColorsFonts/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trivioAppColorsFonts/Fonts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trivioAppColorsFonts/Layout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trivioAppColorsFonts/Mides.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trivioAppColorsFonts/Trivio004.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trivioAppFonts/Trivio002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trivioAppFonts/Trivio002.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,29 +34,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonim/IdeaProjects/TrivoIDEA/src",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/IdeaProjects/TrivoIDEA/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="trivioAppColorsFonts" />
       <recent name="trivioAppLayout" />
       <recent name="trivioAppFonts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Trivio003">
+  <component name="RunManager" selected="Application.Trivio004">
     <configuration name="Trivio002" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="trivioAppFonts.Trivio002" />
       <module name="TrivoIDEA" />
@@ -75,6 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Trivio004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioAppColorsFonts.Trivio004" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trivioAppColorsFonts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="trivioAppColors.Trivio001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="trivioAppColors.Trivio001" />
       <module name="TrivoIDEA" />
@@ -90,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Trivio004" />
         <item itemvalue="Application.Trivio003" />
         <item itemvalue="Application.Trivio002" />
         <item itemvalue="Application.trivioAppColors.Trivio001" />
@@ -104,7 +127,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697618771363</updated>
-      <workItem from="1697618773218" duration="2931000" />
+      <workItem from="1697618773218" duration="3720000" />
+      <workItem from="1697636102235" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -141,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697621398904</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Trivio App">
+      <created>1697621898501</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697621898501</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
