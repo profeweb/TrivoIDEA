@@ -3,7 +3,8 @@ package trivioAppColorsFontsPantalles;
 import processing.core.PApplet;
 import processing.core.PFont;
 
-import static trivioAppFonts.Mides.*;
+import static trivioAppColorsFontsPantalles.Mides.*;
+
 
 public class Fonts {
 
