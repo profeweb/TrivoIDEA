@@ -1,16 +1,14 @@
-package trivioPantalles;
+package trivioAppColorsFontsPantalles;
 
 import processing.core.PApplet;
 
-import static trivioAppLayout.Layout.*;
-
-public class Trivio004 extends PApplet {
+public class Trivio005 extends PApplet {
 
     // Interfície Gràfica (Pantalles i components)
     GUI gui;
 
     public static void main(String[] args) {
-        PApplet.main("trivioPantalles.Trivio004", args);
+        PApplet.main("trivioAppColorsFontsPantalles.Trivio005", args);
     }
 
     public void settings(){
@@ -22,7 +20,7 @@ public class Trivio004 extends PApplet {
     public void setup(){
         noStroke();                         // Sense bordes
         textAlign(CENTER); textSize(18);   // Alineació i mida del text
-        gui = new GUI();                   // Constructor de la GUI
+        gui = new GUI(this);                   // Constructor de la GUI
     }
 
     public void draw(){
