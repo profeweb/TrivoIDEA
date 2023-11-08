@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/MenuButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/MenuButtonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/SwitchButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/SwitchButtonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trivioAppBotons/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trivioAppBotons/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MenuButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +57,22 @@
       <recent name="trivioPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MenuButtonTest">
+  <component name="RunManager" selected="Application.SwitchButtonTest">
     <configuration name="MenuButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.MenuButtonTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.SwitchButtonTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -77,19 +90,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Trivio005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trivioAppColorsFontsPantalles.Trivio005" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="trivioAppColorsFontsPantalles.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SwitchButtonTest" />
         <item itemvalue="Application.MenuButtonTest" />
         <item itemvalue="Application.trivioAppBotons.Trivio005" />
         <item itemvalue="Application.TextFieldTest" />
         <item itemvalue="Application.Trivio005b" />
-        <item itemvalue="Application.Trivio005" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +152,7 @@
       <workItem from="1699358969772" duration="633000" />
       <workItem from="1699426903667" duration="500000" />
       <workItem from="1699435998374" duration="4211000" />
-      <workItem from="1699442248486" duration="2507000" />
+      <workItem from="1699442248486" duration="4320000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699439609889</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Trivio App">
+      <created>1699446470082</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699446470082</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

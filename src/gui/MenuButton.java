@@ -52,7 +52,7 @@ public class MenuButton {
         p5.stroke(strokeColor); p5.strokeWeight(2);        //Color i gruixa del contorn
         p5.rect(this.x, this.y, this.w, this.h, 10);    // Rectangle del botó
 
-        // Text (color, alineació i mida)
+        // Linies (color, alineació i mida)
         p5.fill(0); p5.textAlign(p5.CENTER); p5.textSize(20);
         float marge = 10;
         p5.rect(this.x + marge, this.y + this.w/7, this.w - 2*marge, this.w/7, 5);
