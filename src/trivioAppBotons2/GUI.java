@@ -45,7 +45,6 @@ public class GUI {
         icona2 = p5.loadImage("data/bulbOff.png");
     }
 
-
     // PANTALLES DE LA GUI
 
     public void dibuixaPantallaInicial(PApplet p5){

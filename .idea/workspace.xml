@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/RoundButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trivioAppBotons2/GUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trivioAppBotons2/Trivio005b.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TextFieldTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trivioAppBotons2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trivioAppBotons2/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +50,20 @@
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src\trivioAppColorsFontsPantalles" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="trivioAppBotons2" />
       <recent name="gui" />
+      <recent name="trivioAppBotons2" />
       <recent name="trivioAppBotons" />
       <recent name="trivioAppColorsFontsPantalles" />
       <recent name="trivioPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Trivio005b">
-    <configuration name="Trivio004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trivioAppColorsFonts.Trivio004" />
+  <component name="RunManager" selected="Application.TextFieldTest">
+    <configuration name="TextFieldTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.TextFieldTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trivioAppColorsFonts.*" />
+          <option name="PATTERN" value="gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextFieldTest" />
         <item itemvalue="Application.Trivio005b" />
         <item itemvalue="Application.trivioAppBotons.Trivio005" />
         <item itemvalue="Application.Trivio005" />
         <item itemvalue="Application.trivioPantalles.Trivio004" />
-        <item itemvalue="Application.Trivio004" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +151,7 @@
       <workItem from="1698337879175" duration="47000" />
       <workItem from="1699358969772" duration="633000" />
       <workItem from="1699426903667" duration="500000" />
-      <workItem from="1699435998374" duration="1066000" />
+      <workItem from="1699435998374" duration="3566000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -230,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698243726019</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Trivio App">
+      <created>1699437330767</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699437330767</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Trivio App">
+      <created>1699437353037</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699437353037</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
