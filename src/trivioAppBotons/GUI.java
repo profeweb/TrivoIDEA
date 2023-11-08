@@ -13,7 +13,7 @@ public class GUI {
     // Pantalla Actual
     public PANTALLA pantallaActual;
 
-    // Components de la GUIç
+    // Components de la GUI
     Button b1, b2, b3, b4;
 
     // Constructor de la GUI
