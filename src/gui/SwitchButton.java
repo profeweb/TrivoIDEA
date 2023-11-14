@@ -11,7 +11,7 @@ public class SwitchButton {
     boolean enabled;  // Abilitat / desabilitat
 
     // Mètode Constructor
-    SwitchButton(PApplet p5, float x, float y, float w, float h){
+    public SwitchButton(PApplet p5, float x, float y, float w, float h){
         this.x = x;
         this.y = y;
         this.w = w;
@@ -29,12 +29,17 @@ public class SwitchButton {
         this.enabled = b;
     }
 
-    void toggle(){
+    public void toggle(){
         this.enabled = !this.enabled;
     }
 
+    // Getters
+    public boolean isEnabled(){
+        return  this.enabled;
+    }
+
     // Dibuixa el botó
-    void display(PApplet p5){
+    public void display(PApplet p5){
 
         p5.pushStyle();
 
@@ -67,7 +72,7 @@ public class SwitchButton {
     }
 
     // Indica si el cursor està sobre el botó
-    boolean mouseOverButton(PApplet p5){
+    public boolean mouseOverButton(PApplet p5){
         return (p5.mouseX >= this.x) &&
                 (p5.mouseX<=this.x + this.w) &&
                 (p5.mouseY>= this.y) &&

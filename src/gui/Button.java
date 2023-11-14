@@ -41,6 +41,11 @@ public class Button {
         this.fillColorDisabled = cDisabled;
     }
 
+    // Getters
+    public boolean isEnabled(){
+        return  this.enabled;
+    }
+
     // Dibuixa el botó
     public void display(PApplet p5){
         p5.pushStyle();

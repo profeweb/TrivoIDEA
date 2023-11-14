@@ -1,15 +1,16 @@
-package gui;
+package gui.test;
 
+import gui.SwitchButton;
 import processing.core.PApplet;
 
-public class MenuButtonTest extends PApplet {
+public class SwitchButtonTest extends PApplet {
 
     // Elements de la Interfície Gràfica (TextFields)
-    MenuButton mb;
-    boolean menuOpened = false;
+    SwitchButton sbt;
+    int bgColor;
 
     public static void main(String[] args) {
-        PApplet.main("gui.MenuButtonTest", args);
+        PApplet.main("gui.test.SwitchButtonTest", args);
     }
 
     public void settings(){
@@ -19,32 +20,24 @@ public class MenuButtonTest extends PApplet {
 
     public void setup(){
         // Crea els TextFields
-        mb = new MenuButton(this, 100, 100, 100, 100);
+        sbt = new SwitchButton(this, width/2 - 150, height/2 - 100, 300, 100);
+
+        bgColor = color(255);
     }
 
     public void draw(){
-        background(255);
+        background(bgColor);
         fill(0); textSize(28);
 
-        // Dibuixa el menu button
-        mb.display(this);
-
-        if(menuOpened){
-            fill(200, 100, 100); stroke(0); strokeWeight(2);
-            rect(205, 100, 400, 400, 5);
-            fill(0); textSize(36);
-            for(int i=0; i<4; i++) {
-                text("Opció de Menú "+ (i+1), 220, 150 + i * 100);
-            }
-        }
+        // Dibuixa el SwitchButton
+        sbt.display(this);
 
         updateCursor();
-
     }
 
     // Estableix quin cursor emprar (HAND, ARROW)
     public void updateCursor(){
-        if(mb.mouseOverButton(this)){
+        if(sbt.mouseOverButton(this)){
             cursor(HAND);
         }
         else {
@@ -54,17 +47,21 @@ public class MenuButtonTest extends PApplet {
 
     // ******************* KEYBOARD interaction ***************************** //
 
-    public void keyPressed(){
-    }
+    public void keyPressed(){  }
 
     // ******************* MOUSE interaction ***************************** //
 
     public void mousePressed(){
-        // Comprova si pitjam amb el mouse sobre el menu button
-        if(mb.mouseOverButton(this)){
-            menuOpened = !menuOpened;
+        // Comprova si pitjam amb el mouse sobre el SwitchButton
+        if(sbt.mouseOverButton(this)){
+            sbt.toggle();
+            if(sbt.isEnabled()){
+                bgColor = color(255);
+            }
+            else {
+                bgColor = color(0);
+            }
         }
-
     }
 
     public void mouseDragged(){

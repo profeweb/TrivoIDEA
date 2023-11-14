@@ -14,7 +14,7 @@ public class TextField {
     int borderWeight = 1;
 
     // Text del camp
-    String text = "";
+    public String text = "";
     int textSize = 24;
 
     boolean selected = false;

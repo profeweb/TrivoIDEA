@@ -1,5 +1,6 @@
-package gui;
+package gui.test;
 
+import gui.TextField;
 import processing.core.PApplet;
 
 public class TextFieldTest extends PApplet {
@@ -8,7 +9,7 @@ public class TextFieldTest extends PApplet {
     TextField tf1, tf2;
 
     public static void main(String[] args) {
-        PApplet.main("gui.TextFieldTest", args);
+        PApplet.main("gui.test.TextFieldTest", args);
     }
 
     public void settings(){
