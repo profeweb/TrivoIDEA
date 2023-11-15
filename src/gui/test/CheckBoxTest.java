@@ -6,11 +6,12 @@ import processing.core.PApplet;
 
 public class CheckBoxTest extends PApplet {
 
-    // Elements de la Interfície Gràfica (Checkbox
+    // Elements de la Interfície Gràfica (Checkbox)
 
     // Variables checkbox
     CheckBox cb1, cb2, cb3;
 
+    // Variables color (RGB)
     float r, g, b;
 
 
@@ -32,7 +33,8 @@ public class CheckBoxTest extends PApplet {
     }
 
     public void draw() {
-        // Fons de la finestra
+
+        // Color de la finestra
         background(r, g, b);
 
         if(r==g && g==b && r==0){
@@ -50,11 +52,6 @@ public class CheckBoxTest extends PApplet {
         cb1.display(this);
         cb2.display(this);
         cb3.display(this);
-
-        // Miram el seu valor, per actualitzar r,g i b
-        r = cb1.isChecked() ? 255 : 0;
-        g = cb2.isChecked() ? 255 : 0;
-        b = cb3.isChecked() ? 255 : 0;
 
         // Actualitza el cursor
         updateCursor(this);
@@ -90,6 +87,11 @@ public class CheckBoxTest extends PApplet {
         else if(cb3.onMouseOver(this)){
             cb3.toggle();
         }
+
+        // Miram el seu valor, per actualitzar r,g i b
+        r = cb1.isChecked() ? 255 : 0;
+        g = cb2.isChecked() ? 255 : 0;
+        b = cb3.isChecked() ? 255 : 0;
     }
 
     public void mouseDragged(){
