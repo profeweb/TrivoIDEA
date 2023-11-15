@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/gui/test/CheckBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/CheckBoxTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/RadioButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/RadioButtonGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TextList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/RadioButtonGroupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/RadioButtonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/TextListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +60,7 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CheckBoxTest">
+  <component name="RunManager" selected="Application.TextListTest">
     <configuration name="CheckBoxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CheckBoxTest" />
       <module name="TrivoIDEA" />
@@ -68,8 +74,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PagedTableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PagedTableTest" />
+    <configuration name="RadioButtonGroupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.RadioButtonGroupTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.RadioButtonTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -94,21 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwitchButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SwitchButtonTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TableTest" />
+    <configuration name="TextListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TextListTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -122,10 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextListTest" />
+        <item itemvalue="Application.RadioButtonGroupTest" />
+        <item itemvalue="Application.RadioButtonTest" />
         <item itemvalue="Application.CheckBoxTest" />
         <item itemvalue="Application.SelectTest" />
-        <item itemvalue="Application.PagedTableTest" />
-        <item itemvalue="Application.TableTest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +159,8 @@
       <workItem from="1699515139605" duration="7000" />
       <workItem from="1699964511164" duration="2152000" />
       <workItem from="1700031729124" duration="21000" />
-      <workItem from="1700042830906" duration="1345000" />
+      <workItem from="1700042830906" duration="1478000" />
+      <workItem from="1700046984924" duration="2115000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -287,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700043840694</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Trivio App">
+      <created>1700044242441</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700044242441</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
