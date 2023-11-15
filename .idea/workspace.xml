@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/PagedTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Select.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/PagedTableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/SelectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/TableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MenuButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/MenuButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/SwitchButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SwitchButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/SwitchButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/SwitchButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TextField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TextFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TextFieldTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,8 +125,6 @@
         <item itemvalue="Application.SelectTest" />
         <item itemvalue="Application.PagedTableTest" />
         <item itemvalue="Application.TableTest" />
-        <item itemvalue="Application.gui.SwitchButtonTest" />
-        <item itemvalue="Application.gui.test.MenuButtonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +149,9 @@
       <workItem from="1699435998374" duration="4211000" />
       <workItem from="1699442248486" duration="4860000" />
       <workItem from="1699515139605" duration="7000" />
-      <workItem from="1699964511164" duration="1702000" />
+      <workItem from="1699964511164" duration="2152000" />
+      <workItem from="1700031729124" duration="21000" />
+      <workItem from="1700042830906" duration="504000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -277,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699448295320</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Trivio App">
+      <created>1699966451077</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699966451077</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
