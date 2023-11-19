@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/RadioButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/RadioButtonGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/TextList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/RadioButtonGroupTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/RadioButtonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/TextListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TextArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/TextAreaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +56,7 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextListTest">
+  <component name="RunManager" selected="Application.TextAreaTest">
     <configuration name="CheckBoxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CheckBoxTest" />
       <module name="TrivoIDEA" />
@@ -100,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SelectTest" />
+    <configuration name="TextAreaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TextAreaTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextAreaTest" />
         <item itemvalue="Application.TextListTest" />
         <item itemvalue="Application.RadioButtonGroupTest" />
         <item itemvalue="Application.RadioButtonTest" />
         <item itemvalue="Application.CheckBoxTest" />
-        <item itemvalue="Application.SelectTest" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +156,10 @@
       <workItem from="1699964511164" duration="2152000" />
       <workItem from="1700031729124" duration="21000" />
       <workItem from="1700042830906" duration="1478000" />
-      <workItem from="1700046984924" duration="2115000" />
+      <workItem from="1700046984924" duration="2363000" />
+      <workItem from="1700063501508" duration="593000" />
+      <workItem from="1700125029571" duration="27000" />
+      <workItem from="1700419657995" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -302,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700044242441</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Trivio App">
+      <created>1700053293505</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700053293505</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
