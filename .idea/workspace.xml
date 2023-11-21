@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/TextArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/TextAreaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/CounterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +56,9 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextAreaTest">
-    <configuration name="CheckBoxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.CheckBoxTest" />
+  <component name="RunManager" selected="Application.CounterTest">
+    <configuration name="CounterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.CounterTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CounterTest" />
         <item itemvalue="Application.TextAreaTest" />
         <item itemvalue="Application.TextListTest" />
         <item itemvalue="Application.RadioButtonGroupTest" />
         <item itemvalue="Application.RadioButtonTest" />
-        <item itemvalue="Application.CheckBoxTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +159,10 @@
       <workItem from="1700046984924" duration="2363000" />
       <workItem from="1700063501508" duration="593000" />
       <workItem from="1700125029571" duration="27000" />
-      <workItem from="1700419657995" duration="354000" />
+      <workItem from="1700419657995" duration="588000" />
+      <workItem from="1700552481945" duration="294000" />
+      <workItem from="1700556886698" duration="59000" />
+      <workItem from="1700565217595" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -308,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700053293505</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Trivio App">
+      <created>1700420248455</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700420248455</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
