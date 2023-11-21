@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/BarsDiagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/BarsDiagramTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +158,7 @@
       <workItem from="1700419657995" duration="588000" />
       <workItem from="1700552481945" duration="294000" />
       <workItem from="1700556886698" duration="59000" />
-      <workItem from="1700565217595" duration="3033000" />
+      <workItem from="1700565217595" duration="3874000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -332,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700567688012</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Trivio App">
+      <created>1700569500179</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700569500179</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

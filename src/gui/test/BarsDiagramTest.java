@@ -20,7 +20,7 @@ public class BarsDiagramTest extends PApplet {
     }
 
     public void settings(){
-        size(1200, 600);
+        size(1200, 800);
         smooth(10);
     }
 
