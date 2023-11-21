@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/Calendari.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/DayButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/CalendariTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/BarsDiagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/BarsDiagramTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,20 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalendariTest">
+  <component name="RunManager" selected="Application.BarsDiagramTest">
+    <configuration name="BarsDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.BarsDiagramTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalendariTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CalendariTest" />
       <module name="TrivoIDEA" />
@@ -73,19 +85,6 @@
     </configuration>
     <configuration name="CounterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CounterTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioButtonGroupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.RadioButtonGroupTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BarsDiagramTest" />
         <item itemvalue="Application.CalendariTest" />
         <item itemvalue="Application.CounterTest" />
         <item itemvalue="Application.TextAreaTest" />
         <item itemvalue="Application.TextListTest" />
-        <item itemvalue="Application.RadioButtonGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +162,7 @@
       <workItem from="1700419657995" duration="588000" />
       <workItem from="1700552481945" duration="294000" />
       <workItem from="1700556886698" duration="59000" />
-      <workItem from="1700565217595" duration="2010000" />
+      <workItem from="1700565217595" duration="3033000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -326,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700566989341</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Trivio App">
+      <created>1700567688012</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1700567688012</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
