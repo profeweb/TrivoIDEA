@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/LinesDiagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/LinesDiagramTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/SectorDiagram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/SectorDiagramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinesDiagramTest">
+  <component name="RunManager" selected="Application.SectorDiagramTest">
     <configuration name="BarsDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.BarsDiagramTest" />
       <module name="TrivoIDEA" />
@@ -108,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextAreaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TextAreaTest" />
+    <configuration name="SectorDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.SectorDiagramTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SectorDiagramTest" />
         <item itemvalue="Application.LinesDiagramTest" />
         <item itemvalue="Application.BarsDiagramTest" />
         <item itemvalue="Application.CalendariTest" />
         <item itemvalue="Application.CounterTest" />
-        <item itemvalue="Application.TextAreaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +162,9 @@
       <workItem from="1700419657995" duration="588000" />
       <workItem from="1700552481945" duration="294000" />
       <workItem from="1700556886698" duration="59000" />
-      <workItem from="1700565217595" duration="4390000" />
+      <workItem from="1700565217595" duration="5059000" />
+      <workItem from="1700586712893" duration="90000" />
+      <workItem from="1701174963955" duration="635000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -345,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700570603315</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Trivio App">
+      <created>1700571349718</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700571349718</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
