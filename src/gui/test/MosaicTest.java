@@ -16,7 +16,7 @@ public class MosaicTest extends PApplet {
     }
 
     public void settings(){
-        size(1200, 800);
+        size(800, 800);
         smooth(10);
     }
 
