@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/Carrousel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/CarrouselTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mosaic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/SelectImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/MosaicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +166,11 @@
       <workItem from="1700565217595" duration="5059000" />
       <workItem from="1700586712893" duration="90000" />
       <workItem from="1701174963955" duration="1723000" />
-      <workItem from="1701183828156" duration="683000" />
+      <workItem from="1701183828156" duration="1584000" />
+      <workItem from="1701187209644" duration="26000" />
+      <workItem from="1701262952738" duration="107000" />
+      <workItem from="1701269740083" duration="27000" />
+      <workItem from="1701762348173" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -370,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701176388979</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Trivio App">
+      <created>1701184824504</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701184824504</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
