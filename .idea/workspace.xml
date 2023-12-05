@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/TextTimeField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Timer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/TimerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TimeFieldTest">
+  <component name="RunManager" selected="Application.TimerTest">
     <configuration name="CarrouselTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CarrouselTest" />
       <module name="TrivoIDEA" />
@@ -94,19 +96,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SectorDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SectorDiagramTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TimeFieldTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.TimeFieldTest" />
       <module name="TrivoIDEA" />
@@ -120,13 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TimerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TimerTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TimerTest" />
         <item itemvalue="Application.TimeFieldTest" />
         <item itemvalue="Application.MosaicTest" />
         <item itemvalue="Application.CarrouselTest" />
         <item itemvalue="Application.OpenWebTest" />
-        <item itemvalue="Application.SectorDiagramTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +170,7 @@
       <workItem from="1701262952738" duration="107000" />
       <workItem from="1701269740083" duration="27000" />
       <workItem from="1701762348173" duration="557000" />
-      <workItem from="1701774749985" duration="1585000" />
+      <workItem from="1701774749985" duration="3180000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -394,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701775871239</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Trivio App">
+      <created>1701776658706</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701776658706</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
