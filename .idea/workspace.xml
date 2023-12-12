@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/library1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/LocationSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/LocationSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/MusicPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrivoIDEA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrivoIDEA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Casella.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Tauler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
       <recent name="trivioAppColorsFontsPantalles" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LocationSetTest">
+  <component name="RunManager" selected="Application.TaulerTest">
     <configuration name="LocationSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.LocationSetTest" />
       <module name="TrivoIDEA" />
@@ -75,8 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MosaicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.MosaicTest" />
+    <configuration name="MusicPlayerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.MusicPlayerTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MusicPlayerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.MusicPlayerTest" />
+    <configuration name="TaulerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TaulerTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -129,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TaulerTest" />
         <item itemvalue="Application.LocationSetTest" />
         <item itemvalue="Application.MusicPlayerTest" />
         <item itemvalue="Application.TimerTest" />
         <item itemvalue="Application.TimeFieldTest" />
-        <item itemvalue="Application.MosaicTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +172,7 @@
       <workItem from="1701774749985" duration="3955000" />
       <workItem from="1701795902167" duration="596000" />
       <workItem from="1701889715610" duration="1199000" />
-      <workItem from="1702403408697" duration="1403000" />
+      <workItem from="1702403408697" duration="1912000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -418,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701779211094</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Trivio App">
+      <created>1702404950497</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702404950497</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
