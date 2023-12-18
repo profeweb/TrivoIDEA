@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/CalendariPlus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/CalendariPlusTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Calendari.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Calendari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/CalendariPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/CalendariPlus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,9 @@
       <workItem from="1702403408697" duration="2358000" />
       <workItem from="1702461434129" duration="2979000" />
       <workItem from="1702466382964" duration="41000" />
-      <workItem from="1702638126632" duration="684000" />
+      <workItem from="1702638126632" duration="740000" />
+      <workItem from="1702639331198" duration="105000" />
+      <workItem from="1702893760704" duration="352000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -437,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702462628175</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Trivio App">
+      <created>1702638870878</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702638870878</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

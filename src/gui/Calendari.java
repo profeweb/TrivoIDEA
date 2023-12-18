@@ -58,6 +58,15 @@ public class Calendari {
         createCalendar(x, y, w, h);
     }
 
+    // Getters
+    public boolean isDateSelected(){
+        return this.dateSelected;
+    }
+    public String getSelectedDate(){
+        return this.selectedDay +"/"+ this.selectedMonth + "/"+ this.selectedYear;
+    }
+
+
     // Setters
 
     public void setCalendar(int d, int m, int y){
