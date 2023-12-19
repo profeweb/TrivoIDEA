@@ -21,7 +21,7 @@ public class Tauler {
     public Tauler(PApplet p5, int x, int y, int w){
 
         this.x = x; this.y = y; this.w = w;
-        this.cw = w / 8;
+        this.cw = w / 8f;
 
         caselles = new Casella[8][8];
         int nc=0;
@@ -114,7 +114,7 @@ public class Tauler {
             }
         }
 
-        dibuixaLletres(p5, this.y - 20);
+        dibuixaLletres(p5, this.y - 10);
         dibuixaLletres(p5, this.y + this.w + 20);
 
         dibuixaNúmeros(p5, this.x - 20);
