@@ -3,7 +3,7 @@ package gui;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-public class Carrousel {
+public class CarrouselCiclic {
 
     // Dimensions del carrousel
     int x, y, w, h;
@@ -26,7 +26,7 @@ public class Carrousel {
     RoundButton bPrev, bNext;
 
     // Constructor
-    public Carrousel(int x, int y, int w, int h, int nv){
+    public CarrouselCiclic(int x, int y, int w, int h, int nv){
         this.x = x; this.y = y; this.w = w; this.h = h;
         this.numImatgesVisibles = nv;
         this.currentImage = 0;
@@ -53,8 +53,11 @@ public class Carrousel {
     }
 
     public void next(){
-        if(this.currentImage<this.numTotalImatges - this.numImatgesVisibles){
+        if(this.currentImage<=this.numTotalImatges){
             this.currentImage++;
+        }
+        else {
+            this.currentImage = 0;
         }
     }
 
@@ -75,7 +78,7 @@ public class Carrousel {
 
         for(int i=0; i<this.numImatgesVisibles; i++){
 
-            int index = i + this.currentImage;
+            int index = (i + this.currentImage) % imgs.length;
             float xPos = x + i*(this.imgW + this.margeH);
 
             // Imatge a mostrar
