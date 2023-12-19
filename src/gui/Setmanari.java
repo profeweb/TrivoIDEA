@@ -10,7 +10,7 @@ public class Setmanari {
     String[] months = {"Jan","Feb","Mar","Apr","May","Jun", "Jul","Aug","Sep","Oct","Nov","Dec"};
 
     // Textos representatius dels dies
-    String[] days = {"Mon","Tue","Wen","Thu","Fri","Sat", "Sun"};
+    String[] days = {"Sun", "Mon","Tue","Wen","Thu","Fri","Sat"};
 
     // Informació del calendari
     int any, mes, dia;
@@ -37,25 +37,19 @@ public class Setmanari {
         this.buttons = new DayButton[7];
 
         this.cal = Calendar.getInstance();
-        cal.set(Calendar.DAY_OF_MONTH, 1);
 
         this.any = cal.get(Calendar.YEAR);
         this.mes = cal.get(Calendar.MONTH) + 1;
         this.dia = cal.get(Calendar.DATE);
 
-        this.numDaysMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+        System.out.println("AVUI: "+ this.dia+"/"+this.mes+"/"+this.any);
 
         this.dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-        if(dayOfWeek==Calendar.SUNDAY){ this.dayOfWeek = 6; }
-        else { this.dayOfWeek  = this.dayOfWeek - 2; }
+        System.out.println("DAY OF WEEK: "+this.dayOfWeek);
 
         cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek());
         this.firstDay = cal.get(Calendar.DATE);
-
-        cPrev = Calendar.getInstance();
-        setPrevCalendar(1, this.mes-2, this.any);
-
-        this.numDaysPrevMonth = cPrev.getActualMaximum(Calendar.DAY_OF_MONTH);
+        System.out.println("1ST DAY OF WEEK: "+this.firstDay);
 
         this.x = x; this.y = y; this.w = w; this.h = h;
         createCalendar(x, y, w, h);
@@ -122,15 +116,18 @@ public class Setmanari {
         float dayWidth  = w / 7;
         float dayHeight = h;
 
+        int day = this.firstDay;
+
         for(int d=0; d<7; d++){
-            buttons[d] = new DayButton(x + d*dayWidth, y, dayWidth, dayHeight, d, mes, any);
+            buttons[d] = new DayButton(x + d*dayWidth, y, dayWidth, dayHeight, day, mes, any);
+            day++;
         }
     }
 
     // Va un mes endavant en el calendari
     public void nextMonth(){
 
-        this.buttons = new DayButton[37];
+        this.buttons = new DayButton[7];
 
         this.mes ++;
         if(this.mes==13){
