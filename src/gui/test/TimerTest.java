@@ -66,7 +66,7 @@ public class TimerTest extends PApplet {
 
     public void mousePressed(){
         if(b.mouseOverButton(this)){
-            t.setStarted(true);
+            t.start(this);
         }
     }
 

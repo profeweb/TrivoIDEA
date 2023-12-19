@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/TimerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TimerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +175,7 @@
       <workItem from="1702638126632" duration="740000" />
       <workItem from="1702639331198" duration="105000" />
       <workItem from="1702893760704" duration="638000" />
-      <workItem from="1702988832888" duration="895000" />
+      <workItem from="1702988832888" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="Trivio App">
       <created>1697619883667</created>
@@ -454,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702894190986</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Trivio App">
+      <created>1702990847282</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702990847282</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

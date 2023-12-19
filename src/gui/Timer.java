@@ -20,6 +20,11 @@ public class Timer {
         return  this.numSeconds;
     }
 
+    public void start(PApplet p5){
+        this.lastTime = p5.millis();
+        this.started = true;
+    }
+
     public void update(PApplet p5){
         if(started) {
             int now = p5.millis();
