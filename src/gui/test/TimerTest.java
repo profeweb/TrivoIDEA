@@ -1,5 +1,6 @@
 package gui.test;
 
+import gui.Button;
 import gui.TextField;
 import gui.Timer;
 import processing.core.PApplet;
@@ -8,6 +9,8 @@ public class TimerTest extends PApplet {
 
     // Elements de la Interfície Gràfica (Timer)
     Timer t;
+
+    Button b;
 
     // Color de fons
     int bgColor = color(0);
@@ -24,6 +27,8 @@ public class TimerTest extends PApplet {
     public void setup(){
         // Timer de 10 segons
         t = new Timer(this,10);
+
+        b = new Button(this, "START", 10, 10, 100, 50);
     }
 
     public void draw(){
@@ -35,6 +40,8 @@ public class TimerTest extends PApplet {
 
         fill(255); textSize(64); textAlign(CENTER);
         text(t.getNumSeconds(), width/2, height/2);
+
+        b.display(this);
 
     }
 
@@ -58,6 +65,9 @@ public class TimerTest extends PApplet {
     // ******************* MOUSE interaction ***************************** //
 
     public void mousePressed(){
+        if(b.mouseOverButton(this)){
+            t.setStarted(true);
+        }
     }
 
     public void mouseDragged(){
