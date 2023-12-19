@@ -11,7 +11,7 @@ public class Tauler {
                         BUIDA};
 
     Casella[][] caselles;
-    float x, y, w;
+    float x, y, w, cw;
 
     PImage[] figures;
 
@@ -21,7 +21,7 @@ public class Tauler {
     public Tauler(PApplet p5, int x, int y, int w){
 
         this.x = x; this.y = y; this.w = w;
-        float cw = w / 8;
+        this.cw = w / 8;
 
         caselles = new Casella[8][8];
         int nc=0;
@@ -65,6 +65,15 @@ public class Tauler {
         figures[11] = p5.loadImage("peoN.png");  // Peo N
     }
 
+    public int getFila(int f){
+        return 8 - f;
+    }
+
+    public char getColumna(int c){
+        char simbol = 'H';
+        return (char)(simbol - c);
+    }
+
     public void colocaFigures(){
         caselles[0][0].setFigura(Escac.TORRE_N);
         caselles[0][7].setFigura(Escac.TORRE_N);
@@ -92,7 +101,7 @@ public class Tauler {
     }
 
     public void display(PApplet p5){
-        float cw = w / 8;
+        p5.pushStyle();
         for(int f=0; f<8; f++){
             for(int c=0; c<8; c++){
                 Casella ct = caselles[f][c];
@@ -100,9 +109,34 @@ public class Tauler {
                 if(ct.figura != Escac.BUIDA){
                     p5.imageMode(p5.CENTER);
                     int n = ct.figura.ordinal();
-                    p5.image(figures[n], ct.x + cw/2, ct.y + cw/2, cw, cw);
+                    p5.image(figures[n], ct.x + this.cw/2, ct.y + this.cw/2, this.cw, this.cw);
                 }
             }
+        }
+
+        dibuixaLletres(p5, this.y - 20);
+        dibuixaLletres(p5, this.y + this.w + 20);
+
+        dibuixaNúmeros(p5, this.x - 20);
+        dibuixaNúmeros(p5, this.x +  this.w + 20);
+
+        p5.popStyle();
+    }
+
+    public void dibuixaLletres(PApplet p5, float y){
+        char c = 'H';
+        for(int i=0; i<8; i++){
+            p5.textAlign(p5.CENTER); p5.textSize(18);
+            p5.text(c, this.x + i*this.cw + this.cw/2 , y);
+            c--;
+        }
+    }
+
+    public void dibuixaNúmeros(PApplet p5, float x){
+        for(int f=0; f<8; f++) {
+            p5.textAlign(p5.CENTER);
+            p5.textSize(18);
+            p5.text(8 - f, x, this.y + f * this.cw + this.cw / 2);
         }
     }
 
@@ -140,6 +174,7 @@ public class Tauler {
 
     public void mouJugada(){
         if(sel1 && sel2){
+            System.out.println("MOVIMENT DE " + getFila(sel1Fila) +getColumna(sel1Col) + " A "+ getFila(sel2Fila) +getColumna(sel2Col));
             moviment(sel1Fila, sel1Col, sel2Fila, sel2Col);
         }
     }
