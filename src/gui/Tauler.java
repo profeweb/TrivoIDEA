@@ -74,6 +74,14 @@ public class Tauler {
         return (char)(simbol - c);
     }
 
+    public String getColumnaFila(int f, int c){
+        return getColumna(c)+""+getFila(f);
+    }
+
+    public String getMoviment(){
+        return ("MOVIMENT DE " + getColumnaFila(sel1Fila, sel1Col) + " A "+ getColumnaFila(sel2Fila,sel2Col));
+    }
+
     public void colocaFigures(){
         caselles[0][0].setFigura(Escac.TORRE_N);
         caselles[0][7].setFigura(Escac.TORRE_N);
@@ -174,7 +182,7 @@ public class Tauler {
 
     public void mouJugada(){
         if(sel1 && sel2){
-            System.out.println("MOVIMENT DE " + getFila(sel1Fila) +getColumna(sel1Col) + " A "+ getFila(sel2Fila) +getColumna(sel2Col));
+            System.out.println("MOVIMENT DE " + getColumnaFila(sel1Fila, sel1Col) + " A "+ getColumnaFila(sel2Fila,sel2Col));
             moviment(sel1Fila, sel1Col, sel2Fila, sel2Col);
         }
     }

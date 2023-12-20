@@ -38,16 +38,6 @@ public class SetmanariTest extends PApplet {
     // ******************* KEYBOARD interaction ***************************** //
 
     public void keyPressed(){
-        // Anar un mes enrere
-        if(keyCode==LEFT){
-            s.prevMonth();
-            println("PREV MONTH");
-        }
-        // Anar un mes endavant
-        else if(keyCode==RIGHT){
-            s.nextMonth();
-            println("PREV MONTH");
-        }
     }
 
     // ******************* MOUSE interaction ***************************** //
