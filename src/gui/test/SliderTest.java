@@ -25,7 +25,6 @@ public class SliderTest extends PApplet {
         sX = new Slider(this, "X_POS", 50, 50, 300, 50, 0, width, width/2);
         sY = new Slider(this, "Y_POS", 50, 150, 300, 50, 0, height, height/2);
         sR = new Slider(this, "R_SIZE", 50, 250, 300, 50, 5, 50, 10);
-
     }
 
     public void draw(){
