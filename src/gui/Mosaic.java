@@ -19,7 +19,7 @@ public class Mosaic {
     String[] imgs;
 
     // Imatges del mosaic
-    SelectImage[] selImgs;
+    private SelectImage[] selImgs;
 
 
     // Constructor

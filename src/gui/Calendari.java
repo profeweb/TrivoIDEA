@@ -5,6 +5,7 @@ import processing.core.PApplet;
 import java.util.Calendar;
 
 public class Calendari {
+
     // Textos representatius dels mesos
     String[] months = {"Jan","Feb","Mar","Apr","May","Jun",
             "Jul","Aug","Sep","Oct","Nov","Dec"};
