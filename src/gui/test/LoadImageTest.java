@@ -50,6 +50,7 @@ public class LoadImageTest extends PApplet {
         if(img!=null){
             image(img, 50, 50, 700, 600);
             textSize(34); textAlign(RIGHT);
+            fill(0);
             text(titol, 750, 750);
         }
         else{

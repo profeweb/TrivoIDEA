@@ -30,7 +30,7 @@ public class ListLink {
 
     // Asigna dades als links
     public void setData(String[][] data) {
-        
+
         numLinks = data.length;
         numTotalPages = numLinks / numLinksPage;
         links = new LinkItem[data.length];
