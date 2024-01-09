@@ -74,9 +74,7 @@ public class Habitacio {
 
     public void apagaLlums(){
         for(int i=0; i<numSensors; i++){
-            System.out.println("APAGANT ???");
             if(sensors[i] instanceof Llum) {
-                System.out.println("APAGANT LLUM");
                 sensors[i].setEnces(false);
             }
         }

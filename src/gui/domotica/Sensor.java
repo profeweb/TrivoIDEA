@@ -27,7 +27,6 @@ public class Sensor {
 
     public void setEnces(boolean b){
         this.ences = b;
-        System.out.println("ENCES: "+b);
     }
 
     public void dibuixa(PApplet p5){
