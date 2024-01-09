@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/test/TaulerLlistaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/domotica/DissenyDomotica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/domotica/Habitacio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/domotica/Llum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/domotica/Sensor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Tauler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/SetmanariTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/SetmanariTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +58,13 @@
       <recent name="trivioAppBotons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TaulerLlistaTest">
-    <configuration name="DissenyCollar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.joieria.DissenyCollar" />
+  <component name="RunManager" selected="Application.DissenyDomotica">
+    <configuration name="DissenyDomotica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.domotica.DissenyDomotica" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.joieria.*" />
+          <option name="PATTERN" value="gui.domotica.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DissenyDomotica" />
         <item itemvalue="Application.TaulerLlistaTest" />
         <item itemvalue="Application.SetmanariTest" />
         <item itemvalue="Application.LocationSetTest" />
         <item itemvalue="Application.OrderdListItemsTest" />
-        <item itemvalue="Application.DissenyCollar" />
       </list>
     </recent_temporary>
   </component>
@@ -187,14 +188,9 @@
       <workItem from="1703055767637" duration="6000" />
       <workItem from="1703063913552" duration="4581000" />
       <workItem from="1703071219486" duration="4976000" />
-      <workItem from="1703076669203" duration="323000" />
-    </task>
-    <task id="LOCAL-00002" summary="Trivio App">
-      <created>1697619931643</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1697619931643</updated>
+      <workItem from="1703076669203" duration="542000" />
+      <workItem from="1703317483734" duration="159000" />
+      <workItem from="1704822206524" duration="2781000" />
     </task>
     <task id="LOCAL-00003" summary="Trivio App">
       <created>1697620138647</created>
@@ -532,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703075146865</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Trivio App">
+      <created>1703077156758</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1703077156758</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
