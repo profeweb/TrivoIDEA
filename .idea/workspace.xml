@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/domotica/DissenyDomotica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/domotica/Habitacio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/domotica/Llum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/domotica/Sensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/FaveButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/PagedSongs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/SongCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/PagedSongsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <recent name="trivioAppBotons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DissenyDomotica">
+  <component name="RunManager" selected="Application.PagedSongsTest">
     <configuration name="DissenyDomotica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.domotica.DissenyDomotica" />
       <module name="TrivoIDEA" />
@@ -72,8 +72,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LocationSetTest" />
+    <configuration name="PagedCardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedCardTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderdListItemsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.OrderdListItemsTest" />
+    <configuration name="PagedSongsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedSongsTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetmanariTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SetmanariTest" />
+    <configuration name="PagedTableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedTableTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -126,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PagedSongsTest" />
+        <item itemvalue="Application.PagedCardTest" />
+        <item itemvalue="Application.PagedTableTest" />
         <item itemvalue="Application.DissenyDomotica" />
         <item itemvalue="Application.TaulerLlistaTest" />
-        <item itemvalue="Application.SetmanariTest" />
-        <item itemvalue="Application.LocationSetTest" />
-        <item itemvalue="Application.OrderdListItemsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,21 +190,10 @@
       <workItem from="1703071219486" duration="4976000" />
       <workItem from="1703076669203" duration="542000" />
       <workItem from="1703317483734" duration="159000" />
-      <workItem from="1704822206524" duration="2781000" />
-    </task>
-    <task id="LOCAL-00003" summary="Trivio App">
-      <created>1697620138647</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1697620138647</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Trivio App">
-      <created>1697620841620</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1697620841620</updated>
+      <workItem from="1704822206524" duration="3588000" />
+      <workItem from="1704888335351" duration="1365000" />
+      <workItem from="1704904187045" duration="9000" />
+      <workItem from="1705056668684" duration="2631000" />
     </task>
     <task id="LOCAL-00005" summary="Trivio App">
       <created>1697621398904</created>
@@ -535,7 +524,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703077156758</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Trivio App">
+      <created>1704825173881</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1704825173882</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Trivio App">
+      <created>1704825228379</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1704825228379</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
