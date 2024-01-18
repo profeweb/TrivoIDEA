@@ -59,6 +59,9 @@ public class PagedSongsTest extends PApplet {
         ps.setData(info);
         ps.setCards(this, imgFave, imgNoFave, imgPlay);
 
+        float f = Float.valueOf("123.5");
+        println(f);
+
     }
 
     public void draw() {
