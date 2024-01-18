@@ -23,7 +23,7 @@ public class PagedProductsTest extends PApplet {
     float cardsW = 1200, cardsH = 800;
 
 
-    // Dades de la taula
+    // Dades de la taula (id, nom, tipus, descripció, preu, favorit , foto).
     String[][] info = {
             {"1", "Producte 1", "A", "Descripció 1", "15.25", "true", "imatge1.png"},
             {"2", "Producte 2", "A", "Descripció 2", "9.75", "false", "imatge2.png"},
@@ -49,7 +49,7 @@ public class PagedProductsTest extends PApplet {
     }
 
     public void settings(){
-        size(800, 800);
+        size(1600, 900);
         smooth(10);
     }
 

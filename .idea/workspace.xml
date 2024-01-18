@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/ArrayButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/PagedProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/ProductCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/ArrayButtonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/PagedProductsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/PagedSongsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/PagedSongsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/PagedProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/PagedProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ProductCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ProductCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/PagedProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/PagedProductsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <recent name="trivioAppBotons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayButtonTest">
+  <component name="RunManager" selected="Application.PagedProductsTest">
     <configuration name="ArrayButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.ArrayButtonTest" />
       <module name="TrivoIDEA" />
@@ -74,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DissenyDomotica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.domotica.DissenyDomotica" />
+    <configuration name="PagedCardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedCardTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.domotica.*" />
+          <option name="PATTERN" value="gui.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PagedCardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PagedCardTest" />
+    <configuration name="PagedProductsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedProductsTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PagedProductsTest" />
         <item itemvalue="Application.ArrayButtonTest" />
         <item itemvalue="Application.PagedSongsTest" />
         <item itemvalue="Application.PagedCardTest" />
         <item itemvalue="Application.PagedTableTest" />
-        <item itemvalue="Application.DissenyDomotica" />
       </list>
     </recent_temporary>
   </component>
@@ -200,14 +198,8 @@
       <workItem from="1705488352059" duration="1562000" />
       <workItem from="1705563585525" duration="599000" />
       <workItem from="1705568145637" duration="8000" />
-      <workItem from="1705581676415" duration="1236000" />
-    </task>
-    <task id="LOCAL-00006" summary="Trivio App">
-      <created>1697621898501</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1697621898501</updated>
+      <workItem from="1705581676415" duration="1270000" />
+      <workItem from="1705593348443" duration="1557000" />
     </task>
     <task id="LOCAL-00007" summary="Trivio App">
       <created>1697638130625</created>
@@ -545,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705063579973</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Trivio App">
+      <created>1705582939068</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1705582939069</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

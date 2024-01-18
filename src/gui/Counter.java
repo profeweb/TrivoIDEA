@@ -43,6 +43,10 @@ public class Counter {
         this.value = n;
     }
 
+    public void setStepValue(int n){
+        this.stepValue = n;
+    }
+
     public void setValues(int minValue, int maxValue){
         this.minValue = minValue;
         this.maxValue = maxValue;
@@ -50,12 +54,13 @@ public class Counter {
 
     // Dibuixa el botó
     public void display(PApplet p5){
+
         p5.pushStyle();
         p5.fill(fillColor);                            // Color
-        p5.stroke(strokeColor); p5.strokeWeight(10);      //Color i gruixa del contorn
+        p5.stroke(strokeColor); p5.strokeWeight(3);      //Color i gruixa del contorn
         p5.rect(this.x, this.y, this.w + 2*this.h, this.h, 10);   // Rectangle del botó
 
-        p5.fill(0); p5.textSize(32);
+        p5.fill(0); p5.textSize(32); p5.textAlign(p5.LEFT);
         p5.text(value, this.x + 20, this.y + this.h/2 + 10);
 
         // Icona del botó

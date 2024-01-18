@@ -43,6 +43,7 @@ public class ProductCard {
         this.cQuantity = new Counter(p5, imgMes, imgMenys, xC, yCB, 1*w/4, hCB);
         this.cQuantity.setInitialValue(0);
         this.cQuantity.setValues(0, 10);
+        this.cQuantity.setStepValue(1);
         this.bShop = new Button(p5, "SHOP", xB, yCB, w/4, hCB);
     }
 
@@ -99,6 +100,14 @@ public class ProductCard {
         p5.textAlign(p5.RIGHT);
         p5.textSize(14);
         p5.text(category, x + w - 10, y + 25);
+
+        // Favorit
+        if(this.favorite){
+            p5.fill(255, 0, 0);
+            p5.circle(x + 30, y+30, 30);
+            p5.fill(255); p5.textAlign(p5.CENTER); p5.textSize(14);
+            p5.text("F",x + 30, y+35);
+        }
 
         this.cQuantity.display(p5);
         this.bShop.display(p5);

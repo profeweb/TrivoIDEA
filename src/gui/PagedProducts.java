@@ -41,8 +41,8 @@ class PagedProducts {
         this.hCard = (h - espai) / 2f;
 
         // Creació dels botons
-        b1 = new Button(p5, "NEXT", 100 + this.wCard, 80, buttonW, buttonH);
-        b2 = new Button(p5, "PREV", 100 + this.wCard, 100 + buttonH, buttonW, buttonH);
+        b1 = new Button(p5, "NEXT", x + w + buttonW, y + 50, buttonW, buttonH);
+        b2 = new Button(p5, "PREV", x + w + buttonW, y + buttonH + 70, buttonW, buttonH);
 
         this.espai = 20;
     }
@@ -51,6 +51,7 @@ class PagedProducts {
 
     public void setData(String[][] d) {
         this.productsData = d;
+        this.numProducts = d.length;
         this.numTotalPages = d.length / this.numProductsPage;
     }
 
@@ -102,8 +103,8 @@ class PagedProducts {
         }
 
         // Informació de la Pàgina
-        p5.fill(0); p5.textSize(18);
-        p5.text("Pag: "+(this.numPage+1)+" / "+(this.numTotalPages+1), x + w + 50, y+10);
+        p5.fill(0); p5.textSize(18); p5.textAlign(p5.LEFT);
+        p5.text("Pag: "+(this.numPage+1)+" / "+(this.numTotalPages+1), x + w + 60, y+30);
 
 
         // Dibuixa els botons
