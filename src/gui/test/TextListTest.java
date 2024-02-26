@@ -33,7 +33,6 @@ public class TextListTest extends PApplet {
 
         // Creació del Botó
         b = new Button(this, "TRIA", 3*width/4, height/12, buttonW, buttonH);
-
     }
 
     public void draw() {
