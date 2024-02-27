@@ -71,4 +71,23 @@ public class DataBase {
             return null;
         }
     }
+
+    // Retorna les dades de la columna NOM de la taula UNITAT
+    public String[] getColumnaNomTaulaUnitat(){
+        int numFiles = getNumRowsTaula("unitat");
+        String[] info = new String[numFiles];
+        try {
+            ResultSet rs = query.executeQuery( "SELECT nom FROM unitat ORDER BY nom ASC");
+            int nr = 0;
+            while (rs.next()) {
+                info[nr] = rs.getString("nom");
+                nr++;
+            }
+            return info;
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return null;
+        }
+    }
 }

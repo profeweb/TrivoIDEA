@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bbdd/DatabaseClasseConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bbdd/DatabaseClasseSelectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bbdd/DatabaseConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bbdd/SelectDBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bbdd/TableDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrivoIDEA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrivoIDEA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/TextListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TextListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +31,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonim/Documents/Processing/libraries/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Documents/Processing/libraries/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src" />
@@ -61,7 +57,7 @@
       <recent name="trivioAppBotons2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseClasseSelectTest">
+  <component name="RunManager" selected="Application.SelectDBTest">
     <configuration name="DatabaseClasseConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bbdd.DatabaseClasseConnectionTest" />
       <module name="TrivoIDEA" />
@@ -101,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PagedProductsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PagedProductsTest" />
+    <configuration name="SelectDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.SelectDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="bbdd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TextListTest" />
+    <configuration name="TableDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.TableDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="bbdd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectDBTest" />
+        <item itemvalue="Application.TableDBTest" />
         <item itemvalue="Application.DatabaseClasseSelectTest" />
         <item itemvalue="Application.DatabaseClasseConnectionTest" />
         <item itemvalue="Application.DatabaseConnectionTest" />
-        <item itemvalue="Application.TextListTest" />
-        <item itemvalue="Application.PagedProductsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -208,14 +204,8 @@
       <workItem from="1705916553101" duration="928000" />
       <workItem from="1706014281906" duration="492000" />
       <workItem from="1706089357993" duration="184000" />
-      <workItem from="1708971415472" duration="1685000" />
-    </task>
-    <task id="LOCAL-00008" summary="Trivio App">
-      <created>1698224062995</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1698224062995</updated>
+      <workItem from="1708971415472" duration="2305000" />
+      <workItem from="1709051047081" duration="593000" />
     </task>
     <task id="LOCAL-00009" summary="Trivio App">
       <created>1698225934824</created>
@@ -553,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705596362486</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Trivio App">
+      <created>1708973210928</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1708973210929</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
