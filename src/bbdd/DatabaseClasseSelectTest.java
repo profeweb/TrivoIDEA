@@ -5,7 +5,7 @@ import processing.core.PApplet;
 public class DatabaseClasseSelectTest extends PApplet {
 
     DataBase db;
-    int n;
+    int nr, nc;
 
     int bgColor = color(255);
 
@@ -26,8 +26,12 @@ public class DatabaseClasseSelectTest extends PApplet {
         db.connect();
 
         // Número de files d'una taula
-        n = db.getNumRowsTaula("unitat");
-        println("\nFiles Unitat:"+n);
+        nr = db.getNumRowsTaula("unitat");
+        println("\nFiles Unitat:"+nr);
+
+        // Número de Columnes d'una taula
+        nc = db.getNumColsTaula("unitat");
+        println("\nColumnes Unitat: "+nc);
 
         // Dades d'una taula (unitat)
         String[][] dades1 = db.getInfoTaulaUnitat();
@@ -41,9 +45,11 @@ public class DatabaseClasseSelectTest extends PApplet {
 
         String info = db.connectat ? "OK" : "ERROR";
         fill(0); textSize(48);
-        text("Connexió a la BBDD : "+ info, 100, 100);
+        text("Connexió a la BBDD : "+ info, 50, 100);
 
-        text("Num. Files Taula UNITAT : "+ n, 100, 300);
+        text("Files Taula UNITAT : "+ nr, 50, 300);
+
+        text("Columnes Taula UNITAT : "+ nc, 50, 500);
 
     }
 

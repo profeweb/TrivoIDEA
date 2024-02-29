@@ -51,6 +51,22 @@ public class DataBase {
         }
     }
 
+    // Retorna el número de columnes d'una taula de la base de dades
+    public int getNumColsTaula(String nomTaula){
+        try {
+            String q = "SELECT count(*) as n FROM information_schema.columns WHERE table_name ='"+ nomTaula +"' AND table_schema='"+databaseName+"'";
+            System.out.println(q);
+            ResultSet rs = query.executeQuery( q);
+            rs.next();
+            int numCols = rs.getInt("n");
+            return numCols;
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return 0;
+        }
+    }
+
     // Retorna les dades d'una taula en concret
     public String[][] getInfoTaulaUnitat(){
         int numFiles = getNumRowsTaula("unitat");
