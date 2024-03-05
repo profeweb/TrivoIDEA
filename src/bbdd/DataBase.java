@@ -108,6 +108,19 @@ public class DataBase {
         }
     }
 
+    // Retorna el valor de la Columna NUMERO de la taula UNITAT per aquella fila amb NOM
+    public String getNumeroFromTaulaUnitat(String nom)  {
+        try {
+            ResultSet rs = query.executeQuery( "SELECT numero FROM unitat WHERE nom = '"+nom+"'");
+            rs.next();
+            return String.valueOf(rs.getInt("numero"));
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
 
     // INSERTS
 
@@ -117,6 +130,22 @@ public class DataBase {
         try {
             String sNom = nom.replace("\'", "\\'");
             String q = "INSERT INTO unitat (numero, nom) VALUES ('" + num + "','" + sNom + "')";
+            System.out.println(q);
+            query.execute(q);
+        }
+        catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+
+
+    // UPDATES
+
+    // Actualitza les dades a la taula Unitat
+
+    void updateInfoTaulaUnitat(String id, String num, String nom){
+        try {
+            String q = "UPDATE unitat SET numero='"+num+"', nom='"+nom+"' WHERE numero='"+id+"'";
             System.out.println(q);
             query.execute(q);
         }

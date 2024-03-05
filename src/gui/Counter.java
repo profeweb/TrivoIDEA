@@ -47,6 +47,10 @@ public class Counter {
         this.value = n;
     }
 
+    public void setValue(int n){
+        this.value = n;
+    }
+
     public void setStepValue(int n){
         this.stepValue = n;
     }
