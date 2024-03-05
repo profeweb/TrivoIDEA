@@ -153,4 +153,18 @@ public class DataBase {
             System.out.println(e);
         }
     }
+
+    // DELETES
+
+    // Esborra la fila de la taula Unitat amb el número concret
+    void deleteInfoTaulaUnitat(String id){
+        try {
+            String q = "DELETE FROM unitat WHERE numero='"+id+"'";
+            System.out.println(q);
+            query.execute(q);
+        }
+        catch(Exception e) {
+            System.out.println(e);
+        }
+    }
 }
