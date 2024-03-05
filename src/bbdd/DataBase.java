@@ -27,6 +27,7 @@ public class DataBase {
 
     public void connect(){
         try {
+            Class.forName("com.mysql.jdbc.Driver");
             c = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+databaseName, user, password);
             query = c.createStatement();
             System.out.println("Connectat a la BBDD! :) ");
@@ -104,6 +105,23 @@ public class DataBase {
         catch(Exception e) {
             System.out.println(e);
             return null;
+        }
+    }
+
+
+    // INSERTS
+
+    // Inserta les dades a la taula Unitat
+
+    void insertInfoTaulaUnitat(String num, String nom){
+        try {
+            String sNom = nom.replace("\'", "\\'");
+            String q = "INSERT INTO unitat (numero, nom) VALUES ('" + num + "','" + sNom + "')";
+            System.out.println(q);
+            query.execute(q);
+        }
+        catch(Exception e) {
+            System.out.println(e);
         }
     }
 }

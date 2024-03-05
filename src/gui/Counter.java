@@ -39,6 +39,10 @@ public class Counter {
 
     // Setters
 
+    public void resetValue(){
+        this.value = this.minValue;
+    }
+
     public void setInitialValue(int n){
         this.value = n;
     }
