@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bbdd/InsertDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bbdd/InsertDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/InsertDBTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,14 +210,7 @@
       <workItem from="1709276789397" duration="9000" />
       <workItem from="1709626261169" duration="3687000" />
       <workItem from="1709638837977" duration="2113000" />
-      <workItem from="1709650634319" duration="1946000" />
-    </task>
-    <task id="LOCAL-00015" summary="Trivio App">
-      <created>1699446470082</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1699446470082</updated>
+      <workItem from="1709650634319" duration="2705000" />
     </task>
     <task id="LOCAL-00016" summary="Trivio App">
       <created>1699448295320</created>
@@ -558,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709628787445</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Trivio App">
+      <created>1709652608448</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1709652608449</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

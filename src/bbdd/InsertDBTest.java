@@ -1,9 +1,6 @@
 package bbdd;
 
-import gui.Button;
-import gui.Counter;
-import gui.Table;
-import gui.TextField;
+import gui.*;
 import processing.core.PApplet;
 import processing.core.PImage;
 
@@ -13,7 +10,8 @@ public class InsertDBTest extends PApplet {
     DataBase db;
 
     // Elements de la Interfície Gràfica (Table, textfield, Counter, Button)
-    Table t;
+    PagedTable t;
+    Button bNext, bPrev;
     TextField tNom;
     Counter cNumero;
     Button bInsert, bReset;
@@ -23,6 +21,9 @@ public class InsertDBTest extends PApplet {
 
     // Dimensions dels components
     int compW = 100, compH = 40;
+
+    // Dimensions dels botons
+    float buttonW = 60, buttonH = 60;
 
     // Dimensions de la taula
     float tableW = 800, tableH = 400;
@@ -56,6 +57,10 @@ public class InsertDBTest extends PApplet {
         // Crea la taula amb dades de la BBDD
         setTableDataBase();
 
+        // Creació dels botons
+        bNext = new Button(this, "NEXT", 25 + tableW/2 + buttonW/1.5f, tableH + 80, buttonW, buttonH);
+        bPrev = new Button(this, "PREV", 25 + tableW/2 - buttonW/1.5f, tableH + 80, buttonW, buttonH);
+
         // Carregar de les imatges (icones);
         icona1 = loadImage("mes.png");
         icona2 = loadImage("menys.png");
@@ -70,8 +75,8 @@ public class InsertDBTest extends PApplet {
         tNom = new TextField(this,3*width/4, 200, 3*compW, compH);
 
         // Creació dels Botons
-        bInsert = new Button(this, "Inserir", 3*width/4, 300, compW, compH);
-        bReset = new Button(this, "Reset", 3*width/4 + compW + 5, 300, compW, compH);
+        bInsert = new Button(this, "Inserir", 3*width/4, 300, 2*buttonW, buttonH);
+        bReset = new Button(this, "Reset", 3*width/4 + 2*buttonW + 25, 300, 2*buttonW, buttonH);
 
     }
 
@@ -99,20 +104,21 @@ public class InsertDBTest extends PApplet {
         // Dibuixa els botons
         bInsert.display(this);
         bReset.display(this);
+        bNext.display(this);
+        bPrev.display(this);
     }
 
     // Crea la taula Table amb les dades de la BBDD.
     public void setTableDataBase(){
 
-        // Número de files d'una taula
-        int files = db.getNumRowsTaula("unitat");
-        int columnes = 2;
+        // Número de files i columnes de la taula
+        int files = 6, columnes = 2;
 
-        // Dades d'una taula (unitat)
+        // Dades d'una taula (BBDD -> taula unitat)
         info = db.getInfoTaulaUnitat();
 
         // Creació de la taula
-        t = new Table(files, columnes);
+        t = new PagedTable(files, columnes);
         t.setHeaders(headers);
         t.setData(info);
         t.setColumnWidths(colWidths);
@@ -155,6 +161,12 @@ public class InsertDBTest extends PApplet {
         else if(bReset.mouseOverButton(this) && bReset.isEnabled()){
             // Resetear camps del formulari
             resetFormulari();
+        }
+        else if(bNext.mouseOverButton(this) && bNext.isEnabled()){
+            t.nextPage();
+        }
+        else if(bPrev.mouseOverButton(this) && bPrev.isEnabled()){
+            t.prevPage();
         }
     }
 
