@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gui/Confirm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/ConfirmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DatabaseClasseSelectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DatabaseClasseSelectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,20 @@
       <recent name="trivioAppBotons2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseClasseSelectTest">
+  <component name="RunManager" selected="Application.ConfirmTest">
+    <configuration name="ConfirmTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.ConfirmTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DatabaseClasseConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bbdd.DatabaseClasseConnectionTest" />
       <module name="TrivoIDEA" />
@@ -72,19 +85,6 @@
     </configuration>
     <configuration name="DatabaseClasseSelectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bbdd.DatabaseClasseSelectTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bbdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatabaseConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.DatabaseConnectionTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfirmTest" />
         <item itemvalue="Application.DatabaseClasseSelectTest" />
         <item itemvalue="Application.SelectDBTest" />
         <item itemvalue="Application.TableDBTest" />
         <item itemvalue="Application.DatabaseClasseConnectionTest" />
-        <item itemvalue="Application.DatabaseConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,14 +207,9 @@
       <workItem from="1709051047081" duration="1297000" />
       <workItem from="1709119173755" duration="3713000" />
       <workItem from="1709140887773" duration="63000" />
-      <workItem from="1709199191133" duration="658000" />
-    </task>
-    <task id="LOCAL-00010" summary="Trivio App">
-      <created>1698226824425</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1698226824425</updated>
+      <workItem from="1709199191133" duration="802000" />
+      <workItem from="1709276789397" duration="9000" />
+      <workItem from="1709626261169" duration="321000" />
     </task>
     <task id="LOCAL-00011" summary="Trivio App">
       <created>1698243726019</created>
@@ -552,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709051722053</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Trivio App">
+      <created>1709199991004</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1709199991005</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
