@@ -25,6 +25,18 @@ public class SelectColor {
         this.collapsed = true;
     }
 
+    public boolean isEnabled(){
+        return  this.enabled;
+    }
+
+    public boolean isCollapsed(){
+        return this.collapsed;
+    }
+
+    public int getSelectedValue(){
+        return this.selectedValue;
+    }
+
     public void display(PApplet p5){
 
         p5.pushStyle();
@@ -67,7 +79,7 @@ public class SelectColor {
     }
 
     // Indica si el cursor està sobre el select
-    boolean mouseOverSelect(PApplet p5){
+    public boolean mouseOverSelect(PApplet p5){
         if(this.collapsed){
             return (p5.mouseX >= x) &&
                     (p5.mouseX <= x + w) &&
@@ -82,7 +94,7 @@ public class SelectColor {
         }
     }
 
-    int clickedOption(PApplet p5){
+    public int clickedOption(PApplet p5){
         int i = (int) p5.map(p5.mouseY, y + h, y + h + (h + lineSpace)*colors.length,
                 0, colors.length);
         return i;
