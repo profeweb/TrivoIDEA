@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bbdd/DeleteDBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/SelectColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,19 +29,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Documents/Processing/libraries/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/tonim/Desktop/AvaluacioInterna-berta",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src" />
@@ -211,14 +210,10 @@
       <workItem from="1709276789397" duration="9000" />
       <workItem from="1709626261169" duration="3687000" />
       <workItem from="1709638837977" duration="2113000" />
-      <workItem from="1709650634319" duration="6120000" />
-    </task>
-    <task id="LOCAL-00018" summary="Trivio App">
-      <created>1700043381885</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1700043381885</updated>
+      <workItem from="1709650634319" duration="6934000" />
+      <workItem from="1709717823814" duration="595000" />
+      <workItem from="1709723614984" duration="2878000" />
+      <workItem from="1709727802003" duration="635000" />
     </task>
     <task id="LOCAL-00019" summary="Trivio App">
       <created>1700043840694</created>
@@ -556,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709655772378</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Trivio App">
+      <created>1709658007542</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1709658007542</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
