@@ -53,6 +53,7 @@ public class DataBase {
     }
 
     // Retorna el número de files que retornaria una query SELECT qualsevol amb valor "n"
+    // Per exemple: SELECT COUNT(*) AS n FROM ...
     public int getNumRowsQuery(String q){
         try {
             ResultSet rs = query.executeQuery( q);
