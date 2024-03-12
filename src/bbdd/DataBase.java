@@ -105,6 +105,47 @@ public class DataBase {
         }
     }
 
+    // Retorna les dades bidimensionals d'una query en concret (Dades de les unitats d'un curs en concret).
+    public String[][] getInfoTaulaUnitatCurs(int curs){
+        int numFiles = getNumRowsQuery("SELECT COUNT(*) AS n FROM unitat WHERE curs = '"+curs+"'");
+        int numCols  = 3;
+        String[][] info = new String[numFiles][numCols];
+        try {
+            ResultSet rs = query.executeQuery( "SELECT numero, nom, curs FROM unitat WHERE curs= '"+curs+"'");
+            int nr = 0;
+            while (rs.next()) {
+                info[nr][0] = String.valueOf(rs.getInt("numero"));
+                info[nr][1] = rs.getString("nom");
+                info[nr][2] = String.valueOf(rs.getInt("curs"));
+                nr++;
+            }
+            return info;
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
+    // Retorna les dades unidimensionals d'una query en concret (Cursos diferents)
+    public String[] getInfoColumnaCursTaulaUnitat(){
+        int numFiles = getNumRowsQuery("SELECT COUNT(DISTINCT curs) AS n FROM unitat");
+        String[] info = new String[numFiles];
+        try {
+            ResultSet rs = query.executeQuery( "SELECT DISTINCT(curs) AS curs FROM unitat");
+            int nr = 0;
+            while (rs.next()) {
+                info[nr] = rs.getString("curs");
+                nr++;
+            }
+            return info;
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
     // Retorna les dades de la columna NOM de la taula UNITAT
     public String[] getColumnaNomTaulaUnitat(){
         int numFiles = getNumRowsTaula("unitat");
