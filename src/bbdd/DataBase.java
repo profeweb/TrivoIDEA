@@ -52,6 +52,19 @@ public class DataBase {
         }
     }
 
+    // Retorna el número de files que retornaria una query SELECT qualsevol amb valor "n"
+    public int getNumRowsQuery(String q){
+        try {
+            ResultSet rs = query.executeQuery( q);
+            rs.next();
+            return rs.getInt("n");
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return 0;
+        }
+    }
+
     // Retorna el número de columnes d'una taula de la base de dades
     public int getNumColsTaula(String nomTaula){
         try {
@@ -67,6 +80,8 @@ public class DataBase {
             return 0;
         }
     }
+
+
 
     // Retorna les dades d'una taula en concret
     public String[][] getInfoTaulaUnitat(){
