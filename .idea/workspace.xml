@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bbdd/TableSelectDBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bbdd/DateConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bbdd/DateConversionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +56,9 @@
       <recent name="trivioAppBotons2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TableSelectDBTest">
-    <configuration name="DeleteDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.DeleteDBTest" />
+  <component name="RunManager" selected="Application.DateConversionTest">
+    <configuration name="DateConversionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.DateConversionTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.InsertDBTest" />
+    <configuration name="DeleteDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.DeleteDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DateConversionTest" />
         <item itemvalue="Application.TableSelectDBTest" />
         <item itemvalue="Application.SelectColorTest" />
         <item itemvalue="Application.DeleteDBTest" />
         <item itemvalue="Application.UpdateDBTest" />
-        <item itemvalue="Application.InsertDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -218,14 +218,9 @@
       <workItem from="1709733806809" duration="578000" />
       <workItem from="1709797843683" duration="260000" />
       <workItem from="1710242373635" duration="2516000" />
-      <workItem from="1710254314719" duration="1181000" />
-    </task>
-    <task id="LOCAL-00023" summary="Trivio App">
-      <created>1700566989340</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1700566989341</updated>
+      <workItem from="1710254314719" duration="2315000" />
+      <workItem from="1710271592484" duration="454000" />
+      <workItem from="1710323427706" duration="696000" />
     </task>
     <task id="LOCAL-00024" summary="Trivio App">
       <created>1700567688012</created>
@@ -563,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710247378005</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Trivio App">
+      <created>1710255729773</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1710255729774</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
