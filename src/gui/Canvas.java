@@ -6,8 +6,9 @@ import processing.core.PImage;
 
 public class Canvas {
 
-    enum DISTRIBUCIO {TRESxTRES, DOSxDOS, DOS_HORITZ};
+    public enum DISTRIBUCIO {TRESxTRES, DOSxDOS, DOS_HORITZ};
     DISTRIBUCIO distribucio = DISTRIBUCIO.TRESxTRES;
+
     PGraphics canvas;
     PImage[] imgs;
     int numImatge = 0;
@@ -15,10 +16,10 @@ public class Canvas {
     int x, y, w, h;
 
     public Canvas(int x, int y, int w, int h) {
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
+
+        // Posició i dimensions
+        this.x = x; this.y = y;
+        this.w = w; this.h = h;
 
         // Crea array d'imatges buit
         this.imgs = new PImage[9];
@@ -51,7 +52,10 @@ public class Canvas {
         for (int i=0; i<imgs.length; i++) {
             if (imgs[i]!=null) {
                 if (dist == DISTRIBUCIO.DOS_HORITZ) {
-                    canvas.image(imgs[i], 250*i, 0, 250, 500);
+                    int f=0;
+                    int c = i;
+                    float wh = 500/2;
+                    canvas.image(imgs[i], wh*c, f, wh, w);
                 } else if (dist == DISTRIBUCIO.DOSxDOS) {
                     int f = i / 2;
                     int c = i % 2;

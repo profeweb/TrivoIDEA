@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/Canvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/CanvasTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,14 +218,7 @@
       <workItem from="1710271592484" duration="454000" />
       <workItem from="1710323427706" duration="1420000" />
       <workItem from="1710328683363" duration="1225000" />
-      <workItem from="1710346703071" duration="649000" />
-    </task>
-    <task id="LOCAL-00025" summary="Trivio App">
-      <created>1700569500179</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1700569500179</updated>
+      <workItem from="1710346703071" duration="957000" />
     </task>
     <task id="LOCAL-00026" summary="Trivio App">
       <created>1700570603315</created>
@@ -567,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710324267711</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Trivio App">
+      <created>1710347546899</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1710347546900</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
