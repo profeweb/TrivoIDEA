@@ -192,6 +192,19 @@ public class DataBase {
         }
     }
 
+    public String getClaveFromTabla(String nombreTable, String nombreClave, String nombreColumna, String valorColumna){
+        try {
+            String q = "SELECT "+nombreClave+" AS clave FROM "+nombreTable+" WHERE "+nombreColumna+"='"+valorColumna+"'";
+            ResultSet rs = query.executeQuery( q);
+            rs.next();
+            return rs.getString("clave");
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
 
     // INSERTS
 
