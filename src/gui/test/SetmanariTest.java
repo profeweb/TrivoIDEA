@@ -1,6 +1,5 @@
 package gui.test;
 
-import gui.Calendari;
 import gui.Setmanari;
 import processing.core.PApplet;
 
@@ -38,6 +37,12 @@ public class SetmanariTest extends PApplet {
     // ******************* KEYBOARD interaction ***************************** //
 
     public void keyPressed(){
+        if(keyCode == RIGHT){
+            s.nextWeek();
+        }
+        else if(keyCode == LEFT){
+            s.prevWeek();
+        }
     }
 
     // ******************* MOUSE interaction ***************************** //

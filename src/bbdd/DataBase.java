@@ -84,7 +84,7 @@ public class DataBase {
 
 
 
-    // Retorna les dades d'una taula en concret
+    // Retorna totes les dades d'una taula en concret
     public String[][] getInfoTaulaUnitat(){
         int numFiles = getNumRowsTaula("unitat");
         int numCols  = 2;
@@ -175,6 +175,20 @@ public class DataBase {
         catch(Exception e) {
             System.out.println(e);
             return null;
+        }
+    }
+
+
+    public boolean isValidUser(String userName, String password){
+        String q = "SELECT COUNT(*) AS n FROM usuario WHERE nom = '"+userName+"' AND password='"+password+"'";
+        try {
+            ResultSet rs = query.executeQuery( q);
+            rs.next();
+            return rs.getInt("n")==1;
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            return false;
         }
     }
 

@@ -2,7 +2,10 @@ package gui;
 
 import processing.core.PApplet;
 
+import java.time.LocalDate;
 import java.util.Calendar;
+
+import static java.util.Calendar.YEAR;
 
 public class Setmanari {
 
@@ -38,7 +41,7 @@ public class Setmanari {
 
         this.cal = Calendar.getInstance();
 
-        this.any = cal.get(Calendar.YEAR);
+        this.any = cal.get(YEAR);
         this.mes = cal.get(Calendar.MONTH) + 1;
         this.dia = cal.get(Calendar.DATE);
 
@@ -67,13 +70,13 @@ public class Setmanari {
     // Setters
 
     public void setCalendar(int d, int m, int y){
-        cal.set(Calendar.YEAR, y);
+        cal.set(YEAR, y);
         cal.set(Calendar.MONTH, m);
         cal.set(Calendar.DATE, d);
     }
 
     public void setPrevCalendar(int d, int m, int y){
-        cPrev.set(Calendar.YEAR, y);
+        cPrev.set(YEAR, y);
         cPrev.set(Calendar.MONTH, m);
         cPrev.set(Calendar.DATE, d);
     }
@@ -85,28 +88,26 @@ public class Setmanari {
     }
 
     // Va un mes enrera en el Calendari
-    public void prevMonth(){
+    public void prevWeek(){
 
-        this.buttons = new DayButton[37];
+        this.buttons = new DayButton[7];
 
-        this.mes --;
-        if(this.mes==0){
-            this.mes = 12;
-            this.any--;
-        }
-        setCalendar(this.dia, this.mes -1, this.any);
+        cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek());
+        LocalDate localDate = LocalDate.of(cal.get(YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
+        LocalDate yesterdayDate = localDate.minusWeeks(1);
+        setCalendar(yesterdayDate.getDayOfMonth(), yesterdayDate.getMonthValue(), yesterdayDate.getYear());
 
-        this.numDaysMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+        this.firstDay = yesterdayDate.getDayOfMonth();
+        this.dia = yesterdayDate.getDayOfMonth();
+        this.mes = yesterdayDate.getMonthValue();
+        this.any = yesterdayDate.getYear();
 
         this.dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-        if(dayOfWeek==Calendar.SUNDAY){ this.dayOfWeek = 6; }
-        else { this.dayOfWeek  = this.dayOfWeek - 2; }
+        System.out.println("DAY OF WEEK: "+this.dayOfWeek);
 
         cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek());
         this.firstDay = cal.get(Calendar.DATE);
-
-        setPrevCalendar(1, this.mes -2, this.any);
-        this.numDaysPrevMonth = cPrev.getActualMaximum(Calendar.DAY_OF_MONTH);
+        System.out.println("1ST DAY OF WEEK: "+this.firstDay);
 
         createCalendar(x, y, w, h);
     }
@@ -119,35 +120,33 @@ public class Setmanari {
         int day = this.firstDay;
 
         for(int d=0; d<7; d++){
-            buttons[d] = new DayButton(x + d*dayWidth, y, dayWidth, dayHeight, day, mes, any);
+            if(day>0 && day<=31) {
+                buttons[d] = new DayButton(x + d * dayWidth, y, dayWidth, dayHeight, day, mes, any);
+            }
             day++;
         }
     }
 
     // Va un mes endavant en el calendari
-    public void nextMonth(){
+    public void nextWeek(){
 
         this.buttons = new DayButton[7];
 
-        this.mes ++;
-        if(this.mes==13){
-            this.mes = 1;
-            this.any++;
-        }
-        setCalendar(this.dia, this.mes-1, this.any);
-
-        this.numDaysMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
-
-        this.dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-        if(dayOfWeek==Calendar.SUNDAY){ this.dayOfWeek = 6; }
-        else { this.dayOfWeek  = this.dayOfWeek - 2; }
 
         cal.set(Calendar.DAY_OF_WEEK, cal.getFirstDayOfWeek());
-        this.firstDay = cal.get(Calendar.DATE);
+        LocalDate localDate = LocalDate.of(cal.get(YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
+        LocalDate yesterdayDate = localDate.plusWeeks(1);
 
-        setPrevCalendar(1, this.mes-2, this.any);
 
-        this.numDaysPrevMonth = cPrev.getActualMaximum(Calendar.DAY_OF_MONTH);
+
+        this.firstDay = yesterdayDate.getDayOfMonth();
+        this.dia = yesterdayDate.getDayOfMonth();
+        this.mes = yesterdayDate.getMonthValue();
+        this.any = yesterdayDate.getYear();
+
+        setCalendar(this.dia, this.mes+1, this.any);
+
+        System.out.println(dia+"/"+mes+"/"+any);
 
         createCalendar(x, y, w, h);
     }
