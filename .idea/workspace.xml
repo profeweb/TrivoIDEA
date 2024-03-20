@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gui/ItemList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ListViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/ListViewerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +226,10 @@
       <workItem from="1710346703071" duration="1212000" />
       <workItem from="1710440444562" duration="128000" />
       <workItem from="1710490095168" duration="2148000" />
-      <workItem from="1710501235218" duration="2865000" />
-    </task>
-    <task id="LOCAL-00028" summary="Trivio App">
-      <created>1701175812537</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1701175812537</updated>
+      <workItem from="1710501235218" duration="3470000" />
+      <workItem from="1710518341805" duration="23000" />
+      <workItem from="1710526213590" duration="623000" />
+      <workItem from="1710937983260" duration="296000" />
     </task>
     <task id="LOCAL-00029" summary="Trivio App">
       <created>1701176388979</created>
@@ -569,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710502585460</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Trivio App">
+      <created>1710505750821</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1710505750821</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
