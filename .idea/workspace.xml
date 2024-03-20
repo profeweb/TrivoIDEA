@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/ItemList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/ListViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/ListViewerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +54,7 @@
       <recent name="trivioAppBotons2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SetmanariTest">
+  <component name="RunManager" selected="Application.ListViewerTest">
     <configuration name="CanvasTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CanvasTest" />
       <module name="TrivoIDEA" />
@@ -84,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectColorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SelectColorTest" />
+    <configuration name="ListViewerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.ListViewerTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -125,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListViewerTest" />
         <item itemvalue="Application.SetmanariTest" />
         <item itemvalue="Application.CanvasTest" />
         <item itemvalue="Application.DateConversionTest" />
         <item itemvalue="Application.TableSelectDBTest" />
-        <item itemvalue="Application.SelectColorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -229,14 +226,7 @@
       <workItem from="1710501235218" duration="3470000" />
       <workItem from="1710518341805" duration="23000" />
       <workItem from="1710526213590" duration="623000" />
-      <workItem from="1710937983260" duration="296000" />
-    </task>
-    <task id="LOCAL-00029" summary="Trivio App">
-      <created>1701176388979</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1701176388979</updated>
+      <workItem from="1710937983260" duration="1221000" />
     </task>
     <task id="LOCAL-00030" summary="Trivio App">
       <created>1701184824504</created>
@@ -574,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710505750821</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Trivio App">
+      <created>1710938490413</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1710938490413</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ListViewer {
 
-    ArrayList<ItemList> items;
+    public ArrayList<ItemList> items;
     public Button bUp, bDown;
 
     float x, y, w, h;

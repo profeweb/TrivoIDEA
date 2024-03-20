@@ -10,7 +10,7 @@ public class ListViewerTest extends PApplet {
     ListViewer lv;
 
     public static void main(String[] args) {
-        PApplet.main("gui.test.SliderTest", args);
+        PApplet.main("gui.test.ListViewerTest", args);
     }
 
     public void settings(){
@@ -62,6 +62,10 @@ public class ListViewerTest extends PApplet {
     // ******************* KEYBOARD interaction ***************************** //
 
     public void keyPressed(){
+        if(key=='a' || key=='A'){
+            int num = lv.items.size() + 1;
+            lv.addItemToList(num + " NOU ELEMENT");
+        }
     }
 
     // ******************* MOUSE interaction ***************************** //
