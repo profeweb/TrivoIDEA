@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Current File" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bbdd/DataBase_structure.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/domotica/ArduinoProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrivoIDEA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrivoIDEA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/joieria/Collar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/joieria/Collar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/CanvasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/CanvasTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,27 +45,41 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Desktop/AvaluacioInterna-berta&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/processing354/processing-3.5.4/modes/java/libraries/serial/library/serial.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src\gui\domotica" />
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src" />
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src\trivioAppColorsFontsPantalles" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="gui.domotica" />
       <recent name="gui.test" />
       <recent name="bbdd" />
       <recent name="gui" />
       <recent name="gui.joieria" />
-      <recent name="trivioAppBotons2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ListViewerTest">
+  <component name="RunManager" selected="Application.CanvasTest">
+    <configuration name="ArduinoProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.domotica.ArduinoProcessing" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.domotica.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CanvasTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CanvasTest" />
       <module name="TrivoIDEA" />
@@ -107,26 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableSelectDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.TableSelectDBTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bbdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CanvasTest" />
+        <item itemvalue="Application.ArduinoProcessing" />
         <item itemvalue="Application.ListViewerTest" />
         <item itemvalue="Application.SetmanariTest" />
-        <item itemvalue="Application.CanvasTest" />
         <item itemvalue="Application.DateConversionTest" />
-        <item itemvalue="Application.TableSelectDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +239,18 @@
       <workItem from="1710518341805" duration="23000" />
       <workItem from="1710526213590" duration="623000" />
       <workItem from="1710937983260" duration="1221000" />
-    </task>
-    <task id="LOCAL-00030" summary="Trivio App">
-      <created>1701184824504</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1701184824504</updated>
+      <workItem from="1710957500423" duration="148000" />
+      <workItem from="1711118024430" duration="1340000" />
+      <workItem from="1711121568471" duration="2222000" />
+      <workItem from="1711454170046" duration="594000" />
+      <workItem from="1711470888731" duration="32329000" />
+      <workItem from="1711538986266" duration="1599000" />
+      <workItem from="1711540668514" duration="1112000" />
+      <workItem from="1711551793137" duration="2345000" />
+      <workItem from="1711555271028" duration="594000" />
+      <workItem from="1711559848129" duration="61000" />
+      <workItem from="1711570419388" duration="756000" />
+      <workItem from="1712598006015" duration="1506000" />
     </task>
     <task id="LOCAL-00031" summary="Trivio App">
       <created>1701762909991</created>
@@ -571,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710938490413</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Trivio App">
+      <created>1710957624975</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1710957624976</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

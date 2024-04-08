@@ -78,6 +78,10 @@ public class Canvas {
         numImatge = 0;
     }
 
+    public PGraphics getCanvas(){
+        return this.canvas;
+    }
+
     public void display(PApplet p5) {
         p5.pushStyle();
         p5.fill(255);

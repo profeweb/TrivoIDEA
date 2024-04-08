@@ -1,0 +1,377 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "bbdd.DataBase",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_3016896 { 
+   	label=bbdd
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   DataBase3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DataBase</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   c: Connection [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   connectat: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   databaseName: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   password: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   query: Statement [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   user: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ connect()</TD></TR>
+<TR><TD ALIGN="LEFT" ># deleteInfoTaulaUnitat(id: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getClaveFromTabla(nombreTable: String, nombreClave: String, nombreColumna: String, valorColumna: String): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getInfoTaulaUnitatCurs(curs: int): String[][]</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNumColsTaula(nomTaula: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNumRowsQuery(q: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNumRowsTaula(nomTaula: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNumeroFromTaulaUnitat(nom: String): String</TD></TR>
+<TR><TD ALIGN="LEFT" ># insertInfoTaulaUnitat(num: String, nom: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ isValidUser(userName: String, password: String): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" ># updateInfoTaulaUnitat(id: String, num: String, nom: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DatabaseClasseConnectionTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DatabaseClasseConnectionTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bgColor: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DatabaseClasseSelectTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DatabaseClasseSelectTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bgColor: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nc: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   nr: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ printArray2D(dades: String[][])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DeleteDBTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DeleteDBTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bDelete: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bNext: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bPrev: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   buttonH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   buttonW: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colWidths: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   compH: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   compW: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   headers: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   icona1: PImage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   icona2: PImage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   info: String[][] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   sFila: Select [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   t: PagedTable [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableW: float [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+InsertDBTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)InsertDBTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bInsert: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bNext: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bPrev: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bReset: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   buttonH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   buttonW: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   cNumero: Counter [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colWidths: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   compH: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   compW: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   headers: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   icona1: PImage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   icona2: PImage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   info: String[][] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   t: PagedTable [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tNom: TextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableW: float [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+<TR><TD ALIGN="LEFT" ># resetFormulari()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SelectDBTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SelectDBTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bgColor: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   n: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   s1: Select [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectValues: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectW: float [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+<TR><TD ALIGN="LEFT" ># updateCursor(p5: PApplet)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+TableDBTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)TableDBTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   colWidths: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   headers: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   info: String[][] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   t: Table [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableW: float [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+TableSelectDBTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)TableSelectDBTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   colWidths: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   headers: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   info: String[][] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   s: Select [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectValues: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   selectW: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   t: Table [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableW: float [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+UpdateDBTest3016896[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)UpdateDBTest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   bNext: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bPrev: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bReset: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bSelect: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bUpdate: Button [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   buttonH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   buttonW: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   cNumero: Counter [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   colWidths: float[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   compH: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   compW: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   db: DataBase [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   headers: String[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   icona1: PImage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   icona2: PImage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   info: String[][] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   sFila: Select [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   t: PagedTable [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tNom: TextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableH: float [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tableW: float [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ draw()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ keyPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseDragged()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mousePressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mouseReleased()</TD></TR>
+<TR><TD ALIGN="LEFT" ># resetFormulari()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+DatabaseClasseConnectionTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+DatabaseClasseSelectTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+DeleteDBTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+InsertDBTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+SelectDBTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+TableDBTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+TableSelectDBTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+UpdateDBTest3016896 -> DataBase3016896[label="db
+[0..1]"];
+    
+}
+@enduml

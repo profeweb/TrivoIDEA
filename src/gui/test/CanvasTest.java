@@ -22,7 +22,7 @@ public class CanvasTest extends PApplet {
     PImage img;
 
     // Botó
-    Button bImg, bReset;
+    Button bImg, bReset, bSave;
 
     // Color de fons de l'App
     int bgColor = color(255);
@@ -42,6 +42,7 @@ public class CanvasTest extends PApplet {
         // Creació del Botons
         bImg = new Button(this, "IMAGE", 50, height-120, 200, 80);
         bReset = new Button(this, "RESET", 300, height-120, 200, 80);
+        bSave = new Button(this, "SAVE", 550, height-120, 200, 80);
 
         // Creació del canvas
         c = new Canvas(10, 10, 500, 500);
@@ -80,6 +81,7 @@ public class CanvasTest extends PApplet {
         // Dibuixa els botons
         bImg.display(this);
         bReset.display(this);
+        bSave.display(this);
 
         // Actualitza el cursor
         updateCursor(this);
@@ -142,6 +144,19 @@ public class CanvasTest extends PApplet {
             dibuix = createGraphics(500, 500);
             c.resetCanvas();
         }
+        // Guarda el dibuix i el canvas en una imatge a la carpeta
+        else if(bSave.mouseOverButton(this)){
+            saveImatgeMur(c, dibuix, "C:\\Users\\tonim\\IdeaProjects\\TrivoIDEA\\data", "imatgeMur");
+        }
+    }
+
+    public void saveImatgeMur(Canvas c, PGraphics dibuix, String ruta, String nomImatge){
+        PGraphics imgSave = createGraphics(500, 500);
+        imgSave.beginDraw();
+        imgSave.image(c.getCanvas(), 0, 0);
+        imgSave.image(dibuix, 0, 0);
+        imgSave.endDraw();
+        imgSave.save(ruta +"/" +nomImatge+".jpg");
     }
 
     public void mouseDragged(){
