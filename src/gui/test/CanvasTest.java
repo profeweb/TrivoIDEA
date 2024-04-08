@@ -146,12 +146,12 @@ public class CanvasTest extends PApplet {
         }
         // Guarda el dibuix i el canvas en una imatge a la carpeta
         else if(bSave.mouseOverButton(this)){
-            saveImatgeMur(c, dibuix, "C:\\Users\\tonim\\IdeaProjects\\TrivoIDEA\\data", "imatgeMur");
+            saveImatgeMur(this, c, dibuix, "C:\\Users\\tonim\\IdeaProjects\\TrivoIDEA\\data", "imatgeMur123");
         }
     }
 
-    public void saveImatgeMur(Canvas c, PGraphics dibuix, String ruta, String nomImatge){
-        PGraphics imgSave = createGraphics(500, 500);
+    public void saveImatgeMur(PApplet p5, Canvas c, PGraphics dibuix, String ruta, String nomImatge){
+        PGraphics imgSave = p5.createGraphics(500, 500);
         imgSave.beginDraw();
         imgSave.image(c.getCanvas(), 0, 0);
         imgSave.image(dibuix, 0, 0);
