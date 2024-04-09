@@ -6,7 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/gui/test/CanvasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/CanvasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/domotica/ArduinoProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/domotica/ArduinoProcessing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <recent name="gui.joieria" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CanvasTest">
+  <component name="RunManager" selected="Application.ArduinoProcessing">
     <configuration name="ArduinoProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.domotica.ArduinoProcessing" />
       <module name="TrivoIDEA" />
@@ -127,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CanvasTest" />
         <item itemvalue="Application.ArduinoProcessing" />
+        <item itemvalue="Application.CanvasTest" />
         <item itemvalue="Application.ListViewerTest" />
         <item itemvalue="Application.SetmanariTest" />
         <item itemvalue="Application.DateConversionTest" />
@@ -243,14 +244,9 @@
       <workItem from="1711555271028" duration="594000" />
       <workItem from="1711559848129" duration="61000" />
       <workItem from="1711570419388" duration="756000" />
-      <workItem from="1712598006015" duration="2020000" />
-    </task>
-    <task id="LOCAL-00032" summary="Trivio App">
-      <created>1701775871239</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1701775871239</updated>
+      <workItem from="1712598006015" duration="3220000" />
+      <workItem from="1712611164813" duration="598000" />
+      <workItem from="1712667998773" duration="1508000" />
     </task>
     <task id="LOCAL-00033" summary="Trivio App">
       <created>1701776658706</created>
@@ -588,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712599536614</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Trivio App">
+      <created>1712600050300</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1712600050300</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

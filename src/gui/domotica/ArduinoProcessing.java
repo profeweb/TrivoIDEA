@@ -26,7 +26,7 @@ public class ArduinoProcessing extends PApplet {
     public void setup(){
 
         String portName = "COM5";// Change the number to match the corresponding port number connected to your Arduino.
-        myPort = new Serial(this, portName, 9600);
+        //myPort = new Serial(this, portName, 9600);
 
         bLED = new Button(this, "ON/OFF", 100, 100, 200, 50);
 
@@ -39,29 +39,38 @@ public class ArduinoProcessing extends PApplet {
 
         int colorLed = ledOnOFF == 0 ? color(100) : color(255, 255, 0);
         fill(colorLed);
-        circle(width/2, height/2, 20);
+        circle(width/2, height/2, 200);
 
     }
 
     // ******************* KEYBOARD interaction ***************************** //
 
     public void keyPressed(){
-        /*
+
         if(key=='n' || key=='N'){
-            myPort.write('1');
+            //myPort.write('1');
+            ledOnOFF = 1;
         }
         else if(key=='f' || key=='F'){
-            myPort.write('0');
+            //myPort.write('0');
+            ledOnOFF = 0;
         }
-
-         */
     }
 
     // ******************* MOUSE interaction ***************************** //
 
     // En cas de pitjar el ratolí
     public void mousePressed(){
-
+        if(bLED.mouseOverButton(this)){
+            if(ledOnOFF==0) {
+               // myPort.write(1);
+                ledOnOFF = 1;
+            }
+            else {
+                // myPort.write(0);
+                ledOnOFF = 0;
+            }
+        }
     }
 
     public void mouseDragged(){
