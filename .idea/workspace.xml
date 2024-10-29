@@ -6,8 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/botons/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/botons/GUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/botons/TextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/botons/TrivioBotons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TextField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/domotica/ArduinoProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/domotica/ArduinoProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/SetmanariTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/SetmanariTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trivioAppColorsFontsPantalles/Trivio005.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trivioAppColorsFontsPantalles/Trivio005.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/processing354/processing-3.5.4/modes/java/libraries/serial/library/serial.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Desktop/SolucioInformaticaVicenc-master/SolucioInformaticaVicenc-master&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -53,29 +60,16 @@
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src\trivioAppColorsFontsPantalles" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="botons" />
+      <recent name="gui" />
       <recent name="gui.domotica" />
       <recent name="gui.test" />
       <recent name="bbdd" />
-      <recent name="gui" />
-      <recent name="gui.joieria" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArduinoProcessing">
-    <configuration name="ArduinoProcessing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.domotica.ArduinoProcessing" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.domotica.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanvasTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.CanvasTest" />
+  <component name="RunManager" selected="Application.TrivioBotons">
+    <configuration name="SwitchButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.SwitchButtonTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -87,21 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateConversionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.DateConversionTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bbdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListViewerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.ListViewerTest" />
+    <configuration name="TextFieldTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TextFieldTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -113,12 +94,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetmanariTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SetmanariTest" />
+    <configuration name="Trivio005b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioAppBotons2.Trivio005b" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="trivioAppBotons2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrivioBotons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="botons.TrivioBotons" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="botons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trivioAppBotons.Trivio005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioAppBotons.Trivio005" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trivioAppBotons.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ArduinoProcessing" />
-        <item itemvalue="Application.CanvasTest" />
-        <item itemvalue="Application.ListViewerTest" />
-        <item itemvalue="Application.SetmanariTest" />
-        <item itemvalue="Application.DateConversionTest" />
+        <item itemvalue="Application.TrivioBotons" />
+        <item itemvalue="Application.TextFieldTest" />
+        <item itemvalue="Application.SwitchButtonTest" />
+        <item itemvalue="Application.Trivio005b" />
+        <item itemvalue="Application.trivioAppBotons.Trivio005" />
       </list>
     </recent_temporary>
   </component>
@@ -246,14 +253,19 @@
       <workItem from="1711570419388" duration="756000" />
       <workItem from="1712598006015" duration="3220000" />
       <workItem from="1712611164813" duration="598000" />
-      <workItem from="1712667998773" duration="1508000" />
-    </task>
-    <task id="LOCAL-00033" summary="Trivio App">
-      <created>1701776658706</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1701776658706</updated>
+      <workItem from="1712667998773" duration="2868000" />
+      <workItem from="1712745482537" duration="795000" />
+      <workItem from="1712871764864" duration="849000" />
+      <workItem from="1712942402400" duration="755000" />
+      <workItem from="1713085701779" duration="428000" />
+      <workItem from="1728972631464" duration="3113000" />
+      <workItem from="1728985709411" duration="8000" />
+      <workItem from="1729500364112" duration="3493000" />
+      <workItem from="1729589959092" duration="607000" />
+      <workItem from="1730021463153" duration="608000" />
+      <workItem from="1730099658304" duration="165000" />
+      <workItem from="1730110594441" duration="2499000" />
+      <workItem from="1730190089579" duration="4146000" />
     </task>
     <task id="LOCAL-00034" summary="Trivio App">
       <created>1701779211094</created>
@@ -591,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712600050300</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Trivio App">
+      <created>1712678604476</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1712678604477</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,6 +619,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Trivio App" />
     <option name="LAST_COMMIT_MESSAGE" value="Trivio App" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/botons/TextField.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

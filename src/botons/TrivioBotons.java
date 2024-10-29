@@ -1,14 +1,15 @@
-package trivioAppColorsFontsPantalles;
+package botons;
 
 import processing.core.PApplet;
 
-public class Trivio005 extends PApplet {
+public class TrivioBotons extends PApplet {
 
     // Interfície Gràfica (Pantalles i components)
     GUI gui;
 
+
     public static void main(String[] args) {
-        PApplet.main("trivioAppColorsFontsPantalles.Trivio005", args);
+        PApplet.main("botons.TrivioBotons", args);
     }
 
     public void settings(){
@@ -37,14 +38,25 @@ public class Trivio005 extends PApplet {
                             break;
         }
 
-        fill(0);
-        text(mouseX+", "+mouseY, 100, 100);
+        updateCursor(this);
 
+    }
+
+    public void updateCursor(PApplet p5){
+        if(gui.b1.updateHandCursor(p5) || gui.b2.updateHandCursor(p5)){
+            cursor(HAND);
+        }
+        else {
+            cursor(ARROW);
+        }
     }
 
     // ******************* KEYBOARD interaction ***************************** //
 
     public void keyPressed(){
+
+        gui.t1.keyPressed(key, keyCode);
+
         if(key=='0'){
             gui.pantallaActual = GUI.PANTALLA.INICIAL;
         }
@@ -59,7 +71,15 @@ public class Trivio005 extends PApplet {
     // ******************* MOUSE interaction ***************************** //
 
     public void mousePressed(){
-        println("X: "+mouseX+", Y:"+mouseY);
+        if(gui.b1.mouseOverButton(this)){
+            println("B1 has been pressed!!!");
+        }
+        else if(gui.b2.mouseOverButton(this)){
+            println("B2 has been pressed!!!");
+        }
+
+        gui.t1.isPressed(this);
+
     }
 
     public void mouseDragged(){

@@ -7,7 +7,6 @@ import processing.serial.*;
 
 public class ArduinoProcessing extends PApplet {
 
-    // Variable de classe Habitació i Sensor
     Button bLED;
 
     Serial myPort;  // Create object from Serial class
@@ -26,7 +25,8 @@ public class ArduinoProcessing extends PApplet {
     public void setup(){
 
         String portName = "COM5";// Change the number to match the corresponding port number connected to your Arduino.
-        //myPort = new Serial(this, portName, 9600);
+        myPort = new Serial(this, portName, 9600);
+        //myPort = new Serial(this, Serial.list()[0], 9600);
 
         bLED = new Button(this, "ON/OFF", 100, 100, 200, 50);
 

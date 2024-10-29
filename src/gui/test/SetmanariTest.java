@@ -43,6 +43,9 @@ public class SetmanariTest extends PApplet {
         else if(keyCode == LEFT){
             s.prevWeek();
         }
+        else if(key =='p'){
+            System.out.println(s.getSelectedDate());
+        }
     }
 
     // ******************* MOUSE interaction ***************************** //

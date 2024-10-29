@@ -1,4 +1,4 @@
-package gui;
+package botons;
 
 import processing.core.PApplet;
 
@@ -48,7 +48,7 @@ public class TextField {
         p5.popStyle();
     }
 
-    // Afegeix i/o lleva el text que es tecleja
+    // Afegeix, lleva el text que es tecleja
     public void keyPressed(char key, int keyCode) {
         if (selected) {
             if (keyCode == (int)BACKSPACE) {
@@ -94,7 +94,7 @@ public class TextField {
 
     // Setter del text
     public void setText(String t){
-         this.text= t;
+        this.text= t;
     }
 
     // Indica si el ratolí està sobre el camp de text
