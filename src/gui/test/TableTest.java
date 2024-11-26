@@ -18,7 +18,7 @@ public class TableTest extends PApplet {
     // Títols de les columnes
     String[] headers = {"Id", "Nom", "Llinatges", "Edat", "Sexe"};
 
-    // Amplades de les columnes
+    // Amplades de les columnes (ha de sumar 100!!!!)
     float[] colWidths = {10, 20, 40, 10, 20};
 
     // Dades de la taula

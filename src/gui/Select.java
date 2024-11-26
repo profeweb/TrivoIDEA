@@ -2,8 +2,7 @@ package gui;
 
 import processing.core.PApplet;
 
-public
-class Select {
+public class Select {
 
     float x, y, w, h;          // Posició i dimensions
     String[] texts;            // Valors possibles

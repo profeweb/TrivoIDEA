@@ -28,6 +28,8 @@ public class RoundButton {
 
     // Setters
 
+    public void setImage(PImage img){ this.icona = img; }
+
     public void setEnabled(boolean b){
         this.enabled = b;
     }
