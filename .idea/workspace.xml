@@ -6,12 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/PassField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/PassFieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/HyperLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/HyperLinkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/RoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/RoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Select.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Select.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/TableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +55,13 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="gui.test" />
-      <recent name="botons" />
       <recent name="gui" />
+      <recent name="botons" />
       <recent name="gui.domotica" />
       <recent name="bbdd" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PassFieldTest">
+  <component name="RunManager" selected="Application.HyperLinkTest">
     <configuration name="CarrouselTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CarrouselTest" />
       <module name="TrivoIDEA" />
@@ -78,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinesDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LinesDiagramTest" />
+    <configuration name="HyperLinkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.HyperLinkTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -132,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HyperLinkTest" />
         <item itemvalue="Application.PassFieldTest" />
         <item itemvalue="Application.PagedCardTest" />
         <item itemvalue="Application.CarrouselTest" />
         <item itemvalue="Application.OpenWebTest" />
-        <item itemvalue="Application.LinesDiagramTest" />
       </list>
     </recent_temporary>
   </component>
@@ -273,14 +270,8 @@
       <workItem from="1731490216963" duration="866000" />
       <workItem from="1731491792286" duration="10000" />
       <workItem from="1732003373322" duration="620000" />
-      <workItem from="1732609886039" duration="463000" />
-    </task>
-    <task id="LOCAL-00035" summary="Trivio App">
-      <created>1702404950497</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1702404950497</updated>
+      <workItem from="1732609886039" duration="1408000" />
+      <workItem from="1733130950929" duration="2030000" />
     </task>
     <task id="LOCAL-00036" summary="Trivio App">
       <created>1702405525135</created>
@@ -618,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730197703022</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Trivio App">
+      <created>1732610656271</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1732610656272</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
