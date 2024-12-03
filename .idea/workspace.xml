@@ -6,27 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/Fave.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatge9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatgeMur.jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imatgeMur123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/noFave.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Pissarra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/PissarraTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TextArea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,19 +33,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonim/Desktop/SolucioInformaticaVicenc-master/SolucioInformaticaVicenc-master",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Desktop/SolucioInformaticaVicenc-master/SolucioInformaticaVicenc-master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src\gui\domotica" />
@@ -79,9 +60,9 @@
       <recent name="bbdd" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PissarraTest">
-    <configuration name="CanvasTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.CanvasTest" />
+  <component name="RunManager" selected="Application.CalendariTest">
+    <configuration name="CalendariTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.CalendariTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrouselCiclicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.CarrouselCiclicTest" />
+    <configuration name="PagedCardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedCardTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LinkListTest" />
+    <configuration name="PagedProductsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedProductsTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PissarraTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PissarraTest" />
+    <configuration name="PagedSongsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedSongsTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -132,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaulerLlistaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TaulerLlistaTest" />
+    <configuration name="SwitchButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.SwitchButtonTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -147,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PissarraTest" />
-        <item itemvalue="Application.CanvasTest" />
-        <item itemvalue="Application.LinkListTest" />
-        <item itemvalue="Application.CarrouselCiclicTest" />
-        <item itemvalue="Application.TaulerLlistaTest" />
+        <item itemvalue="Application.CalendariTest" />
+        <item itemvalue="Application.PagedCardTest" />
+        <item itemvalue="Application.PagedSongsTest" />
+        <item itemvalue="Application.SwitchButtonTest" />
+        <item itemvalue="Application.PagedProductsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,14 +270,8 @@
       <workItem from="1731491792286" duration="10000" />
       <workItem from="1732003373322" duration="620000" />
       <workItem from="1732609886039" duration="1408000" />
-      <workItem from="1733130950929" duration="4155000" />
-    </task>
-    <task id="LOCAL-00037" summary="Trivio App">
-      <created>1702462628175</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1702462628175</updated>
+      <workItem from="1733130950929" duration="5542000" />
+      <workItem from="1733211067260" duration="666000" />
     </task>
     <task id="LOCAL-00038" summary="Trivio App">
       <created>1702638870878</created>
@@ -634,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733133054869</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Trivio App">
+      <created>1733136485648</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1733136485648</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

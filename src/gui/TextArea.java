@@ -5,6 +5,7 @@ import processing.core.PApplet;
 import static java.lang.Math.min;
 import static processing.core.PApplet.constrain;
 import static processing.core.PConstants.BACKSPACE;
+import static processing.core.PConstants.CODED;
 
 public class TextArea {
 
@@ -81,7 +82,7 @@ public class TextArea {
                     removeText();
                 } else if (keyCode == 32) {
                     addText(' '); // SPACE
-                } else {
+                } else if(key!=CODED) {
                     addText(key);
                 }
             }
