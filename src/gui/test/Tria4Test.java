@@ -49,7 +49,7 @@ public class Tria4Test extends PApplet {
         // Fons de la finestra
         background(bgColor);
 
-        // Dibuixa el Confirm
+        // Dibuixa el component de la gui
         c.display(this);
 
         // Actualitza forma del cursor

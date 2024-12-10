@@ -6,8 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gui/TextArea2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/TextArea2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TextArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TextArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/Tria4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/Tria4Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +62,22 @@
       <recent name="bbdd" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalendariTest">
+  <component name="RunManager" selected="Application.TextArea2Test">
     <configuration name="CalendariTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CalendariTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.MenuButtonTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -87,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PagedProductsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PagedProductsTest" />
+    <configuration name="TextArea2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TextArea2Test" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -100,21 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PagedSongsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PagedSongsTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SwitchButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SwitchButtonTest" />
+    <configuration name="Tria4Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.Tria4Test" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextArea2Test" />
+        <item itemvalue="Application.Tria4Test" />
+        <item itemvalue="Application.MenuButtonTest" />
         <item itemvalue="Application.CalendariTest" />
         <item itemvalue="Application.PagedCardTest" />
-        <item itemvalue="Application.PagedSongsTest" />
-        <item itemvalue="Application.SwitchButtonTest" />
-        <item itemvalue="Application.PagedProductsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,14 +273,8 @@
       <workItem from="1732003373322" duration="620000" />
       <workItem from="1732609886039" duration="1408000" />
       <workItem from="1733130950929" duration="5542000" />
-      <workItem from="1733211067260" duration="666000" />
-    </task>
-    <task id="LOCAL-00038" summary="Trivio App">
-      <created>1702638870878</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1702638870878</updated>
+      <workItem from="1733211067260" duration="1456000" />
+      <workItem from="1733817506406" duration="1290000" />
     </task>
     <task id="LOCAL-00039" summary="Trivio App">
       <created>1702894190986</created>
@@ -616,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733136485648</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Trivio App">
+      <created>1733214932946</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1733214932947</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
