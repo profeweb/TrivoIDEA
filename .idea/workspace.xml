@@ -6,10 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/TextArea2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/TextArea2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/resultados.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/CSVLoaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/Tria4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/Tria4Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,20 @@
       <recent name="bbdd" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextArea2Test">
+  <component name="RunManager" selected="Application.CSVLoaderTest">
+    <configuration name="CSVLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.CSVLoaderTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalendariTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CalendariTest" />
       <module name="TrivoIDEA" />
@@ -78,19 +90,6 @@
     </configuration>
     <configuration name="MenuButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.MenuButtonTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PagedCardTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PagedCardTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -130,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CSVLoaderTest" />
         <item itemvalue="Application.TextArea2Test" />
         <item itemvalue="Application.Tria4Test" />
         <item itemvalue="Application.MenuButtonTest" />
         <item itemvalue="Application.CalendariTest" />
-        <item itemvalue="Application.PagedCardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -274,14 +273,8 @@
       <workItem from="1732609886039" duration="1408000" />
       <workItem from="1733130950929" duration="5542000" />
       <workItem from="1733211067260" duration="1456000" />
-      <workItem from="1733817506406" duration="1290000" />
-    </task>
-    <task id="LOCAL-00039" summary="Trivio App">
-      <created>1702894190986</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1702894190986</updated>
+      <workItem from="1733817506406" duration="2501000" />
+      <workItem from="1734420129044" duration="804000" />
     </task>
     <task id="LOCAL-00040" summary="Trivio App">
       <created>1702990847282</created>
@@ -619,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733214932947</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Trivio App">
+      <created>1733818815937</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1733818815938</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
