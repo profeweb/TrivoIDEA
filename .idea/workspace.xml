@@ -6,9 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/resultados.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/CSVLoaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/CSVLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/CSVLoaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,14 +273,7 @@
       <workItem from="1733130950929" duration="5542000" />
       <workItem from="1733211067260" duration="1456000" />
       <workItem from="1733817506406" duration="2501000" />
-      <workItem from="1734420129044" duration="804000" />
-    </task>
-    <task id="LOCAL-00040" summary="Trivio App">
-      <created>1702990847282</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1702990847282</updated>
+      <workItem from="1734420129044" duration="1901000" />
     </task>
     <task id="LOCAL-00041" summary="Trivio App">
       <created>1702996316452</created>
@@ -619,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733818815938</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Trivio App">
+      <created>1734420983535</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1734420983536</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

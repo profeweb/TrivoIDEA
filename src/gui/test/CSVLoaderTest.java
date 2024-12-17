@@ -1,18 +1,26 @@
 package gui.test;
 
 import gui.ArrayButtons;
+import gui.LinesDiagram;
 import processing.core.PApplet;
 
 public class CSVLoaderTest extends PApplet {
 
-    // Elements de la Interfície Gràfica (ArrayButton)
+    // Elements de la Interfície Gràfica (Diagrama de Línies)
+    LinesDiagram s;
+    // Dades del Diagrama (etiquetes)
+    String[] textos;
+    // Dades del Diagrama (valors)
+    float[] values;
 
+    // Color de la línia
+    int colorLine = color(150,50,200);
 
     // Color de fons de l'App
     int bgColor = color(255);
 
     String[][] info;
-    int numLine = 0;
+    int numLine = 1;
 
     public static void main(String[] args) {
         PApplet.main("gui.test.CSVLoaderTest", args);
@@ -31,17 +39,45 @@ public class CSVLoaderTest extends PApplet {
             info[i] = lines[i].split(";");
         }
 
+        // Creació del Diagrama de Barres
+        s = new LinesDiagram(50, 50, width-100, height - 200);
+
+        // Configuració de Dades (textos, valors, colors)
+        s.setTexts(generateLabels());
+        values =  extractDataFromLine(numLine);
+        s.setValues(values);
+        s.setColors(colorLine);
+
     }
 
     public void draw() {
         // Fons de la finestra
         background(bgColor);
 
+        // Dibuix del Diagrama de Línies
+        s.display(this);
+
         fill(0);
         for(int i=0; i<info[numLine].length; i++) {
             textAlign(LEFT); textSize(14);
-            text(info[numLine][i], 10 + i*100, 100);
+            text(info[numLine][i], 10 + i*100, 50);
         }
+    }
+
+    public float[] extractDataFromLine(int nl){
+        float[] data = new float[10];
+        for(int i=0; i<10; i++){
+            data[i] = Float.valueOf(info[nl][i+2]);
+        }
+        return data;
+    }
+
+    public String[] generateLabels(){
+        String[] labels = new String[10];
+        for(int i=0; i<10; i++){
+            labels[i] = String.valueOf(i);
+        }
+        return labels;
     }
 
 
@@ -51,15 +87,24 @@ public class CSVLoaderTest extends PApplet {
         if(keyCode==UP){
             numLine++;
             if(numLine>=info.length){
-                numLine = 0;
+                numLine = 1;
             }
         }
         else if(keyCode==DOWN){
             numLine--;
-            if(numLine<0){
+            if(numLine<1){
                 numLine = info.length-1;
             }
         }
+
+        // Creació del Diagrama de Barres
+        s = new LinesDiagram(50, 50, width-100, height - 200);
+
+        // Configuració de Dades (textos, valors, colors)
+        s.setTexts(generateLabels());
+        values =  extractDataFromLine(numLine);
+        s.setValues(values);
+        s.setColors(colorLine);
     }
 
     // ******************* MOUSE interaction ***************************** //
