@@ -61,6 +61,9 @@ public class CSVLoaderTest extends PApplet {
         textAlign(LEFT); textSize(24);
         text(numLine, width -100 , 50);
 
+        text(info[numLine][0], width-100, 100);
+        text(info[numLine][1], width-100, 150);
+
     }
 
     public float[] extractDataFromLine(int nl){
@@ -74,7 +77,7 @@ public class CSVLoaderTest extends PApplet {
     public String[] generateLabels(){
         String[] labels = new String[10];
         for(int i=0; i<10; i++){
-            labels[i] = String.valueOf(i);
+            labels[i] = String.valueOf(i+1);
         }
         return labels;
     }
