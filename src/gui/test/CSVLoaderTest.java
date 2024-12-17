@@ -58,10 +58,9 @@ public class CSVLoaderTest extends PApplet {
         s.display(this);
 
         fill(0);
-        for(int i=0; i<info[numLine].length; i++) {
-            textAlign(LEFT); textSize(14);
-            text(info[numLine][i], 10 + i*100, 50);
-        }
+        textAlign(LEFT); textSize(24);
+        text(numLine, width -100 , 50);
+
     }
 
     public float[] extractDataFromLine(int nl){
