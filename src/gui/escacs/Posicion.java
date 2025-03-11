@@ -2,8 +2,7 @@ package gui.escacs;
 
 public class Posicion {
 
-    int fila;
-    int columna;
+    int fila, columna;
 
     public Posicion(int fila, int columna){
         this.fila = fila;

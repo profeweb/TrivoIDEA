@@ -10,14 +10,19 @@ public class Tauler {
                         REI_N, REINA_N, ALFIL_N, CAVALL_N, TORRE_N, PEO_N,
                         BUIDA};
 
+    // Array bidimensional de caselles
     Casella[][] caselles;
+
+    // Dimensions del tauler
     float x, y, w, cw;
 
+    // Imatges de les figures
     PImage[] figures;
 
     int sel1Fila, sel1Col, sel2Fila, sel2Col;
     boolean sel1, sel2;
 
+    // Constructor
     public Tauler(PApplet p5, int x, int y, int w){
 
         this.x = x; this.y = y; this.w = w;
@@ -38,12 +43,14 @@ public class Tauler {
         resetSeleccio();
     }
 
+    // Resetea la selecció del tauler
     public void resetSeleccio(){
         sel1 = false; sel2 = false;
         sel1Fila = -1; sel1Col = -1;
         sel2Fila = -1; sel2Col = -1;
     }
 
+    // Carrega les imatges de les figures
     public void setImatges(PApplet p5){
 
         this.figures = new PImage[12];
@@ -65,23 +72,28 @@ public class Tauler {
         figures[11] = p5.loadImage("peoN.png");  // Peo N
     }
 
+    // Retorna el número de la fila
     public int getFila(int f){
         return 8 - f;
     }
 
+    // Retorna la lletra de la columna
     public char getColumna(int c){
         char simbol = 'H';
         return (char)(simbol - c);
     }
 
+    // Retorna el text amb el número de fila i columna
     public String getColumnaFila(int f, int c){
         return getColumna(c)+""+getFila(f);
     }
 
+    // Retorna el text amb el moviment efectuat
     public String getMoviment(){
         return ("MOVIMENT DE " + getColumnaFila(sel1Fila, sel1Col) + " A "+ getColumnaFila(sel2Fila,sel2Col));
     }
 
+    // Col·loca les figures a la posició inicial
     public void colocaFigures(){
         caselles[0][0].setFigura(Escac.TORRE_N);
         caselles[0][7].setFigura(Escac.TORRE_N);
@@ -108,10 +120,12 @@ public class Tauler {
         }
     }
 
+    // Col·loca una figura en la fila i columna indicades
     public void colocaFigura(int fila, int columna, Escac figura){
         caselles[fila][columna].setFigura(figura);
     }
 
+    // Buida totes les caselles del tauler (figura BUIDA)
     public void buidaTauler(){
         for(int f=0; f<8; f++) {
             for (int c = 0; c < 8; c++) {
@@ -120,6 +134,7 @@ public class Tauler {
         }
     }
 
+    // Diubuixa el tauler
     public void display(PApplet p5){
         p5.pushStyle();
         for(int f=0; f<8; f++){
@@ -143,6 +158,7 @@ public class Tauler {
         p5.popStyle();
     }
 
+    // Dibuixa les lletres corresponents a les files del tauler
     public void dibuixaLletres(PApplet p5, float y){
         char c = 'H';
         for(int i=0; i<8; i++){
@@ -152,6 +168,7 @@ public class Tauler {
         }
     }
 
+    // Dibuixa els números corresponents a les columnes del tauler
     public void dibuixaNúmeros(PApplet p5, float x){
         for(int f=0; f<8; f++) {
             p5.textAlign(p5.CENTER);

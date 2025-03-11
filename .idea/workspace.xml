@@ -6,8 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/escacs/MovimentValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/escacs/MovimentValid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/escacs/Casella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/escacs/Casella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/escacs/Posicion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/escacs/Posicion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/escacs/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/escacs/Tauler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,21 +277,7 @@
       <workItem from="1734420129044" duration="6397000" />
       <workItem from="1741599636239" duration="2667000" />
       <workItem from="1741680751567" duration="5887000" />
-      <workItem from="1741687982754" duration="1580000" />
-    </task>
-    <task id="LOCAL-00046" summary="Trivio App">
-      <created>1703006064853</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1703006064853</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Trivio App">
-      <created>1703012718189</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1703012718189</updated>
+      <workItem from="1741687982754" duration="2092000" />
     </task>
     <task id="LOCAL-00048" summary="Trivio App">
       <created>1703068191880</created>
@@ -621,7 +608,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741688447979</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Trivio App">
+      <created>1741690561154</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1741690561155</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Trivio App">
+      <created>1741690657928</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1741690657928</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
