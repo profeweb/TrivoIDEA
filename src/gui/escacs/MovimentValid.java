@@ -23,6 +23,11 @@ public class MovimentValid {
         this.posiciones.add(new Posicion(fila, columna));
     }
 
+    // Buida la llista de posicions
+    public void resetPosicions(){
+        this.posiciones = new ArrayList<>();
+    }
+
     // Calcula les posicions vàlides a partir del tauler, figura i posició
     public void calculaPosicions(){
 
@@ -119,7 +124,7 @@ public class MovimentValid {
                 }
             }
         }
-        
+
         // Falta fer: Cavall, Rei i Reina
 
         // Moviments CAVALL  ///////////////////////////////////////////////////////////////////////////
@@ -136,8 +141,6 @@ public class MovimentValid {
         if(this.pieza == Tauler.Escac.REI_B || this.pieza == Tauler.Escac.REI_N) {
 
         }
-
-
     }
 
     // Dibuixa les caselles del tauler a les posicions indicades
