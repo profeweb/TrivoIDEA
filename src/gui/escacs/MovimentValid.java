@@ -12,21 +12,21 @@ public class MovimentValid {
     ArrayList<Posicion> posiciones;
 
     public MovimentValid(Tauler t, Tauler.Escac p, Posicion pi){
-
         this.tauler = t;
         this.pieza = p;
         this.posicionInicial = pi;
-
         this.posiciones = new ArrayList<>();
     }
 
+    // Afegegeix una posició als moviments vàlids
     public void agregarMovimiento(int fila, int columna){
         this.posiciones.add(new Posicion(fila, columna));
     }
 
+    // Calcula les posicions vàlides a partir del tauler, figura i posició
     public void calculaPosicions(){
 
-        // Moviments PEO BLANC (Cap a baix)
+        // Moviments PEO BLANC (1 salt cap a baix) ///////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.PEO_B){
             if(posicionInicial.fila<tauler.caselles.length-1){
                 if(tauler.caselles[posicionInicial.fila+1][posicionInicial.columna].figura == Tauler.Escac.BUIDA) {
@@ -35,7 +35,7 @@ public class MovimentValid {
             }
         }
 
-        // Moviments PEO NEGRE (Cap a dalt)
+        // Moviments PEO NEGRE (1 salt cap a dalt) //////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.PEO_N){
             if(posicionInicial.fila>1){
                 if(tauler.caselles[posicionInicial.fila-1][posicionInicial.columna].figura == Tauler.Escac.BUIDA) {
@@ -44,7 +44,7 @@ public class MovimentValid {
             }
         }
 
-        // Moviments TORRE (Cap a dalt, baix, esquerra o dreta)
+        // Moviments TORRE (Cap a dalt, baix, esquerra o dreta) ////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.TORRE_B || this.pieza == Tauler.Escac.TORRE_B) {
             // Cap a baix
             for (int f = posicionInicial.fila + 1; f < tauler.caselles.length; f++){
@@ -83,7 +83,7 @@ public class MovimentValid {
             }
         }
 
-        // Moviments ALFIL (Diagonals)
+        // Moviments ALFIL (Diagonals) ////////////////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.ALFIL_B || this.pieza == Tauler.Escac.ALFIL_N) {
             // Cap a baix i dreta
             for (int f = posicionInicial.fila + 1, c = posicionInicial.columna + 1; f < tauler.caselles.length && c < tauler.caselles.length; f++, c++) {
@@ -119,10 +119,28 @@ public class MovimentValid {
                 }
             }
         }
+        
+        // Falta fer: Cavall, Rei i Reina
+
+        // Moviments CAVALL  ///////////////////////////////////////////////////////////////////////////
+        if(this.pieza == Tauler.Escac.CAVALL_B || this.pieza == Tauler.Escac.CAVALL_N) {
+
+        }
+
+        // Moviments REINA  ///////////////////////////////////////////////////////////////////////////
+        if(this.pieza == Tauler.Escac.REINA_B || this.pieza == Tauler.Escac.REINA_N) {
+
+        }
+
+        // Moviments REI  ///////////////////////////////////////////////////////////////////////////
+        if(this.pieza == Tauler.Escac.REI_B || this.pieza == Tauler.Escac.REI_N) {
+
+        }
 
 
     }
 
+    // Dibuixa les caselles del tauler a les posicions indicades
     public void display(PApplet p5){
         for(Posicion p : posiciones){
             Casella ct = tauler.caselles[p.getFila()][p.getColumna()];
