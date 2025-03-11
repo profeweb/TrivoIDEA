@@ -28,13 +28,14 @@ public class MovimentsTaulerTest extends PApplet {
         int marge = 50;
         t = new Tauler(this, marge, marge, width-2*marge);
         t.setImatges(this);
-
         t.buidaTauler();
 
+        // Col·loca la figura en el tauler a la posició indicada
         figura = Tauler.Escac.TORRE_B;
         posicio = new Posicion(2, 4);
         t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
 
+        // Calcula els moviments vàlids de la figura en el tauler
         moviments = new MovimentValid(t, figura, posicio);
         moviments.calculaPosicions();
 
@@ -46,6 +47,8 @@ public class MovimentsTaulerTest extends PApplet {
 
         // Dibuixa el tauler
         t.display(this);
+
+        // Dibuixa els moviments sobre el tauler
         moviments.display(this);
 
     }
@@ -55,6 +58,7 @@ public class MovimentsTaulerTest extends PApplet {
 
     public void keyPressed(){
         if(key=='p' || key=='p'){
+            // Per un PEÓ
             figura = Tauler.Escac.PEO_B;
             t.buidaTauler();
             t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
@@ -62,6 +66,7 @@ public class MovimentsTaulerTest extends PApplet {
             moviments.calculaPosicions();
         }
         else if(key=='a' || key=='A'){
+            // Per un ALFIL
             figura = Tauler.Escac.ALFIL_B;
             t.buidaTauler();
             t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
@@ -69,6 +74,7 @@ public class MovimentsTaulerTest extends PApplet {
             moviments.calculaPosicions();
         }
         else if(key=='t' || key=='T'){
+            // Per una TORRE
             figura = Tauler.Escac.TORRE_B;
             t.buidaTauler();
             t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
