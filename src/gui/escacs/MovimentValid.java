@@ -34,18 +34,14 @@ public class MovimentValid {
         // Moviments PEO BLANC (1 salt cap a baix) ///////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.PEO_B){
             if(posicionInicial.fila<tauler.caselles.length-1){
-                if(tauler.caselles[posicionInicial.fila+1][posicionInicial.columna].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(posicionInicial.fila + 1, posicionInicial.columna);
-                }
+                agregarMovimiento(posicionInicial.fila + 1, posicionInicial.columna);
             }
         }
 
         // Moviments PEO NEGRE (1 salt cap a dalt) //////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.PEO_N){
             if(posicionInicial.fila>1){
-                if(tauler.caselles[posicionInicial.fila-1][posicionInicial.columna].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(posicionInicial.fila - 1, posicionInicial.columna);
-                }
+                agregarMovimiento(posicionInicial.fila - 1, posicionInicial.columna);
             }
         }
 
@@ -53,38 +49,22 @@ public class MovimentValid {
         if(this.pieza == Tauler.Escac.TORRE_B || this.pieza == Tauler.Escac.TORRE_B) {
             // Cap a baix
             for (int f = posicionInicial.fila + 1; f < tauler.caselles.length; f++){
-                if (tauler.caselles[f][posicionInicial.columna].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(f, posicionInicial.columna);
-                } else {
-                    break;
-                }
+                agregarMovimiento(f, posicionInicial.columna);
             }
 
             // Cap a dalt
             for (int f = posicionInicial.fila - 1; f >=0; f--){
-                if (tauler.caselles[f][posicionInicial.columna].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(f, posicionInicial.columna);
-                } else {
-                    break;
-                }
+                agregarMovimiento(f, posicionInicial.columna);
             }
 
             // Cap a dreta
             for (int c = posicionInicial.columna + 1; c < tauler.caselles.length; c++){
-                if (tauler.caselles[posicionInicial.fila][c].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(posicionInicial.fila, c);
-                } else {
-                    break;
-                }
+                agregarMovimiento(posicionInicial.fila, c);
             }
 
             // Cap a l'esquerra
             for (int c = posicionInicial.columna - 1; c >=0; c--){
-                if (tauler.caselles[posicionInicial.fila][c].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(posicionInicial.fila, c);
-                } else {
-                    break;
-                }
+                agregarMovimiento(posicionInicial.fila, c);
             }
         }
 
@@ -92,36 +72,20 @@ public class MovimentValid {
         if(this.pieza == Tauler.Escac.ALFIL_B || this.pieza == Tauler.Escac.ALFIL_N) {
             // Cap a baix i dreta
             for (int f = posicionInicial.fila + 1, c = posicionInicial.columna + 1; f < tauler.caselles.length && c < tauler.caselles.length; f++, c++) {
-                if (tauler.caselles[f][c].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(f, c);
-                } else {
-                    break;
-                }
+                agregarMovimiento(f, c);
             }
             // Cap a baix i esquerra
             for (int f = posicionInicial.fila + 1, c = posicionInicial.columna - 1; f < tauler.caselles.length && c >= 0; f++, c--) {
-                if (tauler.caselles[f][c].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(f, c);
-                } else {
-                    break;
-                }
+                agregarMovimiento(f, c);
             }
             // Cap a dalt i dreta
             for (int f = posicionInicial.fila - 1, c = posicionInicial.columna + 1; f >= 0 && c < tauler.caselles.length; f--, c++) {
-                if (tauler.caselles[f][c].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(f, c);
-                } else {
-                    break;
-                }
+                agregarMovimiento(f, c);
             }
 
             // Cap a dalt i esquerra
             for (int f = posicionInicial.fila - 1, c = posicionInicial.columna - 1; f >= 0 && c >= 0; f--, c--) {
-                if (tauler.caselles[f][c].figura == Tauler.Escac.BUIDA) {
-                    agregarMovimiento(f, c);
-                } else {
-                    break;
-                }
+                agregarMovimiento(f, c);
             }
         }
 
@@ -129,7 +93,7 @@ public class MovimentValid {
 
         // Moviments CAVALL  ///////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.CAVALL_B || this.pieza == Tauler.Escac.CAVALL_N) {
-
+            
         }
 
         // Moviments REINA  ///////////////////////////////////////////////////////////////////////////

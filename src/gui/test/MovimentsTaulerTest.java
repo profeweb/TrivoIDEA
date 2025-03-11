@@ -81,6 +81,14 @@ public class MovimentsTaulerTest extends PApplet {
             moviments = new MovimentValid(t, figura, posicio);
             moviments.calculaPosicions();
         }
+        else if(key=='c' || key=='C'){
+            // Per una CAVALL
+            figura = Tauler.Escac.CAVALL_B;
+            t.buidaTauler();
+            t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
+            moviments = new MovimentValid(t, figura, posicio);
+            moviments.calculaPosicions();
+        }
     }
 
     // ******************* MOUSE interaction ***************************** //
