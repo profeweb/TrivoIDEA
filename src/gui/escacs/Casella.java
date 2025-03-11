@@ -1,5 +1,6 @@
-package gui;
+package gui.escacs;
 
+import gui.escacs.Tauler;
 import processing.core.PApplet;
 
 public class Casella {
@@ -31,6 +32,14 @@ public class Casella {
         else {
             p5.fill(this.c);
         }
+        p5.noStroke();
+        p5.rect(this.x, this.y, this.w, this.w);
+        p5.popStyle();
+    }
+
+    public void displayPosicio(PApplet p5){
+        p5.pushStyle();
+        p5.fill(200, 200, 0, 50);
         p5.noStroke();
         p5.rect(this.x, this.y, this.w, this.w);
         p5.popStyle();

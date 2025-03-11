@@ -38,6 +38,40 @@ public class DataBase {
         }
     }
 
+    public String getInfo(String nomTaula, String nomColumna, String nomClau, String identificador){
+        try{
+            String q =  "SELECT " + nomColumna +
+                         " FROM " + nomTaula +
+                         " WHERE "+ nomClau  + " = '" + identificador + "' ";
+            System.out.println(q);
+            ResultSet rs= query.executeQuery(q);
+            rs.next();
+            return rs.getString(nomColumna);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return "";
+    }
+
+    public int getNumFilesTaula(String nomTaula){
+        String q = "SELECT COUNT(*) AS num FROM "+ nomTaula;
+        try{
+            ResultSet rs = query.executeQuery(q);
+            rs.next();
+            return rs.getInt("num");
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return 0;
+    }
+
+    public String[] getInfoArray(String nomTaula, String nomColumna){
+        return null;
+    }
+
+
     // Retorna el número de files d'una taula
     public int getNumRowsTaula(String nomTaula){
         try {

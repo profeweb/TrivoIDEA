@@ -2,14 +2,14 @@ package bbdd;
 
 import processing.core.PApplet;
 
-public class DatabaseClasseConnectionTest extends PApplet {
+public class DatabaseGetInformation extends PApplet {
 
     DataBase db;
 
     int bgColor = color(255);
 
     public static void main(String[] args) {
-        PApplet.main("bbdd.DatabaseClasseConnectionTest", args);
+        PApplet.main("bbdd.DatabaseGetInformation", args);
     }
 
     public void settings(){
@@ -25,6 +25,8 @@ public class DatabaseClasseConnectionTest extends PApplet {
         db.connect();
 
         println(db.getInfo("unitat", "nom", "numero", "5"));
+
+
     }
 
     public void draw() {

@@ -63,7 +63,6 @@ public class CSVLoaderTest extends PApplet {
 
         text(info[numLine][0], width-100, 100);
         text(info[numLine][1], width-100, 150);
-
     }
 
     public float[] extractDataFromLine(int nl){

@@ -1,7 +1,6 @@
 package gui.test;
 
-import gui.Tauler;
-import gui.Timer;
+import gui.escacs.Tauler;
 import processing.core.PApplet;
 
 public class TaulerTest extends PApplet {

@@ -2,7 +2,7 @@ package gui.test;
 
 import gui.ListItem;
 import gui.OrderedListItems;
-import gui.Tauler;
+import gui.escacs.Tauler;
 import processing.core.PApplet;
 
 public class TaulerLlistaTest extends PApplet {

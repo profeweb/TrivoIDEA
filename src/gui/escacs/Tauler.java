@@ -1,4 +1,4 @@
-package gui;
+package gui.escacs;
 
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -105,6 +105,18 @@ public class Tauler {
         caselles[7][4].setFigura(Escac.REINA_B);
         for(int i=0; i<8; i++){
             caselles[6][i].setFigura(Escac.PEO_B);
+        }
+    }
+
+    public void colocaFigura(int fila, int columna, Escac figura){
+        caselles[fila][columna].setFigura(figura);
+    }
+
+    public void buidaTauler(){
+        for(int f=0; f<8; f++) {
+            for (int c = 0; c < 8; c++) {
+                caselles[f][c].setFigura(Escac.BUIDA);
+            }
         }
     }
 
