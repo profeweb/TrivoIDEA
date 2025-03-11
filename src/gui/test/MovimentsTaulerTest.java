@@ -89,11 +89,35 @@ public class MovimentsTaulerTest extends PApplet {
             moviments = new MovimentValid(t, figura, posicio);
             moviments.calculaPosicions();
         }
+        else if(key=='k' || key=='K'){
+            // Per una REI
+            figura = Tauler.Escac.REI_B;
+            t.buidaTauler();
+            t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
+            moviments = new MovimentValid(t, figura, posicio);
+            moviments.calculaPosicions();
+        }
+        else if(key=='q' || key=='Q'){
+            // Per una REINA
+            figura = Tauler.Escac.REINA_B;
+            t.buidaTauler();
+            t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
+            moviments = new MovimentValid(t, figura, posicio);
+            moviments.calculaPosicions();
+        }
     }
 
     // ******************* MOUSE interaction ***************************** //
 
     public void mousePressed(){
+        int f = (int) random(0, 8);
+        int c = (int) random(0, 8);
+        posicio.setFila(f);
+        posicio.setColumna(c);
+        t.buidaTauler();
+        t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
+        moviments = new MovimentValid(t, figura, posicio);
+        moviments.calculaPosicions();
     }
 
     public void mouseDragged(){

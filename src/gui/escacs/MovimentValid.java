@@ -93,17 +93,101 @@ public class MovimentValid {
 
         // Moviments CAVALL  ///////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.CAVALL_B || this.pieza == Tauler.Escac.CAVALL_N) {
-            
+            // Sup-Esq 1
+            if (posicionInicial.fila>1 && posicionInicial.columna>0) {
+                agregarMovimiento(posicionInicial.fila-2, posicionInicial.columna-1);
+            }
+            // Sup-Esq 2
+            if (posicionInicial.fila>0 && posicionInicial.columna>1) {
+                agregarMovimiento(posicionInicial.fila-1, posicionInicial.columna-2);
+            }
+            // Sup-Dret 1
+            if (posicionInicial.fila>1 && posicionInicial.columna<tauler.caselles.length-1) {
+                agregarMovimiento(posicionInicial.fila-2, posicionInicial.columna+1);
+            }
+            // Sup-Dret 2
+            if (posicionInicial.fila>0 && posicionInicial.columna<tauler.caselles.length-2) {
+                agregarMovimiento(posicionInicial.fila-1, posicionInicial.columna+2);
+            }
+            // Inf-Esq 1
+            if (posicionInicial.fila<tauler.caselles.length-2 && posicionInicial.columna>0) {
+                agregarMovimiento(posicionInicial.fila+2, posicionInicial.columna-1);
+            }
+            // Inf-Esq 2
+            if (posicionInicial.fila<tauler.caselles.length-1 && posicionInicial.columna>1) {
+                agregarMovimiento(posicionInicial.fila+1, posicionInicial.columna-2);
+            }
+            // Inf-Dret 1
+            if (posicionInicial.fila<tauler.caselles.length-2 && posicionInicial.columna<tauler.caselles.length-1) {
+                agregarMovimiento(posicionInicial.fila+2, posicionInicial.columna+1);
+            }
+            // Inf-Dret 2
+            if (posicionInicial.fila<tauler.caselles.length-1 && posicionInicial.columna<tauler.caselles.length-2) {
+                agregarMovimiento(posicionInicial.fila+1, posicionInicial.columna+2);
+            }
         }
 
         // Moviments REINA  ///////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.REINA_B || this.pieza == Tauler.Escac.REINA_N) {
+            // Cap a baix
+            for (int f = posicionInicial.fila + 1; f < tauler.caselles.length; f++){
+                agregarMovimiento(f, posicionInicial.columna);
+            }
 
+            // Cap a dalt
+            for (int f = posicionInicial.fila - 1; f >=0; f--){
+                agregarMovimiento(f, posicionInicial.columna);
+            }
+
+            // Cap a dreta
+            for (int c = posicionInicial.columna + 1; c < tauler.caselles.length; c++){
+                agregarMovimiento(posicionInicial.fila, c);
+            }
+
+            // Cap a l'esquerra
+            for (int c = posicionInicial.columna - 1; c >=0; c--){
+                agregarMovimiento(posicionInicial.fila, c);
+            }
+
+            // Cap a baix i dreta
+            for (int f = posicionInicial.fila + 1, c = posicionInicial.columna + 1; f < tauler.caselles.length && c < tauler.caselles.length; f++, c++) {
+                agregarMovimiento(f, c);
+            }
+
+            // Cap a baix i esquerra
+            for (int f = posicionInicial.fila + 1, c = posicionInicial.columna - 1; f < tauler.caselles.length && c >= 0; f++, c--) {
+                agregarMovimiento(f, c);
+            }
+
+            // Cap a dalt i dreta
+            for (int f = posicionInicial.fila - 1, c = posicionInicial.columna + 1; f >= 0 && c < tauler.caselles.length; f--, c++) {
+                agregarMovimiento(f, c);
+            }
+
+            // Cap a dalt i esquerra
+            for (int f = posicionInicial.fila - 1, c = posicionInicial.columna - 1; f >= 0 && c >= 0; f--, c--) {
+                agregarMovimiento(f, c);
+            }
         }
 
         // Moviments REI  ///////////////////////////////////////////////////////////////////////////
         if(this.pieza == Tauler.Escac.REI_B || this.pieza == Tauler.Escac.REI_N) {
-
+            // Cap a baix
+            if(posicionInicial.fila<tauler.caselles.length-1){
+                agregarMovimiento(posicionInicial.fila+1, posicionInicial.columna);
+            }
+            // Cap a dalt
+            if(posicionInicial.fila>0){
+                agregarMovimiento(posicionInicial.fila-1, posicionInicial.columna);
+            }
+            // Cap a l'Esquerra
+            if(posicionInicial.columna>0){
+                agregarMovimiento(posicionInicial.fila, posicionInicial.columna-1);
+            }
+            // Cap a la Dreta
+            if(posicionInicial.columna<tauler.caselles.length-1){
+                agregarMovimiento(posicionInicial.fila, posicionInicial.columna+1);
+            }
         }
     }
 

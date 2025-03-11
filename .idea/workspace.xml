@@ -5,7 +5,11 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="" />
+    <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/escacs/MovimentValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/escacs/MovimentValid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/MovimentsTaulerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/MovimentsTaulerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -274,13 +278,7 @@
       <workItem from="1741599636239" duration="2667000" />
       <workItem from="1741680751567" duration="5887000" />
       <workItem from="1741687982754" duration="2296000" />
-    </task>
-    <task id="LOCAL-00049" summary="Trivio App">
-      <created>1703070335561</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1703070335561</updated>
+      <workItem from="1741704924204" duration="1186000" />
     </task>
     <task id="LOCAL-00050" summary="Trivio App">
       <created>1703075146864</created>
@@ -618,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741691077144</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Trivio App">
+      <created>1741705189888</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1741705189889</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
