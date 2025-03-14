@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextListDBTest">
+  <component name="RunManager" selected="Application.DatabaseGetInformation">
     <configuration name="ArrayButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.ArrayButtonTest" />
       <module name="TrivoIDEA" />
@@ -73,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButonGroupDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.RadioButonGroupDBTest" />
+    <configuration name="DatabaseGetInformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.DatabaseGetInformation" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -86,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButtonGroupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.RadioButtonGroupTest" />
+    <configuration name="RadioButonGroupDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.RadioButonGroupDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="bbdd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatabaseGetInformation" />
         <item itemvalue="Application.TextListDBTest" />
         <item itemvalue="Application.RadioButonGroupDBTest" />
         <item itemvalue="Application.ArrayButtonTest" />
         <item itemvalue="Application.TaulerLlistaTest" />
-        <item itemvalue="Application.RadioButtonGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -278,14 +279,7 @@
       <workItem from="1741687982754" duration="2296000" />
       <workItem from="1741704924204" duration="1405000" />
       <workItem from="1741952649825" duration="3455000" />
-      <workItem from="1741956945751" duration="1520000" />
-    </task>
-    <task id="LOCAL-00055" summary="Trivio App">
-      <created>1705582939068</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1705582939069</updated>
+      <workItem from="1741956945751" duration="1887000" />
     </task>
     <task id="LOCAL-00056" summary="Trivio App">
       <created>1705596362485</created>
@@ -623,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741957297426</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Trivio App">
+      <created>1741958487214</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1741958487214</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

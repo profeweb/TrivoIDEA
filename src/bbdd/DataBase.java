@@ -79,8 +79,14 @@ public class DataBase {
         String q = "SELECT "+ nomColumna +
                    " FROM " + nomTaula +
                    " ORDER BY " + nomColumna + " ASC";
+        System.out.println(q);
         try{
-
+            ResultSet rs = query.executeQuery(q);
+            int f=0;
+            while(rs.next()){
+                info[f] = rs.getString(1);
+                f++;
+            }
         }
         catch(Exception e){
             System.out.println(e);

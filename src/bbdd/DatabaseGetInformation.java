@@ -29,6 +29,9 @@ public class DatabaseGetInformation extends PApplet {
         println("CASELLA: " + infoCasella);
 
         // Obté informació de columna
+        String[] infoColumna = db.getInfoArray("unitat", "nom");
+        println("COLUMNA: " );
+        printArray(infoColumna);
 
 
     }
