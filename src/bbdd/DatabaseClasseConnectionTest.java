@@ -24,6 +24,7 @@ public class DatabaseClasseConnectionTest extends PApplet {
         // Connecta amb la BBDD
         db.connect();
 
+        // Retorna el contingut d'una casella
         println(db.getInfo("unitat", "nom", "numero", "5"));
     }
 

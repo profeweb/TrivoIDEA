@@ -24,7 +24,11 @@ public class DatabaseGetInformation extends PApplet {
         // Connecta amb la BBDD
         db.connect();
 
-        println(db.getInfo("unitat", "nom", "numero", "5"));
+        // Obté informació de casella
+        String infoCasella = db.getInfo("unitat", "nom", "numero", "5");
+        println("CASELLA: " + infoCasella);
+
+        // Obté informació de columna
 
 
     }

@@ -38,6 +38,8 @@ public class DataBase {
         }
     }
 
+    // Retorna la informació d'una casella
+
     public String getInfo(String nomTaula, String nomColumna, String nomClau, String identificador){
         try{
             String q =  "SELECT " + nomColumna +
@@ -54,6 +56,8 @@ public class DataBase {
         return "";
     }
 
+    // Retorna el número total de files d'una taula
+
     public int getNumFilesTaula(String nomTaula){
         String q = "SELECT COUNT(*) AS num FROM "+ nomTaula;
         try{
@@ -66,6 +70,8 @@ public class DataBase {
         }
         return 0;
     }
+
+    // Retorna totes les caselles d'una columna
 
     public String[] getInfoArray(String nomTaula, String nomColumna){
         return null;
