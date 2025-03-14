@@ -1,5 +1,7 @@
 package bbdd;
 
+import jdk.jshell.spi.ExecutionControlProvider;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -91,6 +93,31 @@ public class DataBase {
         catch(Exception e){
             System.out.println(e);
         }
+        return info;
+    }
+
+    // Retorna totes les caselles (files i columnes) d'una taula
+
+    public String[][] getInfoArray2DUnitat(){
+        int nf = getNumFilesTaula("unitat");
+        String[][] info = new String[nf][3];
+        String q = "SELECT numero, nom, curs FROM unitat ORDER BY numero ASC";
+        System.out.println(q);
+        try{
+            ResultSet rs = query.executeQuery(q);
+            int f=0;
+            while(rs.next()){
+                info[f][0] = String.valueOf( rs.getInt("numero"));
+                info[f][1] = rs.getString("nom");
+                info[f][2] = String.valueOf( rs.getInt("curs"));
+                f++;
+            }
+            return info;
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+
         return info;
     }
 
