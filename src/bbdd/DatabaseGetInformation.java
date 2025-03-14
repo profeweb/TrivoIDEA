@@ -33,6 +33,17 @@ public class DatabaseGetInformation extends PApplet {
         println("COLUMNA: " );
         printArray(infoColumna);
 
+        // Obté informació de taula (array bidimensional)
+        String[][] infoTaula= db.getInfoArray2DUnitat();
+        println("TAULA: " );
+        for(int i=0; i<infoTaula.length; i++) {
+            print(i+": ");
+            for(int j=0; j<infoTaula[i].length; j++) {
+                System.out.print(infoTaula[i][j]+"\t");
+            }
+            println();
+        }
+
 
     }
 

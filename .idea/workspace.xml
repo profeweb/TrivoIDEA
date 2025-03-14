@@ -6,8 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,14 +278,7 @@
       <workItem from="1741687982754" duration="2296000" />
       <workItem from="1741704924204" duration="1405000" />
       <workItem from="1741952649825" duration="3455000" />
-      <workItem from="1741956945751" duration="3391000" />
-    </task>
-    <task id="LOCAL-00057" summary="Trivio App">
-      <created>1708973210928</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1708973210929</updated>
+      <workItem from="1741956945751" duration="3770000" />
     </task>
     <task id="LOCAL-00058" summary="Trivio App">
       <created>1709051722053</created>
@@ -624,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741958946716</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Trivio App">
+      <created>1741960380197</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1741960380197</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
