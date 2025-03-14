@@ -74,7 +74,18 @@ public class DataBase {
     // Retorna totes les caselles d'una columna
 
     public String[] getInfoArray(String nomTaula, String nomColumna){
-        return null;
+        int n = getNumFilesTaula(nomTaula);
+        String[] info = new String[n];
+        String q = "SELECT "+ nomColumna +
+                   " FROM " + nomTaula +
+                   " ORDER BY " + nomColumna + " ASC";
+        try{
+
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return info;
     }
 
 
