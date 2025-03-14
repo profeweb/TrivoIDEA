@@ -11,6 +11,7 @@ public class RadioButton {
     int bgColor, borderColor, checkedColor;
 
     boolean checked;
+    String text;
 
     // Constructor
     public RadioButton(PApplet p5, int x, int y, int r){
@@ -28,6 +29,8 @@ public class RadioButton {
         return  this.checked;
     }
 
+    public void setText(String t){ this.text = t; }
+
 
     // Dibuixa el CheckBox
     public void display(PApplet p5){
@@ -42,6 +45,13 @@ public class RadioButton {
             p5.fill(checkedColor); p5.noStroke();
             p5.ellipse(x, y, 1.5f*r, 1.5f*r);
         }
+
+        if(this.text!=null) {
+            p5.fill(0); p5.textAlign(p5.LEFT); p5.textSize(24);
+            p5.text(this.text, this.x + 2.5f*r, this.y + 12);
+        }
+
+        p5.popStyle();
     }
 
     public void setChecked(boolean b){
