@@ -8,6 +8,7 @@
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,14 +282,7 @@
       <workItem from="1741952649825" duration="3455000" />
       <workItem from="1741956945751" duration="4091000" />
       <workItem from="1741967764648" duration="55000" />
-      <workItem from="1742201767706" duration="1730000" />
-    </task>
-    <task id="LOCAL-00059" summary="Trivio App">
-      <created>1709199991004</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1709199991005</updated>
+      <workItem from="1742201767706" duration="5840000" />
     </task>
     <task id="LOCAL-00060" summary="Trivio App">
       <created>1709626854024</created>
@@ -626,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741960760608</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Trivio App">
+      <created>1742203774332</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1742203774333</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

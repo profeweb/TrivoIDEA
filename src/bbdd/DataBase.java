@@ -162,6 +162,46 @@ public class DataBase {
         return info;
     }
 
+    // Retorna dades de dues taules relacionades
+    public String[][] getInfoPreguntesUnitats(){
+        String qNF = " SELECT COUNT(*) AS num " +
+                     " FROM pregunta p, unitat u " +
+                     " WHERE p.unitat = u.numero ";
+        int nf = getNumFilesMatchQuery(qNF);
+        String[][] info = new String[nf][2];
+
+        String q = " SELECT p.enunciat, u.nom " +
+                   " FROM pregunta p, unitat u " +
+                   " WHERE p.unitat = u.numero ";
+
+        System.out.println(q);
+        try{
+            ResultSet rs = query.executeQuery(q);
+            int n=0;
+            while(rs.next()){
+                info[n][0] = rs.getString("p.enunciat");
+                info[n][1] = rs.getString("u.nom");
+                n++;
+            }
+
+        }catch(Exception e){
+            System.out.println(e);
+        }
+
+        return info;
+    }
+
+
+    // Retorna el càlcul sobre una columna d'una taula ( puntuacio, punts).
+
+    public int getMaxPuntuacioUsuari(String nomUsuari){
+        String q = " SELECT MAX(punts) AS maxima " +
+                   " FROM puntuacio " +
+                   " WHERE persona = '" + nomUsuari + "' ";
+
+        return 0;
+    }
+
 
 
 

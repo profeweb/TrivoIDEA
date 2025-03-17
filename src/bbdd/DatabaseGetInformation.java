@@ -55,6 +55,16 @@ public class DatabaseGetInformation extends PApplet {
             println();
         }
 
+        // Obté informació de 2 taules relacionades (pregunta, unitat)
+        String[][] infoJoin = db.getInfoPreguntesUnitats();
+        println("JOIN: " );
+        for(int i=0; i<infoJoin.length; i++) {
+            print(i+": ");
+            for(int j=0; j<infoJoin[i].length; j++) {
+                System.out.print(infoJoin[i][j]+"\t");
+            }
+            println();
+        }
 
     }
 
