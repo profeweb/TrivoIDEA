@@ -44,6 +44,17 @@ public class DatabaseGetInformation extends PApplet {
             println();
         }
 
+        // Obté informació filtrada (preguntes dificultat = 2)
+        String[][] infoQuery = db.getInfoPreguntaDificil();
+        println("QUERY: " );
+        for(int i=0; i<infoQuery.length; i++) {
+            print(i+": ");
+            for(int j=0; j<infoQuery[i].length; j++) {
+                System.out.print(infoQuery[i][j]+"\t");
+            }
+            println();
+        }
+
 
     }
 

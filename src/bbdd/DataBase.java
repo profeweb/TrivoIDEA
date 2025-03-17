@@ -121,6 +121,50 @@ public class DataBase {
         return info;
     }
 
+    // Retorna el número total de files d'una taula
+
+    public int getNumFilesMatchQuery(String q){
+        try{
+            ResultSet rs = query.executeQuery(q);
+            rs.next();
+            return rs.getInt("num");
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return 0;
+    }
+
+    // Retorna les dades (enunaciat, opcions i correcte) de totes les preguntes de dificultat 2
+    public String[][] getInfoPreguntaDificil(){
+        String qNF = "SELECT COUNT(*) AS num FROM pregunta WHERE dificultat='2' ";
+        int nf = getNumFilesMatchQuery(qNF);
+        String[][] info = new String[nf][5];
+        String q = " SELECT enunciat, opcioA, opcioB, opcioC, correcte " +
+                   " FROM pregunta " +
+                   " WHERE dificultat = '2' ";
+        System.out.println(q);
+        try {
+            ResultSet rs = query.executeQuery(q);
+            int n = 0;
+            while(rs.next()){
+                info[n][0] = rs.getString("enunciat");
+                info[n][1] = rs.getString("opcioA");
+                info[n][2] = rs.getString("opcioB");
+                info[n][3] = rs.getString("opcioC");
+                info[n][4] = rs.getString("correcte");
+                n++;
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return info;
+    }
+
+
+
+
 
     // Retorna el número de files d'una taula
     public int getNumRowsTaula(String nomTaula){
