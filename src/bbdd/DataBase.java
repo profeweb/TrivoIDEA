@@ -192,7 +192,7 @@ public class DataBase {
     }
 
 
-    // Retorna el càlcul sobre una columna d'una taula ( puntuacio, punts).
+    // Retorna el càlcul (MAX) sobre una columna numèrica (punts) d'una taula ( puntuacio).
 
     public int getMaxPuntuacioUsuari(String nomUsuari){
         String q = " SELECT MAX(punts) AS maxima " +
