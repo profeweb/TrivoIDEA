@@ -283,14 +283,7 @@
       <workItem from="1741956945751" duration="4091000" />
       <workItem from="1741967764648" duration="55000" />
       <workItem from="1742201767706" duration="7195000" />
-      <workItem from="1742281361978" duration="3402000" />
-    </task>
-    <task id="LOCAL-00063" summary="Trivio App">
-      <created>1709628787445</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1709628787445</updated>
+      <workItem from="1742281361978" duration="6072000" />
     </task>
     <task id="LOCAL-00064" summary="Trivio App">
       <created>1709652608448</created>
@@ -628,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1742283547667</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Trivio App">
+      <created>1742284814401</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1742284814401</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

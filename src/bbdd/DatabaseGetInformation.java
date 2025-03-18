@@ -77,6 +77,20 @@ public class DatabaseGetInformation extends PApplet {
         // Inserta usuari (pep, 12345)
         db.insertaUsuario("pep", "12345");
 
+        // Esborra usuari (pep)
+        db.deleteUsuario("pep");
+
+        // cercador de preguntes
+        String[][] infoCerca = db.preguntesCercador("Quin");
+        println("CERCADOR (Quin): " );
+        for(int i=0; i<infoCerca.length; i++) {
+            print(i+": ");
+            for(int j=0; j<infoCerca[i].length; j++) {
+                System.out.print(infoCerca[i][j]+"\t");
+            }
+            println();
+        }
+
     }
 
     public void draw() {

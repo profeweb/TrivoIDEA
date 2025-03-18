@@ -229,7 +229,6 @@ public class DataBase {
     public void insertaUsuario(String n, String p){
         String q = "INSERT INTO usuario (nombre, password) " +
                    "VALUES ('"+n+"', '"+p+"')";
-
         System.out.println(q);
         try{
             query.execute(q);
@@ -237,6 +236,60 @@ public class DataBase {
         catch(Exception e){
             System.out.println(e);
         }
+    }
+
+
+    // Esborra un usuari de la taula usuario
+    // DELETE FROM `usuario` WHERE `usuario`.`nombre` = \'pep\'"
+    public void deleteUsuario(String nom){
+        String q = "DELETE FROM usuario WHERE nombre ='" + nom + "'";
+        System.out.println(q);
+        try{
+            query.execute(q);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    }
+
+    // UPDATE `usuario` SET `nombre` = 'paquito', `password` = 'abcdefghi' WHERE `usuario`.`nombre` = 'paco';
+    // Modifica les dades d'un usuari
+    public void updateUsuario(String nomActual, String nouNom, String nouPassword){
+        String q = "UPDATE usuario SET " +
+                   " nombre = '"+nouNom+"' , "+
+                   " password = '"+nouPassword+ "' " +
+                   " WHERE nombre='"+nomActual+"'";
+        System.out.println(q);
+        try{
+            query.execute(q);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    }
+
+    // Cercador de Preguntes
+    // SELECT * FROM pregunta WHERE enunciat LIKE '%Quin%'
+    public String[][] preguntesCercador(String clauCerca){
+
+        String qNF = "SELECT COUNT(*) AS num FROM pregunta WHERE enunciat LIKE '%"+ clauCerca+"%'";
+        int nf = getNumFilesMatchQuery(qNF);
+        String[][] info = new String[nf][2];
+        String q = "SELECT numero, enunciat FROM pregunta WHERE enunciat LIKE '%"+ clauCerca+"%'";
+        System.out.println(q);
+        try{
+            ResultSet rs = query.executeQuery(q);
+            int n=0;
+            while(rs.next()){
+                info[n][0] = String.valueOf(rs.getInt("numero"));
+                info[n][1] = rs.getString("enunciat");
+                n++;
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return info;
     }
 
 
