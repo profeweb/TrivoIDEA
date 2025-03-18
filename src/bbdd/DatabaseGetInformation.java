@@ -74,6 +74,9 @@ public class DatabaseGetInformation extends PApplet {
         boolean okLogin = db.isUserOk("paco", "qwerty");
         System.out.println("Login: " + okLogin);
 
+        // Inserta usuari (pep, 12345)
+        db.insertaUsuario("pep", "12345");
+
     }
 
     public void draw() {

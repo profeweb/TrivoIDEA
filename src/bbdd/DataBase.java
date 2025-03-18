@@ -2,10 +2,7 @@ package bbdd;
 
 import jdk.jshell.spi.ExecutionControlProvider;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DataBase {
 
@@ -225,6 +222,21 @@ public class DataBase {
             System.out.println(e);
         }
         return false;
+    }
+
+    // Inserta un usuari a la taula usuario amb nombre i password
+    // INSERT INTO `usuario` (`nombre`, `password`) VALUES ('bel', 'qwerty');
+    public void insertaUsuario(String n, String p){
+        String q = "INSERT INTO usuario (nombre, password) " +
+                   "VALUES ('"+n+"', '"+p+"')";
+
+        System.out.println(q);
+        try{
+            query.execute(q);
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
     }
 
 
