@@ -198,8 +198,33 @@ public class DataBase {
         String q = " SELECT MAX(punts) AS maxima " +
                    " FROM puntuacio " +
                    " WHERE persona = '" + nomUsuari + "' ";
-
+        System.out.println(q);
+        try{
+            ResultSet rs = query.executeQuery(q);
+            rs.next();
+            return rs.getInt("maxima");
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
         return 0;
+    }
+
+    // Retorna true si el nom d'usuari i password estan a la taula (usuario)
+    public boolean isUserOk(String nom, String password){
+        String q = "SELECT COUNT(*) AS n" +
+                   " FROM usuario "+
+                   " WHERE nombre='" + nom + "' AND password='" + password + "' ";
+        System.out.println(q);
+        try{
+            ResultSet rs = query.executeQuery(q);
+            rs.next();
+            return rs.getInt("n")==1;
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return false;
     }
 
 

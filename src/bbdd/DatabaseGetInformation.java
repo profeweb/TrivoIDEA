@@ -66,6 +66,14 @@ public class DatabaseGetInformation extends PApplet {
             println();
         }
 
+        // Obté un càlcul (MAX) d'una columna (punts) d'una taula (puntacio)
+        int maxPuntsPaco = db.getMaxPuntuacioUsuari("paco");
+        System.out.println("MAX PUNTS PACO: " + maxPuntsPaco);
+
+        // Login d'usuari
+        boolean okLogin = db.isUserOk("paco", "qwerty");
+        System.out.println("Login: " + okLogin);
+
     }
 
     public void draw() {
