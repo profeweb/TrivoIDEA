@@ -8,7 +8,7 @@ class PagedCard2D {
 
 
     String[][] cardsData;    // Dades de les Cards
-    Card[][] cards;            // Cards
+    Card[] cards;            // Cards
     int numCards;            // Número total de Cards
     int numRowsPage;
     int numCardsRow;
@@ -19,8 +19,7 @@ class PagedCard2D {
 
     float x, y, w, h;
     float wc, hc;
-    int selectedCardRow = -1;
-    int selectedCardCol = -1;
+    int selectedCard = -1;
 
     // Constructor
     public PagedCard2D(int numRows, int numCols) {
@@ -49,19 +48,18 @@ class PagedCard2D {
 
     public void setCards() {
 
-        cards = new Card[cardsData.length][numCardsRow];
-        float yCard;
-        for(int r=0; r<cardsData.length; r++){
-            int rPage = r % numRowsPage;
-            yCard = y + (hc + 5) * rPage;
-            for(int c=0; c<numCardsRow; c++){
-                float xCard = x + (wc + 5)*c;
-                int index = r*numCardsRow + c;
-                if(index < numCards){
-                    cards[r][c] = new Card(cardsData[r]);
-                    cards[r][c].setDimensions(xCard, yCard, wc, hc, 10);
-                }
-            }
+        cards = new Card[numCards];
+
+        for(int numCard=0; numCard<cardsData.length; numCard++){
+
+            int nr = (numCard / numCardsRow) % numRowsPage;
+            int nc = numCard % numCardsRow;
+
+            float yCard = y + (hc + 5) * nr;
+            float xCard = x + (wc + 5)* nc;
+            cards[numCard] = new Card(cardsData[numCard]);
+            cards[numCard].setDimensions(xCard, yCard, wc, hc, 10);
+
         }
 
     }
@@ -69,18 +67,13 @@ class PagedCard2D {
 
     public void setImages(PImage img1, PImage img2) {
         PImage img;
-        for(int r=0; r<cardsData.length; r++){
-            for(int c=0; c<numCardsRow; c++) {
-                int index = r * numCardsRow + c;
-                if (index < numCards) {
-                    if (cards[r][c].section == "Secció 1") {
-                        img = img1;
-                    } else {
-                        img = img2;
-                    }
-                    cards[r][c].setImage(img);
-                }
+        for(int numCard=0; numCard<numCards; numCard++){
+            if (cards[numCard].section == "Secció 1") {
+                img = img1;
+            } else {
+                img = img2;
             }
+            cards[numCard].setImage(img);
         }
     }
 
@@ -105,13 +98,11 @@ class PagedCard2D {
         // Dibuixa Cards corresponent a la Pàgina
         int firstCardPage = numCardsPage*numPage;
         int lastCardPage  = numCardsPage*(numPage+1) - 1;
-        for(int r=0; r<cards.length; r++) {
-            for (int c = 0; c < cards[r].length; c++) {
-                int index = r * numCardsRow + c;
-                if(index>=firstCardPage && index<= lastCardPage) {
-                    if (index < this.numCards && cards[r][c] != null) {
-                        cards[r][c].display(p5, r == this.selectedCardRow && c == this.selectedCardCol);
-                    }
+
+        for(int numCard=0; numCard<cards.length; numCard++) {
+            if(numCard>=firstCardPage && numCard<= lastCardPage) {
+                if (numCard < this.numCards && cards[numCard] != null) {
+                    cards[numCard].display(p5, numCard == this.selectedCard);
                 }
             }
         }
@@ -130,22 +121,17 @@ class PagedCard2D {
         boolean selected = false;
         int firstCardPage = numCardsPage*numPage;
         int lastCardPage  = numCardsPage*(numPage+1) - 1;
-        for(int r=0; r<cards.length; r++) {
-            for (int c = 0; c < cards[r].length; c++) {
-                int index = r * numCardsRow + c;
-                if (index >= firstCardPage && index <= lastCardPage) {
-                    if (index < cards.length && cards[r][c] != null && cards[r][c].mouseOver(p5)) {
-                        selectedCardRow = r;
-                        selectedCardCol = c;
-                        selected = true;
-                        break;
-                    }
+        for(int numCard=0; numCard<numCards; numCard++){
+            if (numCard >= firstCardPage && numCard <= lastCardPage) {
+                if (numCard < cards.length && cards[numCard] != null && cards[numCard].mouseOver(p5)) {
+                    selectedCard = numCard;
+                    selected = true;
+                    break;
                 }
             }
         }
         if(!selected){
-            selectedCardRow = -1;
-            selectedCardCol = -1;
+            selectedCard = -1;
         }
     }
 
@@ -154,22 +140,19 @@ class PagedCard2D {
         int firstCardPage = numCardsPage*numPage;
         int lastCardPage  = numCardsPage*(numPage+1) - 1;
 
-        for(int r=0; r<cards.length; r++) {
-            for (int c = 0; c < cards[r].length; c++) {
-                int index = r * numCardsRow + c;
-                if(index>=firstCardPage && index<= lastCardPage) {
-                    if (index < this.numCards && cards[r][c] != null && cards[r][c].mouseOver(p5)) {
+        for(int numCard=0; numCard<numCards; numCard++){
+                if(numCard>=firstCardPage && numCard<= lastCardPage) {
+                    if (numCard < this.numCards && cards[numCard] != null && cards[numCard].mouseOver(p5)) {
                             return true;
                     }
                 }
-            }
         }
         return false;
     }
 
     public void printSelectedCard(PApplet p5){
-        if(selectedCardRow !=-1 && selectedCardCol !=-1){
-            Card cSelected = cards[selectedCardRow][selectedCardCol];
+        if(selectedCard !=-1){
+            Card cSelected = cards[selectedCard];
             p5.pushStyle();
             p5.fill(0); p5.textSize(18);
             p5.text("Seleccionada: ", 900, 300);

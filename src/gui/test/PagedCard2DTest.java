@@ -20,11 +20,9 @@ public class PagedCard2DTest extends PApplet {
     // Dimensions de les cards
     float cardsW = 800, cardsH = 700;
 
-    // Número de cards per pàgina
-    int numCardsPage = 4;
-
     // Dades de les cards
     String[][] info = {
+            {"Títol 0", "Lloc 0", "Data 0", "Secció 0", "Descripció 0"},
             {"Títol 1", "Lloc 1", "Data 1", "Secció 1", "Descripció 1"},
             {"Títol 2", "Lloc 2", "Data 2", "Secció 2", "Descripció 2"},
             {"Títol 3", "Lloc 3", "Data 3", "Secció 1", "Descripció 3"},
@@ -34,7 +32,7 @@ public class PagedCard2DTest extends PApplet {
             {"Títol 7", "Lloc 7", "Data 7", "Secció 1", "Descripció 7"},
             {"Títol 8", "Lloc 8", "Data 8", "Secció 8", "Descripció 8"},
             {"Títol 9", "Lloc 9", "Data 9", "Secció 9", "Descripció 9"},
-            {"Títol 0", "Lloc 0", "Data 0", "Secció 0", "Descripció 0"},
+            {"Títol 10", "Lloc 10", "Data 10", "Secció 10", "Descripció 10"},
     };
 
     // Imatges de les cards
