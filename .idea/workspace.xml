@@ -6,9 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gui/PagedCard2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/PagedCard2DTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DatabaseGetInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,16 +54,16 @@
       <recent name="C:\Users\tonim\IdeaProjects\TrivoIDEA\src\trivioAppColorsFontsPantalles" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="bbdd" />
       <recent name="gui.test" />
       <recent name="gui" />
+      <recent name="bbdd" />
       <recent name="botons" />
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseGetInformation">
-    <configuration name="ArrayButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.ArrayButtonTest" />
+  <component name="RunManager" selected="Application.InsertDBTest">
+    <configuration name="ConfirmTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.ConfirmTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -88,12 +88,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButonGroupDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.RadioButonGroupDBTest" />
+    <configuration name="InsertDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.InsertDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bbdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PagedCard2DTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedCard2DTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,26 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextListDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.TextListDBTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bbdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertDBTest" />
+        <item itemvalue="Application.PagedCard2DTest" />
+        <item itemvalue="Application.ConfirmTest" />
         <item itemvalue="Application.DatabaseGetInformation" />
         <item itemvalue="Application.TableDBTest" />
-        <item itemvalue="Application.TextListDBTest" />
-        <item itemvalue="Application.RadioButonGroupDBTest" />
-        <item itemvalue="Application.ArrayButtonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -283,14 +283,11 @@
       <workItem from="1741956945751" duration="4091000" />
       <workItem from="1741967764648" duration="55000" />
       <workItem from="1742201767706" duration="7195000" />
-      <workItem from="1742281361978" duration="6072000" />
-    </task>
-    <task id="LOCAL-00064" summary="Trivio App">
-      <created>1709652608448</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1709652608449</updated>
+      <workItem from="1742281361978" duration="6518000" />
+      <workItem from="1742308651746" duration="17000" />
+      <workItem from="1742547833751" duration="768000" />
+      <workItem from="1742550007651" duration="984000" />
+      <workItem from="1742807507487" duration="5281000" />
     </task>
     <task id="LOCAL-00065" summary="Trivio App">
       <created>1709653641535</created>
@@ -628,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1742284814401</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Trivio App">
+      <created>1742287598187</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1742287598187</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
