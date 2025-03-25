@@ -26,15 +26,15 @@ public class ImportBooksDBTest extends PApplet {
     public void setup(){
 
         // Configura els paràmetres de connexió a la BBDD
-        db = new DataBase("admin", "12345", "trivio");
+        db = new DataBase("admin", "12345", "libros");
 
         // Connecta amb la BBDD
         db.connect();
 
         // Crea els inserts amb dades de la BBDD (CSV)
-        //getEditorsInfoDataBase("books.csv");
-        //getAuthorsInfoDataBase("books.csv");
-        getBooksInfoDataBase("books.csv");
+        //getEditorsInfoDataBase("books.csv");  // Fet
+        //getAuthorsInfoDataBase("books.csv");  // Fet
+        getBooksInfoDataBase("books.csv");  // Pendent de provar
 
     }
 
@@ -58,7 +58,6 @@ public class ImportBooksDBTest extends PApplet {
         }
 
         for(String editor: editors){
-            // INSERT INTO `editorial` (`ideditorial`, `nombre`) VALUES ('', 'sdf');
             System.out.println("INSERT INTO editorial (ideditorial, nombre) VALUES ('', '"+editor+"'); ");
         }
 
@@ -88,7 +87,7 @@ public class ImportBooksDBTest extends PApplet {
     public void getBooksInfoDataBase(String dbName){
         String[] lines = loadStrings(dbName);
         for(String l : lines){
-            // bookID,title,authors,average_rating,isbn,isbn13,language_code,  num_pages,ratings_count,text_reviews_count,publication_date,publisher
+
             String[] info = l.split(",");
             String title = info[1].replace("\'", "\\'").replace("\"", "\\\"");
             String author = info[2];
@@ -100,10 +99,8 @@ public class ImportBooksDBTest extends PApplet {
             String idAuthor = db.getInfo("autor", "idautor", "nombre", author);
             String idEditor = db.getInfo("editorial", "ideditorial", "nombre", editor);
 
-            // INSERT INTO `libro` (`isbn`, `titulo`, `numpags`, `valoracion`, `fechapublicacion`, `resena`, `editorial_ideditorial`, `autor_idautor`, `genero_idgenero`, `coleccion_idcolecion`, `fecha`)
-            // VALUES ('11111', 'aaaa', '123', '', '', '', '2386', '0', '1', '2', '');
             String sql = "INSERT INTO libro (isbn, titulo, numpags, valoracion, fechapublicacion, resena, editorial_ideditorial, autor_idautor, genero_idegenero, coleccion_idecoleccion, fecha)";
-            sql += " VALUES ('"+isbn+"', '"+title+"', '"+numpages+"', '', '', '', '"+ idEditor+"', '"+idAuthor+"', '1', '2', ''); ";
+            sql += " VALUES ('"+isbn+"', '"+title+"', '"+numpages+"', '"+average+"', '', '"+ idEditor+"', '"+idAuthor+"', '1', '2', ''); ";
             System.out.println(sql);
 
         }
