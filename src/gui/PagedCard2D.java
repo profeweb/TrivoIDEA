@@ -59,7 +59,6 @@ class PagedCard2D {
             float xCard = x + (wc + 5)* nc;
             cards[numCard] = new Card(cardsData[numCard]);
             cards[numCard].setDimensions(xCard, yCard, wc, hc, 10);
-
         }
 
     }
