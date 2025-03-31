@@ -33,8 +33,9 @@ public class Slider {
         p5.rect(x, y, w, h, 5);
         p5.noStroke(); p5.fill(0);
         p5.rect(x + p5.map(v, minV, maxV, 0, w), y, 15, h);
-        p5.fill(255); p5.textAlign(p5.CENTER); p5.textSize(24);
-        p5.text(v, x + p5.map(v, minV, maxV, 0, w), y +h/2);
+        p5.fill(0); p5.textAlign(p5.LEFT); p5.textSize(24);
+        //p5.text(v, x + p5.map(v, minV, maxV, 0, w), y +h/2);
+        p5.text(v, x + w +5 , y +h/2);
         p5.fill(0); p5.textAlign(p5.LEFT);
         p5.text(s, x + 5, y -10);
         p5.popStyle();

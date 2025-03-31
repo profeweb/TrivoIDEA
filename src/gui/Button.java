@@ -2,6 +2,7 @@ package gui;
 
 import processing.core.PApplet;
 
+
 public class Button {
 
     // Propietats d'un botó:
@@ -10,7 +11,7 @@ public class Button {
     int fillColor, strokeColor; // Colors del boto (fill / stroke).
     int fillColorOver, fillColorDisabled;  // Colors del boto (actiu / inactiu).
     String textBoto;  // Text
-    boolean enabled;  // Estat del botó (actiu / inactiu).
+    public boolean enabled;  // Estat del botó (actiu / inactiu).
 
     // Constructor
     public Button(PApplet p5, String text, float x, float y, float w, float h){
@@ -42,6 +43,7 @@ public class Button {
     }
 
     // Getters
+
     public boolean isEnabled(){
         return  this.enabled;
     }
