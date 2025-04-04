@@ -110,10 +110,9 @@ public class MovimentsTaulerTest extends PApplet {
     // ******************* MOUSE interaction ***************************** //
 
     public void mousePressed(){
-        int f = (int) random(0, 8);
-        int c = (int) random(0, 8);
-        posicio.setFila(f);
-        posicio.setColumna(c);
+        int[] casella = t.casellaClickMouse(this);
+        posicio.setFila(casella[0]);
+        posicio.setColumna(casella[1]);
         t.buidaTauler();
         t.colocaFigura(posicio.getFila(), posicio.getColumna(), figura);
         moviments = new MovimentValid(t, figura, posicio);

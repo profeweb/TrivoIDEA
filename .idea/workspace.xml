@@ -6,12 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/SliderValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/SliderValueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Slider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/SliderValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SliderValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/escacs/Tauler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/escacs/Tauler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/MovimentsTaulerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/MovimentsTaulerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +62,9 @@
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SliderValueTest">
-    <configuration name="BarsDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.BarsDiagramTest" />
+  <component name="RunManager" selected="Application.MovimentsTaulerTest">
+    <configuration name="LoadImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.LoadImageTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -78,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImportBooksDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.ImportBooksDBTest" />
+    <configuration name="MovimentsTaulerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.MovimentsTaulerTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bbdd.*" />
+          <option name="PATTERN" value="gui.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinesDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LinesDiagramTest" />
+    <configuration name="PissarraTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PissarraTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -132,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovimentsTaulerTest" />
+        <item itemvalue="Application.PissarraTest" />
+        <item itemvalue="Application.LoadImageTest" />
         <item itemvalue="Application.SliderValueTest" />
         <item itemvalue="Application.SectorDiagramTest" />
-        <item itemvalue="Application.LinesDiagramTest" />
-        <item itemvalue="Application.BarsDiagramTest" />
-        <item itemvalue="Application.ImportBooksDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -296,14 +294,9 @@
       <workItem from="1743150650485" duration="613000" />
       <workItem from="1743152116306" duration="102000" />
       <workItem from="1743164228883" duration="1217000" />
-      <workItem from="1743412955155" duration="2119000" />
-    </task>
-    <task id="LOCAL-00071" summary="Trivio App">
-      <created>1710247378005</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1710247378005</updated>
+      <workItem from="1743412955155" duration="3019000" />
+      <workItem from="1743487883222" duration="954000" />
+      <workItem from="1743782136762" duration="747000" />
     </task>
     <task id="LOCAL-00072" summary="Trivio App">
       <created>1710255729773</created>
@@ -641,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1742895188861</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Trivio App">
+      <created>1743415902398</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1743415902399</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

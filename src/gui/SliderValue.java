@@ -8,7 +8,7 @@ public class SliderValue {
     Slider slider;
 
     public SliderValue(PApplet p5, String s, float x, float y, float w, float h, float minV, float maxV, float val) {
-        tf = new TextField(p5, (int)x - 100, (int)y, 100 , (int)h);
+        tf = new TextField(p5, (int)x - 105, (int)y, 100 , (int)h);
         slider = new Slider(p5, "VALUE", x, y, w, h, minV, maxV, minV);
     }
 

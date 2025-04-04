@@ -177,6 +177,21 @@ public class Tauler {
         }
     }
 
+    public int[] casellaClickMouse(PApplet p5){
+        int[] casella = {-1, -1};
+        for(int f=0; f<8; f++){
+            for(int c=0; c<8; c++){
+                Casella ct = caselles[f][c];
+                if(ct.mouseDinsCasella(p5)){
+                    casella[0] = f;
+                    casella[1] = c;
+                    return  casella;
+                }
+            }
+        }
+        return casella;
+    }
+
     public void casellaMouse(PApplet p5){
         for(int f=0; f<8; f++){
             for(int c=0; c<8; c++){
