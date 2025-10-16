@@ -31,7 +31,7 @@ public class ButtonTest extends PApplet {
         // Color de fons
         bgColor = color(255);
 
-        // Creació del Tria
+        // Creació dels botons
         b1 = new Button(this, "RED", 200, 200, buttonWidth, buttonHeight);
         b2 = new Button(this, "GREEN", 200, 400, buttonWidth, buttonHeight);
         b3 = new Button(this, "BLUE", 200, 600, buttonWidth, buttonHeight);
