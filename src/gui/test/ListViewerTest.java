@@ -45,6 +45,11 @@ public class ListViewerTest extends PApplet {
         lv.display(this);
         updateCursor();
 
+        if(lv.getSelectedIndex()!=-1){
+            fill(0); textSize(18);
+            text(lv.getSelectedItem(), 400, 100);
+        }
+
     }
 
     void updateCursor(){
@@ -72,6 +77,7 @@ public class ListViewerTest extends PApplet {
 
     public void mousePressed(){
         lv.buttonPressed(this);
+        lv.mousePressed(this);
     }
 
     public void mouseDragged(){

@@ -6,9 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bbdd/LocalDatesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/ButtonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/processing/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DateConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DateConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ItemList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ListViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ListViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/SliderValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SliderValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/ListViewerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/ListViewerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trivioAppColors/Colors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trivioAppColors/Colors.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +49,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -61,9 +67,9 @@
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LocalDatesTest">
-    <configuration name="LoadImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LoadImageTest" />
+  <component name="RunManager" selected="Application.ButtonTest">
+    <configuration name="ButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.ButtonTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -75,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalDatesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.LocalDatesTest" />
+    <configuration name="Trivio003" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioAppLayout.Trivio003" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bbdd.*" />
+          <option name="PATTERN" value="trivioAppLayout.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovimentsTaulerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.MovimentsTaulerTest" />
+    <configuration name="Trivio004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioPantalles.Trivio004" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="trivioPantalles.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PissarraTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.PissarraTest" />
+    <configuration name="Trivio005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trivioAppColorsFontsPantalles.Trivio005" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="trivioAppColorsFontsPantalles.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SliderValueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SliderValueTest" />
+    <configuration name="TrivioBotons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="botons.TrivioBotons" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="botons.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LocalDatesTest" />
-        <item itemvalue="Application.MovimentsTaulerTest" />
-        <item itemvalue="Application.PissarraTest" />
-        <item itemvalue="Application.LoadImageTest" />
-        <item itemvalue="Application.SliderValueTest" />
+        <item itemvalue="Application.ButtonTest" />
+        <item itemvalue="Application.TrivioBotons" />
+        <item itemvalue="Application.Trivio005" />
+        <item itemvalue="Application.Trivio004" />
+        <item itemvalue="Application.Trivio003" />
       </list>
     </recent_temporary>
   </component>
@@ -296,21 +302,19 @@
       <workItem from="1743412955155" duration="3019000" />
       <workItem from="1743487883222" duration="954000" />
       <workItem from="1743782136762" duration="1352000" />
-      <workItem from="1744280961508" duration="695000" />
-    </task>
-    <task id="LOCAL-00073" summary="Trivio App">
-      <created>1710324267710</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1710324267711</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Trivio App">
-      <created>1710347546899</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1710347546900</updated>
+      <workItem from="1744280961508" duration="1344000" />
+      <workItem from="1749535792943" duration="2106000" />
+      <workItem from="1751972015377" duration="1700000" />
+      <workItem from="1751981814015" duration="40000" />
+      <workItem from="1751988386370" duration="337000" />
+      <workItem from="1752057681518" duration="469000" />
+      <workItem from="1753527281703" duration="1293000" />
+      <workItem from="1758888296723" duration="2699000" />
+      <workItem from="1759387204914" duration="2115000" />
+      <workItem from="1759993176387" duration="2854000" />
+      <workItem from="1760088729994" duration="100000" />
+      <workItem from="1760598450555" duration="1826000" />
+      <workItem from="1760601169892" duration="411000" />
     </task>
     <task id="LOCAL-00075" summary="Trivio App">
       <created>1710347927087</created>
@@ -641,7 +645,21 @@
       <option name="project" value="LOCAL" />
       <updated>1743782899634</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Trivio App">
+      <created>1744281818600</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1744281818600</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Trivio App">
+      <created>1744281911545</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1744281911545</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

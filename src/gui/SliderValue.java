@@ -13,7 +13,6 @@ public class SliderValue {
     }
 
     public void display(PApplet p5) {
-
         p5.pushStyle();
         tf.display(p5);
         slider.display(p5);

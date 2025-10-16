@@ -13,6 +13,7 @@ public class ListViewer {
 
     int start = 0;
     int numItems;
+    int selectedItem = -1;
 
 
     public ListViewer(PApplet p5, float x, float y, float w, float h){
@@ -44,7 +45,7 @@ public class ListViewer {
         int s = this.start;
         int e = p5.min(this.items.size(), s + numItems);
         for(int i= s; i< e; i++){
-            this.items.get(i).display(p5, x+5, y + (i-s)*50 + 5, w-10, 50);
+            this.items.get(i).display(p5, x+5, y + (i-s)*50 + 5, w-10, 50, i==selectedItem);
         }
 
         bUp.display(p5);
@@ -71,5 +72,23 @@ public class ListViewer {
         else {
             bDown.enabled = true;
         }
+    }
+
+    public void mousePressed(PApplet p5){
+        if(p5.mouseX>=x && p5.mouseX<= x + w && p5.mouseY>= y && p5.mouseY<= y + h){
+            int n = (int) p5.map(p5.mouseY, y, y +h, 0, numItems);
+            selectedItem = this.start + n;
+            System.out.println("Selected: " + selectedItem);
+        }
+        else {
+            selectedItem = -1;
+            System.out.println("Deselected.");
+        }
+    }
+
+    public int getSelectedIndex(){ return this.selectedItem; }
+
+    public String getSelectedItem(){
+        return items.get(selectedItem).info;
     }
 }
