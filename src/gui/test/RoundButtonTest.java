@@ -19,7 +19,7 @@ public class RoundButtonTest extends PApplet {
     int bgColor;
 
     public static void main(String[] args) {
-        PApplet.main("gui.test.ButtonTest", args);
+        PApplet.main("gui.test.RoundButtonTest", args);
     }
 
     public void settings(){
@@ -35,8 +35,8 @@ public class RoundButtonTest extends PApplet {
         this.setMedia(this);  // Carrega les imatges
 
         // Inicialització de components (botons)
-        b1 = new RoundButton(this, icona1, 150, 500, 60);
-        b2 = new RoundButton(this, icona2, 150, 800, 60);
+        b1 = new RoundButton(this, icona1, width/2, height/3, 60);
+        b2 = new RoundButton(this, icona2, width/2, 2*height/3, 60);
 
         bgColor = color(100);
 
@@ -63,7 +63,7 @@ public class RoundButtonTest extends PApplet {
 
     // Modifica el cursor
     void updateCursor(PApplet p5){
-        if(b1.mouseOverButton(p5) || b2.mouseOverButton(p5) || b3.mouseOverButton(p5)){
+        if(b1.mouseOverButton(p5) || b2.mouseOverButton(p5)){
             cursor(HAND);
         }
         else {
@@ -82,13 +82,10 @@ public class RoundButtonTest extends PApplet {
     public void mousePressed(){
 
         if(b1.mouseOverButton(this)){
-            bgColor = color(255, 0, 0);
+            bgColor = color(255);
         }
         else if(b2.mouseOverButton(this)){
-            bgColor = color(0, 255, 0);
-        }
-        else if(b3.mouseOverButton(this)){
-            bgColor = color(0, 0, 255);
+            bgColor = color(0);
         }
 
     }

@@ -1,20 +1,17 @@
 package gui.test;
 
 import gui.Button;
-import gui.RadioButton;
 import gui.TextList;
+import gui.TextList1D;
 import processing.core.PApplet;
 
-public class TextListTest extends PApplet {
+public class TextList1DTest extends PApplet {
 
     // Elements de la Interfície Gràfica (TextList)
-    TextList tList;   // Llista de textos
+    TextList1D tList;   // Llista de textos
     Button b;         // Botons
 
-    String[][] listValues = {{"0", "Alemania"},
-                            {"1", "Angola"},
-                            {"2", "Canada"},
-                            {"3", "Brasil"}};
+    String[] listValues = {"Alemania", "Angola", "Canada", "Brasil"};
     String selectedText;
 
     // Dimensions del TextList i Botons
@@ -22,7 +19,7 @@ public class TextListTest extends PApplet {
     float buttonW = 120, buttonH = 60;
 
     public static void main(String[] args) {
-        PApplet.main("gui.test.TextListTest", args);
+        PApplet.main("gui.test.TextList1DTest", args);
     }
 
     public void settings(){
@@ -32,7 +29,7 @@ public class TextListTest extends PApplet {
 
     public void setup(){
         // Creació de la Llista de Textos
-        tList = new TextList(this, listValues, width/8, height/12, tListW, tListH);
+        tList = new TextList1D(this, listValues, width/8, height/12, tListW, tListH);
 
         // Creació del Botó
         b = new Button(this, "TRIA", 3*width/4, height/12, buttonW, buttonH);
