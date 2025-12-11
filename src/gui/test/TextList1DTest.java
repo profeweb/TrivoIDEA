@@ -56,7 +56,6 @@ public class TextList1DTest extends PApplet {
             popStyle();
         }
 
-
     }
 
     // Modifica el cursor

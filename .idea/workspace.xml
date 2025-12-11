@@ -6,11 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/TextList1D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/test/TextList1DTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/MyCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/TestMyCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/Load2ImagesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/RoundButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/RoundButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/test/TextListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TextListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/LoadImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/LoadImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/TextList1DTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TextList1DTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,15 +59,15 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="gui.test" />
-      <recent name="bbdd" />
       <recent name="gui" />
+      <recent name="bbdd" />
       <recent name="botons" />
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextList1DTest">
-    <configuration name="RadioButtonGroupTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.RadioButtonGroupTest" />
+  <component name="RunManager" selected="Application.Load2ImagesTest">
+    <configuration name="CalendariPlusTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.CalendariPlusTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButtonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.RadioButtonTest" />
+    <configuration name="Load2ImagesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.Load2ImagesTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +92,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SliderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.SliderTest" />
+    <configuration name="LoadImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.LoadImageTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -104,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextList1DTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TextList1DTest" />
+    <configuration name="PagedProductsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.PagedProductsTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -117,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TextListTest" />
+    <configuration name="TestMyCard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.TestMyCard" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.test.*" />
+          <option name="PATTERN" value="gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TextList1DTest" />
-        <item itemvalue="Application.TextListTest" />
-        <item itemvalue="Application.SliderTest" />
-        <item itemvalue="Application.RadioButtonGroupTest" />
-        <item itemvalue="Application.RadioButtonTest" />
+        <item itemvalue="Application.Load2ImagesTest" />
+        <item itemvalue="Application.LoadImageTest" />
+        <item itemvalue="Application.TestMyCard" />
+        <item itemvalue="Application.CalendariPlusTest" />
+        <item itemvalue="Application.PagedProductsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -313,14 +314,14 @@
       <workItem from="1760598450555" duration="1826000" />
       <workItem from="1760601169892" duration="555000" />
       <workItem from="1760947978202" duration="5147000" />
-      <workItem from="1761807006088" duration="3651000" />
-    </task>
-    <task id="LOCAL-00078" summary="Trivio App">
-      <created>1710938490413</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1710938490413</updated>
+      <workItem from="1761807006088" duration="4483000" />
+      <workItem from="1762441774398" duration="597000" />
+      <workItem from="1762507978784" duration="4000" />
+      <workItem from="1763017312143" duration="3163000" />
+      <workItem from="1763034045459" duration="91000" />
+      <workItem from="1763621852926" duration="4542000" />
+      <workItem from="1765436039827" duration="736000" />
+      <workItem from="1765441777471" duration="818000" />
     </task>
     <task id="LOCAL-00079" summary="Trivio App">
       <created>1710957624975</created>
@@ -658,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1760952215887</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Trivio App">
+      <created>1761813126914</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1761813126915</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

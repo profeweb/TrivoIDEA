@@ -6,13 +6,14 @@ import processing.core.PImage;
 
 import java.io.File;
 
-public class LoadImageTest extends PApplet {
+public class Load2ImagesTest extends PApplet {
 
     // Elements de la Interfície Gràfica (Load Image)
 
     // Imatge
-    PImage img;
-    String titol="";
+    PImage[] imgs;
+    String[] titols;
+    int numImgs = 0;
 
     // Botó
     Button b;
@@ -22,7 +23,7 @@ public class LoadImageTest extends PApplet {
 
 
     public static void main(String[] args) {
-        PApplet.main("gui.test.LoadImageTest", args);
+        PApplet.main("gui.test.Load2ImagesTest", args);
     }
 
     public void settings(){
@@ -38,6 +39,9 @@ public class LoadImageTest extends PApplet {
         // Creació del Botó
         b = new Button(this, "IMAGE", 50, height-120, 200, 80);
 
+        imgs = new PImage[2];
+        titols = new String[2];
+
     }
 
     public void draw() {
@@ -46,17 +50,20 @@ public class LoadImageTest extends PApplet {
         background(bgColor);
 
         // Dibuixa la imatge
-        if(img!=null){
-            image(img, 50, 50, 700, 600);
-            textSize(34); textAlign(RIGHT);
-            fill(0);
-            text(titol, 750, 750);
-        }
-        else{
-            fill(255);
-            rect(50, 50, 700, 600);
-            textSize(34); textAlign(RIGHT);
-            text("Sense imatge", 750, 750);
+        for(int i=0; i<imgs.length; i++) {
+            if (imgs[i] != null) {
+                image(imgs[i], 50 + i*350, 50, 350, 600);
+                textSize(34);
+                textAlign(RIGHT);
+                fill(0);
+                text(titols[i], 750, 350 + i*350);
+            } else {
+                fill(255);
+                rect(50+  i*350, 50, 350 , 600);
+                textSize(34);
+                textAlign(RIGHT);
+                text(i+ "¨: Sense imatge", 750, 350 + i*350);
+            }
         }
 
         // Dibuixa el botó
@@ -75,8 +82,9 @@ public class LoadImageTest extends PApplet {
             // Obtenim la ruta del fitxer seleccionat
             String rutaImatge = selection.getAbsolutePath();
 
-            img = loadImage(rutaImatge);  // Actualitzam imatge
-            titol = selection.getName();  // Actualitzam títol
+            imgs[numImgs] = loadImage(rutaImatge);  // Actualitzam imatge
+            titols[numImgs] = selection.getName();  // Actualitzam títol
+            numImgs++;
         }
     }
 
