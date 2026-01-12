@@ -1,0 +1,4 @@
+TXT_HOME,Home,Inicio,Inici
+TXT_PLAY,Play,Jugar,Jugar
+TXT_EXIT,Exit,Salir,Sortir
+TXT_PRINT,Print,Imprimir,Imprimir
