@@ -2,3 +2,6 @@ TXT_HOME,Home,Inicio,Inici
 TXT_PLAY,Play,Jugar,Jugar
 TXT_EXIT,Exit,Salir,Sortir
 TXT_PRINT,Print,Imprimir,Imprimir
+TXT_B1,Red,Rojo,Vermell
+TXT_B2,Green,Verde,Verd
+TXT_B3,Blue,Azul,Blau
