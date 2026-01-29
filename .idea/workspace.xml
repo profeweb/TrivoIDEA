@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="8" />
+    <option name="SCOPE_TYPE" value="10" />
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/test/LanguageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/acces/ProvaAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ColorPicker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ProvaAccesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/ColorPickerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/languages.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/languages.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/LanguagesInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/LanguagesInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/SliderValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SliderValue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,6 +33,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Wvh4Txdk9tpZvjZt60hysfdK88" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,7 +53,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/tonim/Desktop/SolucioInformaticaVicenc-master/SolucioInformaticaVicenc-master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
@@ -66,9 +74,35 @@
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LanguageTest">
+  <component name="RunManager" selected="Application.ColorPickerTest">
+    <configuration name="BarsDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.BarsDiagramTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckBoxStarListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.CheckBoxStarListTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ColorPickerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.ColorPickerTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -93,34 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Load2ImagesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.Load2ImagesTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoadImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LoadImageTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TextListTest" />
+    <configuration name="LinesDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.LinesDiagramTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -134,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ColorPickerTest" />
+        <item itemvalue="Application.LinesDiagramTest" />
+        <item itemvalue="Application.BarsDiagramTest" />
         <item itemvalue="Application.LanguageTest" />
         <item itemvalue="Application.CheckBoxStarListTest" />
-        <item itemvalue="Application.TextListTest" />
-        <item itemvalue="Application.Load2ImagesTest" />
-        <item itemvalue="Application.LoadImageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -325,14 +333,11 @@
       <workItem from="1765441777471" duration="1605000" />
       <workItem from="1766046322353" duration="1463000" />
       <workItem from="1767862462719" duration="2005000" />
-      <workItem from="1768211280675" duration="3040000" />
-    </task>
-    <task id="LOCAL-00083" summary="Trivio App">
-      <created>1730197703021</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1730197703022</updated>
+      <workItem from="1768211280675" duration="3170000" />
+      <workItem from="1768418421338" duration="835000" />
+      <workItem from="1768462322342" duration="4778000" />
+      <workItem from="1768472335107" duration="530000" />
+      <workItem from="1769677249633" duration="1266000" />
     </task>
     <task id="LOCAL-00084" summary="Trivio App">
       <created>1732610656271</created>
@@ -670,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1768211924948</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Trivio App">
+      <created>1768221005307</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1768221005307</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

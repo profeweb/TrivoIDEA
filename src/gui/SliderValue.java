@@ -9,7 +9,7 @@ public class SliderValue {
 
     public SliderValue(PApplet p5, String s, float x, float y, float w, float h, float minV, float maxV, float val) {
         tf = new TextField(p5, (int)x - 105, (int)y, 100 , (int)h);
-        slider = new Slider(p5, "VALUE", x, y, w, h, minV, maxV, minV);
+        slider = new Slider(p5, s, x, y, w, h, minV, maxV, minV);
     }
 
     public void display(PApplet p5) {
