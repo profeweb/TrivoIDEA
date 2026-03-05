@@ -1,7 +1,5 @@
 package bbdd;
 
-import jdk.jshell.spi.ExecutionControlProvider;
-
 import java.sql.*;
 
 public class DataBase {
@@ -26,7 +24,7 @@ public class DataBase {
 
     public void connect(){
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            //Class.forName("com.mysql.jdbc.Driver");
             c = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+databaseName, user, password);
             query = c.createStatement();
             System.out.println("Connectat a la BBDD! :) ");
@@ -83,7 +81,7 @@ public class DataBase {
             ResultSet rs = query.executeQuery(q);
             int f=0;
             while(rs.next()){
-                info[f] = rs.getString(1);
+                info[f] = rs.getString(nomColumna);
                 f++;
             }
         }
