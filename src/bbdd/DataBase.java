@@ -507,4 +507,25 @@ public class DataBase {
             System.out.println(e);
         }
     }
+
+    // Print Array 1D String
+    public void printArray1D(String[] info){
+        System.out.println();
+        for(int i=0; i<info.length; i++){
+            System.out.printf("%d: %s.\n", i, info[i]);
+        }
+    }
+
+    // Print Array 2D String
+    public void printArray2D(String[][] info){
+        System.out.println();
+        for(int i=0; i<info.length; i++){
+            System.out.printf("%d:", i);
+            for(int j=0; j<info[i].length; j++) {
+                System.out.printf("%s \t", info[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
 }
