@@ -5,6 +5,8 @@ public class TestDataBase {
     public static DataBase db, db2;
 
     public static void main(String[] args) {
+
+        // Connecta a la Base de Dades "provabbdd"
         db = new DataBase("admin", "12345", "provabbdd");
         db.connect();
 
@@ -24,14 +26,13 @@ public class TestDataBase {
         String[][] infoClients = db.getInfoTotsClients();
         db.printArray2D(infoClients);
 
-        // Connecta a una altra base de dades
+        // Connecta a una altra base de dades "concesionari"
         db2 = new DataBase("admin", "12345", "concesionari");
         db2.connect();
 
         // Informació de dues taules relacionades (Cotxe i Marca) amb relació 1:N
         String[][] infoCotxes = db2.getInfoCotxosSEAT();
         db2.printArray2D(infoCotxes);
-
 
     }
 }
