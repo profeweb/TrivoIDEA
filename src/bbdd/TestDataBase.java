@@ -24,10 +24,11 @@ public class TestDataBase {
         String[][] infoClients = db.getInfoTotsClients();
         db.printArray2D(infoClients);
 
+        // Connecta a una altra base de dades
         db2 = new DataBase("admin", "12345", "concesionari");
         db2.connect();
 
-        // Tota la informació de la taula clients
+        // Informació de dues taules relacionades (Cotxe i Marca) amb relació 1:N
         String[][] infoCotxes = db2.getInfoCotxosSEAT();
         db2.printArray2D(infoCotxes);
 
