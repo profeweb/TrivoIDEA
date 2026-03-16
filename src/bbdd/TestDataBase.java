@@ -2,21 +2,35 @@ package bbdd;
 
 public class TestDataBase {
 
-    public static DataBase db;
+    public static DataBase db, db2;
 
     public static void main(String[] args) {
         db = new DataBase("admin", "12345", "provabbdd");
         db.connect();
 
-        String s = db.getInfo("client", "nom", "dni", "18224746H");
-        System.out.println(s);
-
+        // Número de clients
         int n = db.getNumFilesTaula("client");
-        System.out.println(n);
+        System.out.printf("Hi ha %d clients.\n", n);
 
-        String[] noms = db.getInfoArray("client", "nom");
-        for(int i=0; i<noms.length; i++){
-            System.out.println(noms[i]);
-        }
+        // Nom del client amb dni = 18224746H
+        String nomClient = db.getNomClientAmbDNI("18224746H");
+        System.out.println(nomClient);
+
+        // Noms de tots els clients ordenats alfabèticament
+        String[] noms = db.getNomTotsClients();
+        db.printArray1D(noms);
+
+        // Tota la informació de la taula clients
+        String[][] infoClients = db.getInfoTotsClients();
+        db.printArray2D(infoClients);
+
+        db2 = new DataBase("admin", "12345", "concesionari");
+        db2.connect();
+
+        // Tota la informació de la taula clients
+        String[][] infoCotxes = db2.getInfoCotxosSEAT();
+        db2.printArray2D(infoCotxes);
+
+
     }
 }
