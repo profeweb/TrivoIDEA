@@ -48,10 +48,17 @@ public class TextFieldTest extends PApplet {
 
     // ******************* KEYBOARD interaction ***************************** //
 
+    public void keyTyped(){
+        tf1.keyTyped(key);
+        tf2.keyTyped(key);
+    }
+
     public void keyPressed(){
         // Comprova i actualitza l'escriptura dins els TextFields
-        tf1.keyPressed(key, keyCode);
-        tf2.keyPressed(key, keyCode);
+        //tf1.keyPressed(key, keyCode);
+        //tf2.keyPressed(key, keyCode);
+        tf1.keyPressed(keyCode);
+        tf2.keyPressed(keyCode);
     }
 
     // ******************* MOUSE interaction ***************************** //

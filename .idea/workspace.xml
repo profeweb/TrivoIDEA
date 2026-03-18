@@ -7,8 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/TestDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/test/TextFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/test/TextFieldTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDataBase">
+  <component name="RunManager" selected="Application.TextFieldTest">
     <configuration name="ColorPickerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.test.ColorPickerTest" />
       <module name="TrivoIDEA" />
@@ -111,19 +111,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinesDiagramTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.LinesDiagramTest" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestDataBase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bbdd.TestDataBase" />
       <module name="TrivoIDEA" />
@@ -137,13 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TextFieldTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.TextFieldTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextFieldTest" />
         <item itemvalue="Application.TestDataBase" />
         <item itemvalue="Application.HSBColorPickerTest" />
         <item itemvalue="Application.HueSliderTest" />
         <item itemvalue="Application.ColorPickerTest" />
-        <item itemvalue="Application.LinesDiagramTest" />
       </list>
     </recent_temporary>
   </component>
@@ -346,28 +346,8 @@
       <workItem from="1773046294683" duration="1410000" />
       <workItem from="1773126012175" duration="596000" />
       <workItem from="1773298987080" duration="5993000" />
-      <workItem from="1773654406784" duration="4468000" />
-    </task>
-    <task id="LOCAL-00088" summary="Trivio App">
-      <created>1733818815937</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1733818815938</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Trivio App">
-      <created>1734420983535</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1734420983536</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Trivio App">
-      <created>1734422222210</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1734422222210</updated>
+      <workItem from="1773654406784" duration="5326000" />
+      <workItem from="1773821778783" duration="607000" />
     </task>
     <task id="LOCAL-00091" summary="Trivio App">
       <created>1734422338221</created>
@@ -691,7 +671,28 @@
       <option name="project" value="LOCAL" />
       <updated>1773301183366</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="Trivio App">
+      <created>1773661803339</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1773661803340</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Trivio App">
+      <created>1773661859470</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1773661859470</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Trivio App">
+      <created>1773661905847</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1773661905847</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

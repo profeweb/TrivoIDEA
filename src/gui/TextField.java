@@ -49,6 +49,7 @@ public class TextField {
     }
 
     // Afegeix i/o lleva el text que es tecleja
+
     public void keyPressed(char key, int keyCode) {
         if (selected) {
             if (keyCode == (int)BACKSPACE) {
@@ -68,11 +69,29 @@ public class TextField {
         }
     }
 
+
+    // Gestiona tecles especials
+    public void keyPressed(int keyCode) {
+        if (!selected) return;
+
+        if (keyCode == BACKSPACE) {
+            removeText();
+        }
+    }
+
+    // Gestiona entrada de text real (inclou accents)
+    public void keyTyped(char key) {
+        if (!selected) return;
+
+        // Evita caracteres de control
+        if (key == '\n' || key == '\r' || key == '\b') return;
+
+        addText(key);
+    }
+
     // Afegeix la lletra c al final del text
     public void addText(char c) {
-        if (this.text.length() + 1 < w) {
-            this.text += c;
-        }
+        this.text += c;
     }
 
     // Lleva la darrera lletra del text
