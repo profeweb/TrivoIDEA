@@ -26,6 +26,8 @@ public class TestDataBase {
         String[][] infoClients = db.getInfoTotsClients();
         db.printArray2D(infoClients);
 
+        db.getInfoTaula("client");
+
         // Connecta a una altra base de dades "concesionari"
         db2 = new DataBase("admin", "12345", "concesionari");
         db2.connect();
@@ -33,6 +35,9 @@ public class TestDataBase {
         // Informació de dues taules relacionades (Cotxe i Marca) amb relació 1:N
         String[][] infoCotxes = db2.getInfoCotxosSEAT();
         db2.printArray2D(infoCotxes);
+
+        String[][] allInfoCOtxes = db2.getInfoTaula("cotxo");
+        db2.printArray2D(allInfoCOtxes);
 
     }
 }

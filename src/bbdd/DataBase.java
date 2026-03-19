@@ -187,6 +187,49 @@ public class DataBase {
     }
 
 
+    //fghjkjhg
+    public String[][] getInfoTaula(String nomTaula){
+        int nf = getNumRowsTaula(nomTaula);
+        int nc = getNumColsTaula(nomTaula);
+        System.out.println(nf +"x"+nc);
+        String[][] info = new String[nf][nc];
+        try{
+            String q = "SELECT * FROM "+ nomTaula;
+            ResultSet rs = query.executeQuery(q);
+            int n=0;
+            while(rs.next()){
+                ResultSetMetaData rsmd = rs.getMetaData();
+                for(int c=0; c<nc; c++){
+                    // VARCHAR (12)
+                    if(rsmd.getColumnType(c+1)==12){
+                        info[n][c] = rs.getString(c+1);
+                    }
+                    // INT (4)
+                    else if(rsmd.getColumnType(c+1)==4){
+                        info[n][c] = String.valueOf(rs.getInt(c+1));
+                    }
+                    // FLOAT (6)
+                    else if(rsmd.getColumnType(c+1)==6){
+                        info[n][c] = String.valueOf(rs.getFloat(c+1));
+                    }
+                    // DOUBLE (8)
+                    else if(rsmd.getColumnType(c+1)==8){
+                        info[n][c] = String.valueOf(rs.getDouble(c+1));
+                    }
+                    else {
+                        info[n][c] = rs.getString(c+1);
+                    }
+                }
+                n++;
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return info;
+    }
+
+
     // Retorna el càlcul (MAX) sobre una columna numèrica (punts) d'una taula ( puntuacio).
 
     public int getMaxPuntuacioUsuari(String nomUsuari){
