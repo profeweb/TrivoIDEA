@@ -7,8 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bbdd/TestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/TestDataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,14 +346,7 @@
       <workItem from="1773298987080" duration="5993000" />
       <workItem from="1773654406784" duration="5326000" />
       <workItem from="1773821778783" duration="976000" />
-      <workItem from="1773903004790" duration="4355000" />
-    </task>
-    <task id="LOCAL-00092" summary="Trivio App">
-      <created>1734422481376</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1734422481376</updated>
+      <workItem from="1773903004790" duration="5463000" />
     </task>
     <task id="LOCAL-00093" summary="Trivio App">
       <created>1741686656957</created>
@@ -693,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1773822407686</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Trivio App">
+      <created>1773910082635</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1773910082636</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
