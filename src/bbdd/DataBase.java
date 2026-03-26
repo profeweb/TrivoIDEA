@@ -187,7 +187,7 @@ public class DataBase {
     }
 
 
-    //fghjkjhg
+    //Retorna tota la informació de la taula
     public String[][] getInfoTaula(String nomTaula){
         int nf = getNumRowsTaula(nomTaula);
         int nc = getNumColsTaula(nomTaula);
@@ -670,6 +670,25 @@ public class DataBase {
             System.out.println(e);
         }
         return 0;
+    }
+
+
+    public boolean loginCorrecte(String nom, String password){
+        String q = "SELECT COUNT(*) AS N "+
+                   "FROM usuario "+
+                   "WHERE nombre = '" + nom + "' AND password ='"+ password + "'";
+        System.out.println(q);
+        try{
+            ResultSet rs = query.executeQuery(q);
+            rs.next();
+            int n = rs.getInt("N");
+            return (n==1);
+
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+        return false;
     }
 
 

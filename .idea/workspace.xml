@@ -6,7 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4755ce-1693-4cf8-9b22-6d8f467a0be1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bbdd/TextFieldLoginDBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/test/LoadAndCopyImageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bbdd/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bbdd/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +66,15 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="gui.test" />
-      <recent name="gui" />
       <recent name="bbdd" />
+      <recent name="gui" />
       <recent name="botons" />
       <recent name="gui.domotica" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDataBase">
-    <configuration name="TableDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.TableDBTest" />
+  <component name="RunManager" selected="Application.LoadAndCopyImageTest">
+    <configuration name="DeleteDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.DeleteDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableSelectDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.TableSelectDBTest" />
+    <configuration name="InsertDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.InsertDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -96,21 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataBase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.TestDataBase" />
-      <module name="TrivoIDEA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bbdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextFieldTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.test.TextFieldTest" />
+    <configuration name="LoadAndCopyImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.LoadAndCopyImageTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +112,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextListDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bbdd.TextListDBTest" />
+    <configuration name="LoadImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.test.LoadImageTest" />
+      <module name="TrivoIDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextFieldLoginDBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bbdd.TextFieldLoginDBTest" />
       <module name="TrivoIDEA" />
       <extension name="coverage">
         <pattern>
@@ -137,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDataBase" />
-        <item itemvalue="Application.TextListDBTest" />
-        <item itemvalue="Application.TableSelectDBTest" />
-        <item itemvalue="Application.TableDBTest" />
-        <item itemvalue="Application.TextFieldTest" />
+        <item itemvalue="Application.LoadAndCopyImageTest" />
+        <item itemvalue="Application.LoadImageTest" />
+        <item itemvalue="Application.TextFieldLoginDBTest" />
+        <item itemvalue="Application.DeleteDBTest" />
+        <item itemvalue="Application.InsertDBTest" />
       </list>
     </recent_temporary>
   </component>
@@ -347,13 +350,13 @@
       <workItem from="1773654406784" duration="5326000" />
       <workItem from="1773821778783" duration="976000" />
       <workItem from="1773903004790" duration="5463000" />
-    </task>
-    <task id="LOCAL-00093" summary="Trivio App">
-      <created>1741686656957</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1741686656958</updated>
+      <workItem from="1773911414241" duration="497000" />
+      <workItem from="1773942421568" duration="609000" />
+      <workItem from="1774262763243" duration="1453000" />
+      <workItem from="1774508314389" duration="5031000" />
+      <workItem from="1774520590977" duration="1083000" />
+      <workItem from="1774537571263" duration="32000" />
+      <workItem from="1774538194346" duration="1048000" />
     </task>
     <task id="LOCAL-00094" summary="Trivio App">
       <created>1741688447978</created>
@@ -691,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1773910082636</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Trivio App">
+      <created>1773911428895</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1773911428895</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
